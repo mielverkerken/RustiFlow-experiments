@@ -10,8 +10,7 @@ import argparse
 exporters = {
     "rustiflow": {
         "name": "rustiflow", 
-        "cmd": "ping -c 5 8.8.8.8"
-        # "cmd": "rustiflow -f basic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}.csv pcap {pcap_file}.pcap"
+        "cmd": "rustiflow -f basic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}.csv pcap {pcap_file}.pcap"
     },
     "extractor1": {
         "name": "extractor1", 
@@ -146,8 +145,6 @@ if __name__ == "__main__":
     print(f"Total Memory: {psutil.virtual_memory().total / (1024 * 1024 * 1024)} GB")
     print(f"Available Memory: {psutil.virtual_memory().available / (1024 * 1024 * 1024)} GB")
 
-    exporter_name = "rustiflow"
-    folder = "monday"
     for pcap_file in pcap_files:
         print(f"\nRunning flow exporter on {pcap_file}...")
         experiment = Experiment(exporter_name, folder, pcap_file)
