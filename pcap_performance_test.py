@@ -11,8 +11,7 @@ import threading
 exporters = {
     "rustiflow": {
         "name": "rustiflow", 
-        "cmd": "ping -c 5 8.8.8.8"
-        # "cmd": "rustiflow -f basic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}.csv pcap {pcap_file}.pcap"
+        "cmd": "rustiflow -f basic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}.csv pcap {pcap_file}.pcap"
     },
     "extractor1": {
         "name": "extractor1", 
