@@ -1,13 +1,19 @@
 #!/bin/bash
 
+# Check if an exporter was passed as an argument
+if [ -z "$1" ]; then
+    echo "Usage: $0 <exporter>"
+    exit 1
+fi
+
+# Assign the first argument as the exporter
+exporter=$1
+
 # Array containing the days of the week
 days=("monday" "tuesday" "wednesday" "thursday" "friday")
 
 # Path to your Python script
 python_script="pcap_performance_test.py"
-
-# Exporter to use
-exporter="rustiflow"
 
 # Base folder path
 base_folder="/data"
