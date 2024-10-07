@@ -5,12 +5,14 @@ import subprocess
 import csv
 import shlex
 import argparse
+import threading
 
 # Define the flow exporters
 exporters = {
     "rustiflow": {
         "name": "rustiflow", 
-        "cmd": "rustiflow -f basic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}.csv pcap {pcap_file}.pcap"
+        "cmd": "ping -c 5 8.8.8.8"
+        # "cmd": "rustiflow -f basic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}.csv pcap {pcap_file}.pcap"
     },
     "extractor1": {
         "name": "extractor1", 
@@ -27,7 +29,7 @@ pcap_files = [
     "sample_8M",
 ]
 
-MONITOR_INTERVAL = 1
+MONITOR_INTERVAL = 1  # Interval in seconds for resource monitoring
 
 class Experiment:
     def __init__(self, extractor, folder, pcap):
@@ -42,6 +44,7 @@ class Experiment:
         self.memory_usage = []
         self.runtime = 0
         self.datetime = time.strftime('%Y-%m-%d %H:%M:%S')
+        self.stop_event = threading.Event()
 
     def run(self):
         exporter_command = shlex.split(exporters[self.extractor]['cmd'].format(pcap_file=os.path.join(self.folder, self.pcap)))
@@ -51,20 +54,22 @@ class Experiment:
 
         # Start the flow exporter process
         with subprocess.Popen(exporter_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True) as proc:
-            # Monitor resource usage until process terminates
-            self.cpu_usage, self.memory_usage = self.monitor_resources(proc)
+            # Start the resource monitoring in a separate thread
+            monitor_thread = threading.Thread(target=self.monitor_resources, args=(proc,))
+            monitor_thread.start()
 
-            # Wait for process completion to avoid zombie state and stop the process
+            # Wait for process completion
             proc.communicate()
+
+            # Signal the monitoring thread to stop and wait for it to finish
+            self.stop_event.set()
+            monitor_thread.join()
 
         end_time = time.time()
         self.runtime = end_time - start_time
         print(f"Finished after {self.runtime}s")
 
-    def monitor_resources(self, proc, interval=MONITOR_INTERVAL):
-        cpu_usage = []
-        memory_usage = []
-
+    def monitor_resources(self, proc):
         try:
             # Get process by PID
             process = psutil.Process(proc.pid)
@@ -72,24 +77,25 @@ class Experiment:
 
             # Set an initial call to cpu_percent to establish a baseline
             process.cpu_percent(interval=None)
-            time.sleep(interval)
 
-            # Monitor until process terminates
-            while process.is_running() and process.status() != psutil.STATUS_ZOMBIE:
+            while not self.stop_event.is_set() and process.is_running():
                 # Fetch multiple attributes in a single call to optimize performance
                 proc_info = process.as_dict(attrs=['cpu_percent', 'memory_info'], ad_value=None)
 
                 # Extract needed metrics
-                cpu_usage.append(proc_info['cpu_percent'])
-                memory_usage.append(proc_info['memory_info'].rss / (1024 * 1024))  # Memory in MB
+                self.cpu_usage.append(proc_info['cpu_percent'])
+                self.memory_usage.append(proc_info['memory_info'].rss / (1024 * 1024))  # Memory in MB
 
                 # Sleep for the given interval
-                time.sleep(interval)
+                self.stop_event.wait(MONITOR_INTERVAL)
+            
+            # Fetch metrics one last time once the process has finished
+            proc_info = process.as_dict(attrs=['cpu_percent', 'memory_info'], ad_value=None)
+            self.cpu_usage.append(proc_info['cpu_percent'])
+            self.memory_usage.append(proc_info['memory_info'].rss / (1024 * 1024))  # Memory in MB
 
         except (psutil.NoSuchProcess, psutil.AccessDenied):
             pass
-
-        return cpu_usage, memory_usage
 
     def save_to_csv(self):
         # Save detailed metrics to a per-run CSV file
@@ -99,7 +105,7 @@ class Experiment:
             writer.writerow(["Interval", "CPU_Usage (%)", "Memory_Usage (MB)"])
 
             for i, (cpu, mem) in enumerate(zip(self.cpu_usage, self.memory_usage)):
-                writer.writerow([i, cpu, mem])
+                writer.writerow([i+1, cpu, mem])
 
         # Calculate average CPU and memory usage for summary
         avg_cpu_usage = sum(self.cpu_usage) / len(self.cpu_usage) if self.cpu_usage else 0
