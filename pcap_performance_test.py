@@ -4,6 +4,7 @@ import psutil
 import subprocess
 import csv
 import shlex
+import argparse
 
 # Define the flow exporters
 exporters = {
@@ -120,6 +121,24 @@ class Experiment:
 
 # Main function
 if __name__ == "__main__":
+
+    # Parsing command-line arguments
+    parser = argparse.ArgumentParser(description="Run PCAP performance tests using specified exporter and folder.")
+    parser.add_argument("exporter", type=str, help="The name of the flow exporter to use (e.g., rustiflow or extractor1).")
+    parser.add_argument("folder", type=str, help="The folder containing the PCAP files.")
+    args = parser.parse_args()
+
+    exporter_name = args.exporter
+    folder = args.folder
+
+    if exporter_name not in exporters:
+        print(f"Error: Exporter '{exporter_name}' is not defined.")
+        exit(1)
+
+    if not os.path.isdir(folder):
+        print(f"Error: Folder '{folder}' does not exist.")
+        exit(1)
+    
     print("Starting pcap performance test with following stats:")
     print(f"Date: {time.strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"CPU Cores: {psutil.cpu_count(logical=False)}")
