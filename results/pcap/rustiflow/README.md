@@ -1,214 +1,200 @@
 # RustiFlow PCAP
 
-## Monday
-
-
-## Monday
-
 ```sh
-mverkerk@node0:~/RustiFlow-experiments$ python3 pcap_performance_test.py rustiflow /data/monday
+mverkerk@node0:~/RustiFlow-experiments$ ./pcap_run.sh rustiflow
+Running test for monday in folder /data/monday...
 Starting pcap performance test with following stats:
-Date: 2024-10-07 15:21:25
+Date: 2024-10-07 15:50:54
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.03873062133789 GB
+Available Memory: 44.04258346557617 GB
 
 Running flow exporter on sample_100k...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/monday/sample_100k.csv', 'pcap', '/data/monday/sample_100k.pcap']
-Process ID: 869841
-Finished after 0.1966876983642578s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/monday/sample_100k.csv', 'pcap', '/data/monday/sample_100k.pcap']
+Process ID: 871214
+Finished after 0.16649460792541504s
 
 Running flow exporter on sample_500k...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/monday/sample_500k.csv', 'pcap', '/data/monday/sample_500k.pcap']
-Process ID: 869875
-Finished after 1.6119942665100098s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/monday/sample_500k.csv', 'pcap', '/data/monday/sample_500k.pcap']
+Process ID: 871248
+Finished after 1.1062052249908447s
 
 Running flow exporter on sample_1M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/monday/sample_1M.csv', 'pcap', '/data/monday/sample_1M.pcap']
-Process ID: 869910
-Finished after 2.9329729080200195s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/monday/sample_1M.csv', 'pcap', '/data/monday/sample_1M.pcap']
+Process ID: 871282
+Finished after 2.524383306503296s
 
 Running flow exporter on sample_2M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/monday/sample_2M.csv', 'pcap', '/data/monday/sample_2M.pcap']
-Process ID: 869945
-Finished after 6.638058185577393s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/monday/sample_2M.csv', 'pcap', '/data/monday/sample_2M.pcap']
+Process ID: 871316
+Finished after 5.149806499481201s
 
 Running flow exporter on sample_4M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/monday/sample_4M.csv', 'pcap', '/data/monday/sample_4M.pcap']
-Process ID: 869980
-Finished after 10.957953929901123s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/monday/sample_4M.csv', 'pcap', '/data/monday/sample_4M.pcap']
+Process ID: 871350
+Finished after 12.854406118392944s
 
 Running flow exporter on sample_8M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/monday/sample_8M.csv', 'pcap', '/data/monday/sample_8M.pcap']
-Process ID: 870014
-Finished after 25.60288095474243s
-```
-
-## Tuesday
-
-```sh
-mverkerk@node0:~/RustiFlow-experiments$ python3 pcap_performance_test.py rustiflow /data/tuesday
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/monday/sample_8M.csv', 'pcap', '/data/monday/sample_8M.pcap']
+Process ID: 871384
+Finished after 29.264506578445435s
+Test for monday completed successfully.
+---------------------------------------------
+Running test for tuesday in folder /data/tuesday...
 Starting pcap performance test with following stats:
-Date: 2024-10-07 15:31:44
+Date: 2024-10-07 15:51:46
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.04421615600586 GB
+Available Memory: 44.04038619995117 GB
 
 Running flow exporter on sample_100k...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/tuesday/sample_100k.csv', 'pcap', '/data/tuesday/sample_100k.pcap']
-Process ID: 870072
-Finished after 0.1890580654144287s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/tuesday/sample_100k.csv', 'pcap', '/data/tuesday/sample_100k.pcap']
+Process ID: 871419
+Finished after 0.21272778511047363s
 
 Running flow exporter on sample_500k...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/tuesday/sample_500k.csv', 'pcap', '/data/tuesday/sample_500k.pcap']
-Process ID: 870106
-Finished after 1.1562328338623047s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/tuesday/sample_500k.csv', 'pcap', '/data/tuesday/sample_500k.pcap']
+Process ID: 871453
+Finished after 1.495194911956787s
 
 Running flow exporter on sample_1M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/tuesday/sample_1M.csv', 'pcap', '/data/tuesday/sample_1M.pcap']
-Process ID: 870140
-Finished after 2.7159881591796875s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/tuesday/sample_1M.csv', 'pcap', '/data/tuesday/sample_1M.pcap']
+Process ID: 871487
+Finished after 3.494438886642456s
 
 Running flow exporter on sample_2M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/tuesday/sample_2M.csv', 'pcap', '/data/tuesday/sample_2M.pcap']
-Process ID: 870174
-Finished after 6.1212005615234375s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/tuesday/sample_2M.csv', 'pcap', '/data/tuesday/sample_2M.pcap']
+Process ID: 871521
+Finished after 7.4355268478393555s
 
 Running flow exporter on sample_4M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/tuesday/sample_4M.csv', 'pcap', '/data/tuesday/sample_4M.pcap']
-Process ID: 870208
-Finished after 13.500881671905518s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/tuesday/sample_4M.csv', 'pcap', '/data/tuesday/sample_4M.pcap']
+Process ID: 871557
+Finished after 16.773060083389282s
 
 Running flow exporter on sample_8M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/tuesday/sample_8M.csv', 'pcap', '/data/tuesday/sample_8M.pcap']
-Process ID: 870245
-Finished after 23.476406812667847s
-```
-
-## Wednesday
-
-```sh
-mverkerk@node0:~/RustiFlow-experiments$ python3 pcap_performance_test.py rustiflow /data/wednesday
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/tuesday/sample_8M.csv', 'pcap', '/data/tuesday/sample_8M.pcap']
+Process ID: 871592
+Finished after 26.441498041152954s
+Test for tuesday completed successfully.
+---------------------------------------------
+Running test for wednesday in folder /data/wednesday...
 Starting pcap performance test with following stats:
-Date: 2024-10-07 15:33:34
+Date: 2024-10-07 15:52:42
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.04677963256836 GB
+Available Memory: 44.04169845581055 GB
 
 Running flow exporter on sample_100k...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/wednesday/sample_100k.csv', 'pcap', '/data/wednesday/sample_100k.pcap']
-Process ID: 870284
-Finished after 0.3285515308380127s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/wednesday/sample_100k.csv', 'pcap', '/data/wednesday/sample_100k.pcap']
+Process ID: 871627
+Finished after 0.3178596496582031s
 
 Running flow exporter on sample_500k...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/wednesday/sample_500k.csv', 'pcap', '/data/wednesday/sample_500k.pcap']
-Process ID: 870318
-Finished after 1.5917444229125977s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/wednesday/sample_500k.csv', 'pcap', '/data/wednesday/sample_500k.pcap']
+Process ID: 871661
+Finished after 1.6013295650482178s
 
 Running flow exporter on sample_1M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/wednesday/sample_1M.csv', 'pcap', '/data/wednesday/sample_1M.pcap']
-Process ID: 870352
-Finished after 3.240562915802002s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/wednesday/sample_1M.csv', 'pcap', '/data/wednesday/sample_1M.pcap']
+Process ID: 871695
+Finished after 3.2998197078704834s
 
 Running flow exporter on sample_2M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/wednesday/sample_2M.csv', 'pcap', '/data/wednesday/sample_2M.pcap']
-Process ID: 870386
-Finished after 8.263049602508545s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/wednesday/sample_2M.csv', 'pcap', '/data/wednesday/sample_2M.pcap']
+Process ID: 871729
+Finished after 6.403965950012207s
 
 Running flow exporter on sample_4M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/wednesday/sample_4M.csv', 'pcap', '/data/wednesday/sample_4M.pcap']
-Process ID: 870420
-Finished after 14.870386123657227s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/wednesday/sample_4M.csv', 'pcap', '/data/wednesday/sample_4M.pcap']
+Process ID: 871763
+Finished after 17.584348678588867s
 
 Running flow exporter on sample_8M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/wednesday/sample_8M.csv', 'pcap', '/data/wednesday/sample_8M.pcap']
-Process ID: 870454
-Finished after 27.365530252456665s
-```
-
-## Thursday
-
-```sh
-mverkerk@node0:~/RustiFlow-experiments$ python3 pcap_performance_test.py rustiflow /data/thursday
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/wednesday/sample_8M.csv', 'pcap', '/data/wednesday/sample_8M.pcap']
+Process ID: 871799
+Finished after 28.40266513824463s
+Test for wednesday completed successfully.
+---------------------------------------------
+Running test for thursday in folder /data/thursday...
 Starting pcap performance test with following stats:
-Date: 2024-10-07 15:35:09
+Date: 2024-10-07 15:53:39
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.045291900634766 GB
+Available Memory: 44.0390625 GB
 
 Running flow exporter on sample_100k...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/thursday/sample_100k.csv', 'pcap', '/data/thursday/sample_100k.pcap']
-Process ID: 870497
-Finished after 0.246445894241333s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/thursday/sample_100k.csv', 'pcap', '/data/thursday/sample_100k.pcap']
+Process ID: 871836
+Finished after 0.32364344596862793s
 
 Running flow exporter on sample_500k...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/thursday/sample_500k.csv', 'pcap', '/data/thursday/sample_500k.pcap']
-Process ID: 870531
-Finished after 1.4744484424591064s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/thursday/sample_500k.csv', 'pcap', '/data/thursday/sample_500k.pcap']
+Process ID: 871870
+Finished after 2.1698286533355713s
 
 Running flow exporter on sample_1M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/thursday/sample_1M.csv', 'pcap', '/data/thursday/sample_1M.pcap']
-Process ID: 870565
-Finished after 3.0833640098571777s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/thursday/sample_1M.csv', 'pcap', '/data/thursday/sample_1M.pcap']
+Process ID: 871904
+Finished after 4.293245077133179s
 
 Running flow exporter on sample_2M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/thursday/sample_2M.csv', 'pcap', '/data/thursday/sample_2M.pcap']
-Process ID: 870600
-Finished after 6.326556205749512s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/thursday/sample_2M.csv', 'pcap', '/data/thursday/sample_2M.pcap']
+Process ID: 871938
+Finished after 7.012402534484863s
 
 Running flow exporter on sample_4M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/thursday/sample_4M.csv', 'pcap', '/data/thursday/sample_4M.pcap']
-Process ID: 870634
-Finished after 13.270917654037476s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/thursday/sample_4M.csv', 'pcap', '/data/thursday/sample_4M.pcap']
+Process ID: 871972
+Finished after 13.356477737426758s
 
 Running flow exporter on sample_8M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/thursday/sample_8M.csv', 'pcap', '/data/thursday/sample_8M.pcap']
-Process ID: 870668
-Finished after 21.041515827178955s
-```
-
-## Friday
-
-```sh
-mverkerk@node0:~/RustiFlow-experiments$ python3 pcap_performance_test.py rustiflow /data/friday
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/thursday/sample_8M.csv', 'pcap', '/data/thursday/sample_8M.pcap']
+Process ID: 872006
+Finished after 21.16976547241211s
+Test for thursday completed successfully.
+---------------------------------------------
+Running test for friday in folder /data/friday...
 Starting pcap performance test with following stats:
-Date: 2024-10-07 15:36:24
+Date: 2024-10-07 15:54:28
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.04353332519531 GB
+Available Memory: 44.03169631958008 GB
 
 Running flow exporter on sample_100k...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/friday/sample_100k.csv', 'pcap', '/data/friday/sample_100k.pcap']
-Process ID: 870703
-Finished after 0.24668335914611816s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/friday/sample_100k.csv', 'pcap', '/data/friday/sample_100k.pcap']
+Process ID: 872041
+Finished after 0.2551119327545166s
 
 Running flow exporter on sample_500k...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/friday/sample_500k.csv', 'pcap', '/data/friday/sample_500k.pcap']
-Process ID: 870737
-Finished after 1.4272115230560303s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/friday/sample_500k.csv', 'pcap', '/data/friday/sample_500k.pcap']
+Process ID: 872075
+Finished after 1.400146245956421s
 
 Running flow exporter on sample_1M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/friday/sample_1M.csv', 'pcap', '/data/friday/sample_1M.pcap']
-Process ID: 870771
-Finished after 3.004216432571411s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/friday/sample_1M.csv', 'pcap', '/data/friday/sample_1M.pcap']
+Process ID: 872109
+Finished after 3.1585347652435303s
 
 Running flow exporter on sample_2M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/friday/sample_2M.csv', 'pcap', '/data/friday/sample_2M.pcap']
-Process ID: 870806
-Finished after 6.245294570922852s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/friday/sample_2M.csv', 'pcap', '/data/friday/sample_2M.pcap']
+Process ID: 872143
+Finished after 6.274327754974365s
 
 Running flow exporter on sample_4M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/friday/sample_4M.csv', 'pcap', '/data/friday/sample_4M.pcap']
-Process ID: 870840
-Finished after 13.155837774276733s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/friday/sample_4M.csv', 'pcap', '/data/friday/sample_4M.pcap']
+Process ID: 872177
+Finished after 13.177401542663574s
 
 Running flow exporter on sample_8M...
-Executing CMD: ['rustiflow', '-f', 'basic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/friday/sample_8M.csv', 'pcap', '/data/friday/sample_8M.pcap']
-Process ID: 870874
-Finished after 21.214545249938965s
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/friday/sample_8M.csv', 'pcap', '/data/friday/sample_8M.pcap']
+Process ID: 872211
+Finished after 15.3345787525177s
+Test for friday completed successfully.
+---------------------------------------------
 ```
