@@ -26,7 +26,7 @@ exporters = {
     },
     "argus": {
         "name": "argus",
-        "cmd": "argus -r {pcap_file}.pcap -S 3600 -w - | ra -r - -c, -s stime ltime trans flgs dur runtime idle mean stddev sum min max smacclass dmacclass senc denc saddr daddr proto sport dport stos dtos sdsb ddsb sttl dttl shops dhops sipid dipid autoid cause pkts spkts dpkts bytes sbytes dbytes appbytes sappbytes dappbytes pcr load sload dload loss sloss dloss ploss psloss pdloss retrans sretrans dretrans pretrans psretrans pdretrans sgap dgap rate srate drate dir state swin dwin stcpb dtcpb smss dmss tcprtt synack ackdat tcpopt inode offset smeansz dmeansz > {pcap_file}.csv",
+        "cmd": "argus -r {pcap_file}.pcap -S 3600 -w - | ra -r - -c , -s stime ltime trans flgs dur runtime idle mean stddev sum min max smacclass dmacclass senc denc saddr daddr proto sport dport stos dtos sdsb ddsb sttl dttl shops dhops sipid dipid autoid cause pkts spkts dpkts bytes sbytes dbytes appbytes sappbytes dappbytes pcr load sload dload loss sloss dloss ploss psloss pdloss retrans sretrans dretrans pretrans psretrans pdretrans sgap dgap rate srate drate dir state swin dwin stcpb dtcpb smss dmss tcprtt synack ackdat tcpopt inode offset smeansz dmeansz > {pcap_file}.csv",
         "cwd": None # Runs from any directory
     }
 }
