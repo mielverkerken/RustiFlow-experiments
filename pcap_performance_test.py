@@ -33,7 +33,12 @@ exporters = {
         "name": "go-flows",
         "cmd": "/users/mverkerk/go-flows/go-flows run features /users/mverkerk/RustiFlow-experiments/go-flows-features.json export csv {pcap_file}_go-flows.csv source libpcap {pcap_file}.pcap",
         "cwd": None, # Runs from any directory
-    }
+    },
+    "zeek": {
+        "name": "zeek",
+        "cmd": "/opt/zeek/bin/zeek -r {pcap_file}.pcap",
+        "cwd": "/dev/null", # Throws away all the output
+    },
 }
 
 pcap_files = [

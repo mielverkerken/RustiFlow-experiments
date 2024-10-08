@@ -206,5 +206,71 @@ Test for friday completed successfully.
 5 times repeated
 
 ```sh
+mverkerk@node0:~/RustiFlow-experiments$ ./pcap_run_cicids2017.sh go-flows 5
+Running test 1 with exporter go-flows...
+Starting pcap performance test with following stats:
+Date: 2024-10-08 16:15:25
+CPU Cores: 16
+CPU Logical Cores: 32
+Total Memory: 47.10600662231445 GB
+Available Memory: 44.07585144042969 GB
 
+Running flow exporter on cicids2017...
+Executing CMD: ['/users/mverkerk/go-flows/go-flows', 'run', 'features', '/users/mverkerk/RustiFlow-experiments/go-flows-features.json', 'export', 'csv', '/data/cicids2017/cicids2017_go-flows.csv', 'source', 'libpcap', '/data/cicids2017/cicids2017.pcap']
+Process ID: 900711
+Finished after 140.32331800460815s
+Test 1 complete. Metrics copied to results/pcap/go-flows/cicids2017/1_go-flows_cicids2017_metrics.csv
+Running test 2 with exporter go-flows...
+Starting pcap performance test with following stats:
+Date: 2024-10-08 16:17:45
+CPU Cores: 16
+CPU Logical Cores: 32
+Total Memory: 47.10600662231445 GB
+Available Memory: 44.0687141418457 GB
+
+Running flow exporter on cicids2017...
+Executing CMD: ['/users/mverkerk/go-flows/go-flows', 'run', 'features', '/users/mverkerk/RustiFlow-experiments/go-flows-features.json', 'export', 'csv', '/data/cicids2017/cicids2017_go-flows.csv', 'source', 'libpcap', '/data/cicids2017/cicids2017.pcap']
+Process ID: 900757
+Finished after 131.00136256217957s
+Test 2 complete. Metrics copied to results/pcap/go-flows/cicids2017/2_go-flows_cicids2017_metrics.csv
+Running test 3 with exporter go-flows...
+Starting pcap performance test with following stats:
+Date: 2024-10-08 16:19:57
+CPU Cores: 16
+CPU Logical Cores: 32
+Total Memory: 47.10600662231445 GB
+Available Memory: 44.067806243896484 GB
+
+Running flow exporter on cicids2017...
+Executing CMD: ['/users/mverkerk/go-flows/go-flows', 'run', 'features', '/users/mverkerk/RustiFlow-experiments/go-flows-features.json', 'export', 'csv', '/data/cicids2017/cicids2017_go-flows.csv', 'source', 'libpcap', '/data/cicids2017/cicids2017.pcap']
+Process ID: 900800
+Finished after 148.1161961555481s
+Test 3 complete. Metrics copied to results/pcap/go-flows/cicids2017/3_go-flows_cicids2017_metrics.csv
+Running test 4 with exporter go-flows...
+Starting pcap performance test with following stats:
+Date: 2024-10-08 16:22:25
+CPU Cores: 16
+CPU Logical Cores: 32
+Total Memory: 47.10600662231445 GB
+Available Memory: 44.069793701171875 GB
+
+Running flow exporter on cicids2017...
+Executing CMD: ['/users/mverkerk/go-flows/go-flows', 'run', 'features', '/users/mverkerk/RustiFlow-experiments/go-flows-features.json', 'export', 'csv', '/data/cicids2017/cicids2017_go-flows.csv', 'source', 'libpcap', '/data/cicids2017/cicids2017.pcap']
+Process ID: 900847
+Finished after 95.65036201477051s
+Test 4 complete. Metrics copied to results/pcap/go-flows/cicids2017/4_go-flows_cicids2017_metrics.csv
+Running test 5 with exporter go-flows...
+Starting pcap performance test with following stats:
+Date: 2024-10-08 16:24:01
+CPU Cores: 16
+CPU Logical Cores: 32
+Total Memory: 47.10600662231445 GB
+Available Memory: 44.07315444946289 GB
+
+Running flow exporter on cicids2017...
+Executing CMD: ['/users/mverkerk/go-flows/go-flows', 'run', 'features', '/users/mverkerk/RustiFlow-experiments/go-flows-features.json', 'export', 'csv', '/data/cicids2017/cicids2017_go-flows.csv', 'source', 'libpcap', '/data/cicids2017/cicids2017.pcap']
+Process ID: 900890
+Finished after 152.04722428321838s
+Test 5 complete. Metrics copied to results/pcap/go-flows/cicids2017/5_go-flows_cicids2017_metrics.csv
+All tests completed successfully.
 ```
