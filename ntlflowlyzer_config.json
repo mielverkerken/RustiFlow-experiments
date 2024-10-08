@@ -1,0 +1,8 @@
+{
+    "pcap_file_address": "changeme",
+    "output_file_address": "changeme",
+    "number_of_threads": 16,
+    "max_flow_duration": 3600000,
+    "activity_timeout": 120000,
+    "max_rows_number": 100000000
+}
