@@ -74,6 +74,8 @@ class Experiment:
     def run(self):
         exporter_command = shlex.split(exporters[self.extractor]['cmd'].format(pcap_file=os.path.join(self.folder, self.pcap), output_folder=self.folder))
         cwd = exporters[self.extractor]['cwd']
+        if self.extractor == "zeek":
+            cwd = cwd.format(output_folder=self.folder)
         print(f"Executing CMD: {exporter_command}")
 
         start_time = time.time()
