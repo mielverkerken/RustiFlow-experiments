@@ -1,14 +1,5 @@
 #!/bin/bash
 
-# Check if the exporter was passed as an argument
-if [ -z "$1" ]; then
-    echo "Usage: $0 <exporter>"
-    exit 1
-fi
-
-# Assign the first argument as the exporter
-exporter=$1
-
 # Array containing the days of the week
 days=("monday" "tuesday" "wednesday" "thursday" "friday" "cicids2017")
 
