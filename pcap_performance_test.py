@@ -11,7 +11,7 @@ import threading
 exporters = {
     "rustiflow": {
         "name": "rustiflow", 
-        "cmd": "rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}.csv pcap rustiflow_{pcap_file}.pcap",
+        "cmd": "rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}.csv pcap {pcap_file}_rustiflow.pcap",
         "cwd": None, # Runs from any directory
     },
     "cicflowmeter": {
@@ -26,7 +26,7 @@ exporters = {
     },
     "argus": {
         "name": "argus",
-        "cmd": "/users/mverkerk/RustiFlow-experiments/argus_script.sh {pcap_file}.pcap argus_{pcap_file}.csv",
+        "cmd": "/users/mverkerk/RustiFlow-experiments/argus_script.sh {pcap_file}.pcap {pcap_file}_argus.csv",
         "cwd": None, # Runs from any directory
     },
     "go-flows": {
