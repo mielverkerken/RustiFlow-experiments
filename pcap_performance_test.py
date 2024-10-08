@@ -31,7 +31,7 @@ exporters = {
     },
     "go-flows": {
         "name": "go-flows",
-        "cmd": "/users/mverkerk/go-flows/go-flows run features /users/mverkerk/RustiFlow-experiments/go-flows-features.json export csv go-flows_{pcap_file}.csv source libpcap {pcap_file}.pcap",
+        "cmd": "/users/mverkerk/go-flows/go-flows run features /users/mverkerk/RustiFlow-experiments/go-flows-features.json export csv {pcap_file}_go-flows.csv source libpcap {pcap_file}.pcap",
         "cwd": None, # Runs from any directory
     }
 }
