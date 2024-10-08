@@ -45,7 +45,8 @@ if __name__ == "__main__":
     mode_group = parser.add_mutually_exclusive_group(required=True)
     mode_group.add_argument("--offline", type=str, help="Path to the PCAP file for offline processing.")
     mode_group.add_argument("--realtime", type=str, help="Network interface for real-time traffic processing.")
-    mode_group.add_argument("--output", type=str, help="The output folder for the CSV file with the flow results.")
+    
+    parser.add_argument("--output", type=str, required=True, help="The output folder for the CSV file with the flow results.")
     
     args = parser.parse_args()
 
