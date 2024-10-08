@@ -2,9 +2,11 @@
 
 Using the pcap_performance_test python script we run the flow extractor tool and capture the resource metrics every second in seperate thread and measure the runtime. The detailed results for each flow exporter are in the subfolders.
 
-Using the `pcap_run.sh` you can execute the experiments on pcap samples of all the days. Then run `python3 pcap_performance_test.py <exporter> /data/cicids2017 --pcap cicids2017`. Finally, run `copy_pcap_results.sh` to copy the result files to idlab share.
+Using the `./pcap_run.sh <exporter>` you can execute the experiments on pcap samples of all the days. Then run `python3 pcap_performance_test.py <exporter> /data/cicids2017 --pcap cicids2017`. Finally, run `copy_pcap_results.sh` to copy the result files to idlab share.
 
 ## PCAP Stats
+
+### Monday - Friday
 
 ```sh
 mverkerk@node0:~/RustiFlow-experiments$     for day in "${days[@]}"; do
@@ -461,4 +463,26 @@ Total Packets: 8000000
 Total Size: 6923260169 bytes
 
 Results have been written to /data/friday/sample_8M_stat.csv
+```
+
+### All Days Combined
+
+```sh
+mverkerk@node0:~/RustiFlow-experiments$ go run pcap_stat.go /data/cicids2017
+Processing cicids2017
+...................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Protocol Summary:
+Protocol: IPv4, Count: 6295, Size: 2155959 bytes
+Protocol: IPv4/UDP, Count: 3849939, Size: 490013507 bytes
+Protocol: IPv6/UDP, Count: 135158, Size: 21047001 bytes
+Protocol: IPv6, Count: 6863, Size: 584078 bytes
+Protocol: IPv4/SCTP, Count: 62, Size: 4092 bytes
+Protocol: IPv4/TCP, Count: 52101890, Size: 50013136702 bytes
+Protocol: Ethernet, Count: 270495, Size: 30788497 bytes
+
+Total Summary:
+Total Packets: 56370702
+Total Size: 50557729836 bytes
+
+Results have been written to /data/cicids2017/cicids2017_stat.csv
 ```
