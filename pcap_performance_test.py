@@ -11,11 +11,13 @@ import threading
 exporters = {
     "rustiflow": {
         "name": "rustiflow", 
-        "cmd": "rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}.csv pcap {pcap_file}.pcap"
+        "cmd": "rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}.csv pcap {pcap_file}.pcap",
+        "cwd": None # Runs from any directory
     },
     "cicflowmeter": {
         "name": "cicflowmeter", 
-        "cmd": "cfm {pcap_file}.pcap {output_folder}"
+        "cmd": "./cfm {pcap_file}.pcap {output_folder}",
+        "cwd": "/users/mverkerk/CICFlowMeter/build/distributions/CICFlowMeter-4.0/bin" # Issues with libraries is running from other directory
     }
 }
 
@@ -51,12 +53,13 @@ class Experiment:
 
     def run(self):
         exporter_command = shlex.split(exporters[self.extractor]['cmd'].format(pcap_file=os.path.join(self.folder, self.pcap), output_folder=self.folder))
+        cwd = exporters[self.extractor]['cwd']
         print(f"Executing CMD: {exporter_command}")
 
         start_time = time.time()
 
         # Start the flow exporter process
-        with subprocess.Popen(exporter_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True) as proc:
+        with subprocess.Popen(exporter_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd) as proc:
             # Start the resource monitoring in a separate thread
             monitor_thread = threading.Thread(target=self.monitor_resources, args=(proc,))
             monitor_thread.start()
