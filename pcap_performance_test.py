@@ -18,7 +18,12 @@ exporters = {
         "name": "cicflowmeter", 
         "cmd": "./cfm {pcap_file}.pcap {output_folder}",
         "cwd": "/users/mverkerk/CICFlowMeter/build/distributions/CICFlowMeter-4.0/bin" # Issues with libraries is running from other directory
-    }
+    },
+    "nfstream": {
+        "name": "nfstream", 
+        "cmd": "python3 /users/mverkerk/RustiFlow-experiments/nfstream.py --offline {pcap_file}.pcap",
+        "cwd": None # Runs from any directory
+    },
 }
 
 pcap_files = [
