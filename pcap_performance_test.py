@@ -28,6 +28,11 @@ exporters = {
         "name": "argus",
         "cmd": "/users/mverkerk/RustiFlow-experiments/argus_script.sh {pcap_file}.pcap argus_{pcap_file}.csv",
         "cwd": None, # Runs from any directory
+    },
+    "go-flows": {
+        "name": "go-flows",
+        "cmd": "/users/mverkerk/go-flows/go-flows run features /users/mverkerk/RustiFlow-experiments/go-flows-features.json export csv go-flows_{pcap_file}.csv source libpcap {pcap_file}.pcap",
+        "cwd": None, # Runs from any directory
     }
 }
 
