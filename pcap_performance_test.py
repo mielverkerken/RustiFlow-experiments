@@ -75,7 +75,11 @@ class Experiment:
             monitor_thread.start()
 
             # Wait for process completion
-            proc.communicate()
+            _, stderr = proc.communicate()
+
+            # Print error if it occurred
+            if proc.returncode != 0:
+                print(f"Error occurred while running the command:\n{stderr}")
 
             # Signal the monitoring thread to stop and wait for it to finish
             self.stop_event.set()
