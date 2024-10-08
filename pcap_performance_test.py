@@ -13,9 +13,9 @@ exporters = {
         "name": "rustiflow", 
         "cmd": "rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}.csv pcap {pcap_file}.pcap"
     },
-    "extractor1": {
-        "name": "extractor1", 
-        "cmd": "path/to/extractor1"
+    "cicflowmeter": {
+        "name": "cicflowmeter", 
+        "cmd": "cfm {pcap_file}.pcap {output_folder}"
     }
 }
 
@@ -50,7 +50,7 @@ class Experiment:
         self.stop_event = threading.Event()
 
     def run(self):
-        exporter_command = shlex.split(exporters[self.extractor]['cmd'].format(pcap_file=os.path.join(self.folder, self.pcap)))
+        exporter_command = shlex.split(exporters[self.extractor]['cmd'].format(pcap_file=os.path.join(self.folder, self.pcap), output_folder=self.folder))
         print(f"Executing CMD: {exporter_command}")
 
         start_time = time.time()
