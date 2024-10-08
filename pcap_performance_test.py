@@ -41,6 +41,10 @@ class Experiment:
         self.memory_available = psutil.virtual_memory().available / (1024 * 1024)  # MB
         self.cpu_usage = []
         self.memory_usage = []
+        self.cpu_num = []
+        self.num_threads = []
+        self.open_files = []
+        self.num_ctx_switches = []
         self.runtime = 0
         self.datetime = time.strftime('%Y-%m-%d %H:%M:%S')
         self.stop_event = threading.Event()
@@ -74,24 +78,20 @@ class Experiment:
             process = psutil.Process(proc.pid)
             print(f"Process ID: {process.pid}")
 
-            # Set an initial call to cpu_percent to establish a baseline
-            process.cpu_percent(interval=None)
-
             while not self.stop_event.is_set() and process.is_running():
                 # Fetch multiple attributes in a single call to optimize performance
-                proc_info = process.as_dict(attrs=['cpu_percent', 'memory_info'], ad_value=None)
+                proc_info = process.as_dict(attrs=['cpu_percent', 'memory_info', 'cpu_num', 'num_threads', 'open_files', 'num_ctx_switches'], ad_value=None)
 
                 # Extract needed metrics
                 self.cpu_usage.append(proc_info['cpu_percent'])
                 self.memory_usage.append(proc_info['memory_info'].rss / (1024 * 1024))  # Memory in MB
+                self.cpu_num.append(proc_info['cpu_num'])
+                self.num_threads.append(proc_info['num_threads'])
+                self.open_files.append(len(proc_info['open_files']) if proc_info['open_files'] else 0)
+                self.num_ctx_switches.append(proc_info['num_ctx_switches'].voluntary + proc_info['num_ctx_switches'].involuntary)
 
                 # Sleep for the given interval
                 self.stop_event.wait(MONITOR_INTERVAL)
-            
-            # Fetch metrics one last time once the process has finished
-            proc_info = process.as_dict(attrs=['cpu_percent', 'memory_info'], ad_value=None)
-            self.cpu_usage.append(proc_info['cpu_percent'])
-            self.memory_usage.append(proc_info['memory_info'].rss / (1024 * 1024))  # Memory in MB
 
         except (psutil.NoSuchProcess, psutil.AccessDenied):
             pass
@@ -101,10 +101,10 @@ class Experiment:
         filename = f"{self.extractor}_{self.pcap}_metrics.csv"
         with open(os.path.join(self.folder, filename), mode='w', newline='') as file:
             writer = csv.writer(file)
-            writer.writerow(["Interval", "CPU_Usage (%)", "Memory_Usage (MB)"])
+            writer.writerow(["Interval", "CPU_Usage (%)", "Memory_Usage (MB)", "CPU_Num", "Num_Threads", "Open_Files", "Context_Switches"])
 
-            for i, (cpu, mem) in enumerate(zip(self.cpu_usage, self.memory_usage)):
-                writer.writerow([i+1, cpu, mem])
+            for i, (cpu, mem, cpu_num, num_threads, open_files, ctx_switches) in enumerate(zip(self.cpu_usage, self.memory_usage, self.cpu_num, self.num_threads, self.open_files, self.num_ctx_switches)):
+                writer.writerow([i+1, cpu, mem, cpu_num, num_threads, open_files, ctx_switches])
 
         # Calculate average CPU and memory usage for summary
         avg_cpu_usage = sum(self.cpu_usage) / len(self.cpu_usage) if self.cpu_usage else 0
@@ -143,7 +143,7 @@ if __name__ == "__main__":
     if not os.path.isdir(folder):
         print(f"Error: Folder '{folder}' does not exist.")
         exit(1)
-        
+
     if args.pcap:
         pcap_files = [args.pcap]
     
