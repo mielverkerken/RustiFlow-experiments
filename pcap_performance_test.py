@@ -13,25 +13,21 @@ exporters = {
         "name": "rustiflow", 
         "cmd": "rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}.csv pcap {pcap_file}.pcap",
         "cwd": None, # Runs from any directory
-        "shell": False
     },
     "cicflowmeter": {
         "name": "cicflowmeter", 
         "cmd": "./cfm {pcap_file}.pcap {output_folder}",
         "cwd": "/users/mverkerk/CICFlowMeter/build/distributions/CICFlowMeter-4.0/bin", # Issues with libraries is running from other directory
-        "shell": False
     },
     "nfstream": {
         "name": "nfstream", 
         "cmd": "python3 /users/mverkerk/RustiFlow-experiments/nfstream_script.py --offline {pcap_file}.pcap --output {output_folder}",
         "cwd": None, # Runs from any directory
-        "shell": False
     },
     "argus": {
         "name": "argus",
-        "cmd": "argus -r {pcap_file}.pcap -S 3600 -w - | ra -r - -c , -s stime ltime trans flgs dur runtime idle mean stddev sum min max smacclass dmacclass senc denc saddr daddr proto sport dport stos dtos sdsb ddsb sttl dttl shops dhops sipid dipid autoid cause pkts spkts dpkts bytes sbytes dbytes appbytes sappbytes dappbytes pcr load sload dload loss sloss dloss ploss psloss pdloss retrans sretrans dretrans pretrans psretrans pdretrans sgap dgap rate srate drate dir state swin dwin stcpb dtcpb smss dmss tcprtt synack ackdat tcpopt inode offset smeansz dmeansz > {pcap_file}.csv",
+        "cmd": "/users/mverkerk/RustiFlow-experiments/argus_script.sh {pcap_file}.pcap {pcap_file}.csv",
         "cwd": None, # Runs from any directory
-        "shell": True # Required for piping
     }
 }
 
@@ -68,13 +64,12 @@ class Experiment:
     def run(self):
         exporter_command = shlex.split(exporters[self.extractor]['cmd'].format(pcap_file=os.path.join(self.folder, self.pcap), output_folder=self.folder))
         cwd = exporters[self.extractor]['cwd']
-        shell = exporters[self.extractor]['shell']
         print(f"Executing CMD: {exporter_command}")
 
         start_time = time.time()
 
         # Start the flow exporter process
-        with subprocess.Popen(exporter_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd, shell=shell) as proc:
+        with subprocess.Popen(exporter_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd) as proc:
             # Start the resource monitoring in a separate thread
             monitor_thread = threading.Thread(target=self.monitor_resources, args=(proc,))
             monitor_thread.start()
