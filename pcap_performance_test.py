@@ -89,7 +89,6 @@ class Experiment:
                 config = json.load(file)
                 config['pcap_file_address'] = os.path.join(self.folder, f"{self.pcap}.pcap")
                 config['output_file_address'] = os.path.join(self.folder, f"{self.pcap}_ntlflowlyzer.csv")
-                config = config.replace("{{pcap_file}}", os.path.join(self.folder, self.pcap))
 
             with open("/users/mverkerk/RustiFlow-experiments/ntlflowlyzer_config.json", "w") as file:
                 json.dump(config, file, indent=4)
