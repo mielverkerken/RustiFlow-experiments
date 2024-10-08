@@ -21,7 +21,7 @@ exporters = {
     },
     "nfstream": {
         "name": "nfstream", 
-        "cmd": "python3 /users/mverkerk/RustiFlow-experiments/nfstream.py --offline {pcap_file}.pcap",
+        "cmd": "python3 /users/mverkerk/RustiFlow-experiments/nfstream_script.py --offline {pcap_file}.pcap",
         "cwd": None # Runs from any directory
     },
 }
