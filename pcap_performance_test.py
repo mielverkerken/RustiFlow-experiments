@@ -37,7 +37,7 @@ exporters = {
     "zeek": {
         "name": "zeek",
         "cmd": "/opt/zeek/bin/zeek -r {pcap_file}.pcap",
-        "cwd": "/dev/null", # Throws away all the output
+        "cwd": "{output_folder}", # Write all output here
     },
 }
 
