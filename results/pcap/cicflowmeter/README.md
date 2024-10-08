@@ -352,5 +352,4 @@ Test for friday completed successfully.
 
 ### All Days Combined
 
-5 times repeated
-
+Flow extraction from cicids2017.pcap (50GB) did not finish within 2 hours.. Was stuck after bit over half milion flows (519579 flows).
