@@ -32,8 +32,8 @@ for day in "${days[@]}"; do
     # Copy all CSV files matching the extractor's output for the current day
     echo "Copying files from ${source_folder} to ${destination_folder}..."
 
-    # Find and copy the relevant files (e.g., rustiflow_sample_100k.csv)
-    find "$source_folder" -name "${exporter}_*.csv" -exec cp {} "$destination_folder" \;
+    # Find and copy the relevant files (e.g., rustiflow_sample_100k.csv or sample_100k_stat.csv)
+    find "$source_folder" -name "*.csv" -exec cp {} "$destination_folder" \;
 
     # Check if the copy was successful
     if [ $? -eq 0 ]; then
