@@ -18,7 +18,7 @@ func main() {
 
 	folder := os.Args[1]
 	fileNames := []string{"sample_100k", "sample_500k", "sample_1M", "sample_2M", "sample_4M", "sample_8M"}
-	// fileNames := []string{"Wednesday-WorkingHours"}
+	// fileNames := []string{"cicids2017"}
 	for _, fileName := range fileNames {
 		fmt.Println("Processing", fileName)
 		pcapFile := fmt.Sprintf("%s/%s.pcap", folder, fileName)

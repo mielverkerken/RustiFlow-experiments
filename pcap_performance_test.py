@@ -130,6 +130,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run PCAP performance tests using specified exporter and folder.")
     parser.add_argument("exporter", type=str, help="The name of the flow exporter to use (e.g., rustiflow or extractor1).")
     parser.add_argument("folder", type=str, help="The folder containing the PCAP files.")
+    parser.add_argument("--pcap", type=str, help="The specific PCAP file to process. If not provided, all PCAP files will be processed.")
     args = parser.parse_args()
 
     exporter_name = args.exporter
@@ -142,6 +143,9 @@ if __name__ == "__main__":
     if not os.path.isdir(folder):
         print(f"Error: Folder '{folder}' does not exist.")
         exit(1)
+        
+    if args.pcap:
+        pcap_files = [args.pcap]
     
     print("Starting pcap performance test with following stats:")
     print(f"Date: {time.strftime('%Y-%m-%d %H:%M:%S')}")
@@ -149,6 +153,7 @@ if __name__ == "__main__":
     print(f"CPU Logical Cores: {psutil.cpu_count(logical=True)}")
     print(f"Total Memory: {psutil.virtual_memory().total / (1024 * 1024 * 1024)} GB")
     print(f"Available Memory: {psutil.virtual_memory().available / (1024 * 1024 * 1024)} GB")
+
 
     for pcap_file in pcap_files:
         print(f"\nRunning flow exporter on {pcap_file}...")
