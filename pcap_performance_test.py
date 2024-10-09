@@ -85,9 +85,12 @@ class Experiment:
         self.stop_event = threading.Event()
 
     def run(self):
-        exporter_command = shlex.split(exporters[self.extractor]['cmd'].format(pcap_file=os.path.join(self.folder, self.pcap), output_folder=self.folder))
+        exporter_command = exporters[self.extractor]['cmd'].format(pcap_file=os.path.join(self.folder, self.pcap), output_folder=self.folder)
         cwd = exporters[self.extractor]['cwd']
         shell = exporters[self.extractor]['shell']
+
+        if not shell:
+            exporter_command = shlex.split(exporter_command)
 
         if self.extractor == "zeek":
             cwd = cwd.format(output_folder=self.folder)
