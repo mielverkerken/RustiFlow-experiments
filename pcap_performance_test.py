@@ -209,7 +209,6 @@ class Experiment:
             writer.writerow(["Interval", "CPU_Usage (%)", "Memory_Usage (MB)", "CPU_Num", "Num_Threads", "Open_Files", "Context_Switches", "Child Processes"])
 
             for i, (cpu, mem, cpu_num, num_threads, open_files, ctx_switches, num_children) in enumerate(zip(self.cpu_usage, self.memory_usage, self.cpu_num, self.num_threads, self.open_files, self.num_ctx_switches, self.num_children)):
-                print(f"{i+1}: CPU={cpu:.2f}%, Memory={mem:.2f}MB, CPU_Num={cpu_num}, Num_Threads={num_threads}, Open_Files={open_files}, Context_Switches={ctx_switches}, Child Processes={num_children}")
                 writer.writerow([i+1, cpu, mem, cpu_num, num_threads, open_files, ctx_switches, num_children])
 
         # Calculate average CPU and memory usage for summary
