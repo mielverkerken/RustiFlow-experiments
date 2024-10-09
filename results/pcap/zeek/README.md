@@ -208,5 +208,5 @@ Test for friday completed successfully.
 5 times repeated
 
 ```sh
-
+# shell closed before I could copy output, but all results are saved
 ```

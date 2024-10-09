@@ -12,36 +12,43 @@ import json
 exporters = {
     "rustiflow": {
         "name": "rustiflow", 
+        "shell": False,
         "cmd": "rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}.csv pcap {pcap_file}_rustiflow.pcap",
         "cwd": None, # Runs from any directory
     },
     "cicflowmeter": {
         "name": "cicflowmeter", 
+        "shell": False,
         "cmd": "./cfm {pcap_file}.pcap {output_folder}",
         "cwd": "/users/mverkerk/CICFlowMeter/build/distributions/CICFlowMeter-4.0/bin", # Issues with libraries is running from other directory
     },
     "nfstream": {
         "name": "nfstream", 
+        "shell": False,
         "cmd": "python3 /users/mverkerk/RustiFlow-experiments/nfstream_script.py --offline {pcap_file}.pcap --output {output_folder}",
         "cwd": None, # Runs from any directory
     },
     "argus": {
         "name": "argus",
+        "shell": True,
         "cmd": "/users/mverkerk/RustiFlow-experiments/argus_script.sh {pcap_file}.pcap {pcap_file}_argus.csv",
         "cwd": None, # Runs from any directory
     },
     "go-flows": {
         "name": "go-flows",
+        "shell": False,
         "cmd": "/users/mverkerk/go-flows/go-flows run features /users/mverkerk/RustiFlow-experiments/go-flows-features.json export csv {pcap_file}_go-flows.csv source libpcap {pcap_file}.pcap",
         "cwd": None, # Runs from any directory
     },
     "zeek": {
         "name": "zeek",
+        "shell": False,
         "cmd": "/opt/zeek/bin/zeek -r {pcap_file}.pcap",
         "cwd": "{output_folder}", # Write all output here
     },
     "ntlflowlyzer": {
         "name": "ntlflowlyzer",
+        "shell": False,
         "cmd": "ntlflowlyzer -c /users/mverkerk/RustiFlow-experiments/ntlflowlyzer_config.json",
         "cwd": None, # Runs from any directory
     },
@@ -80,6 +87,7 @@ class Experiment:
     def run(self):
         exporter_command = shlex.split(exporters[self.extractor]['cmd'].format(pcap_file=os.path.join(self.folder, self.pcap), output_folder=self.folder))
         cwd = exporters[self.extractor]['cwd']
+        shell = exporters[self.extractor]['shell']
 
         if self.extractor == "zeek":
             cwd = cwd.format(output_folder=self.folder)
@@ -98,7 +106,7 @@ class Experiment:
         start_time = time.time()
 
         # Start the flow exporter process
-        with subprocess.Popen(exporter_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd) as proc:
+        with subprocess.Popen(exporter_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd, shell=shell) as proc:
             # Start the resource monitoring in a separate thread
             monitor_thread = threading.Thread(target=self.monitor_resources, args=(proc,))
             monitor_thread.start()
