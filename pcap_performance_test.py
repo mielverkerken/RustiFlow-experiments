@@ -6,6 +6,7 @@ import csv
 import shlex
 import argparse
 import threading
+import json
 
 # Define the flow exporters
 exporters = {
@@ -38,6 +39,11 @@ exporters = {
         "name": "zeek",
         "cmd": "/opt/zeek/bin/zeek -r {pcap_file}.pcap",
         "cwd": "{output_folder}", # Write all output here
+    },
+    "ntlflowlyzer": {
+        "name": "ntlflowlyzer",
+        "cmd": "ntlflowlyzer -c /users/mverkerk/RustiFlow-experiments/ntlflowlyzer_config.json",
+        "cwd": None, # Runs from any directory
     },
 }
 
@@ -74,8 +80,19 @@ class Experiment:
     def run(self):
         exporter_command = shlex.split(exporters[self.extractor]['cmd'].format(pcap_file=os.path.join(self.folder, self.pcap), output_folder=self.folder))
         cwd = exporters[self.extractor]['cwd']
+
         if self.extractor == "zeek":
             cwd = cwd.format(output_folder=self.folder)
+
+        if self.extractor == "ntlflowlyzer":
+            with open("/users/mverkerk/RustiFlow-experiments/ntlflowlyzer_config.json", "r") as file:
+                config = json.load(file)
+                config['pcap_file_address'] = os.path.join(self.folder, f"{self.pcap}.pcap")
+                config['output_file_address'] = os.path.join(self.folder, f"{self.pcap}_ntlflowlyzer.csv")
+
+            with open("/users/mverkerk/RustiFlow-experiments/ntlflowlyzer_config.json", "w") as file:
+                json.dump(config, file, indent=4)
+
         print(f"Executing CMD: {exporter_command}")
 
         start_time = time.time()
