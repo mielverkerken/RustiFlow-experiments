@@ -204,7 +204,6 @@ class Experiment:
     def save_to_csv(self):
         # Save detailed metrics to a per-run CSV file
         filename = f"{self.extractor}_{self.pcap}_metrics.csv"
-        print(f"{len(self.cpu_usage)} {len(self.memory_usage)} {len(self.cpu_num)} {len(self.num_threads)} {len(self.open_files)} {len(self.num_ctx_switches)} {len(self.num_children)}")
         with open(os.path.join(self.folder, filename), mode='w', newline='') as file:
             writer = csv.writer(file)
             writer.writerow(["Interval", "CPU_Usage (%)", "Memory_Usage (MB)", "CPU_Num", "Num_Threads", "Open_Files", "Context_Switches", "Child Processes"])
