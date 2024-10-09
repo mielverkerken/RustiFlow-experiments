@@ -80,6 +80,7 @@ class Experiment:
         self.num_threads = []
         self.open_files = []
         self.num_ctx_switches = []
+        self.num_children = []
         self.runtime = 0
         self.datetime = time.strftime('%Y-%m-%d %H:%M:%S')
         self.stop_event = threading.Event()
@@ -131,37 +132,60 @@ class Experiment:
 
     def monitor_resources(self, proc):
         try:
-            # Get process by PID
-            process = psutil.Process(proc.pid)
-            print(f"Process ID: {process.pid}")
+            # Get the parent process by its PID
+            parent_process = psutil.Process(proc.pid)
+            print(f"Process ID: {parent_process.pid}")
 
-            while not self.stop_event.is_set() and process.is_running():
-                # Fetch multiple attributes in a single call to optimize performance
-                proc_info = process.as_dict(attrs=['cpu_percent', 'memory_info', 'cpu_num', 'num_threads', 'open_files', 'num_ctx_switches'], ad_value=None)
+            while not self.stop_event.is_set() and parent_process.is_running():
+                # Get all child processes (recursive) of the parent process
+                children = parent_process.children(recursive=True)
+                all_processes = [parent_process] + children
 
-                # Extract needed metrics
-                self.cpu_usage.append(proc_info['cpu_percent'])
-                self.memory_usage.append(proc_info['memory_info'].rss / (1024 * 1024))  # Memory in MB
-                self.cpu_num.append(proc_info['cpu_num'])
-                self.num_threads.append(proc_info['num_threads'])
-                self.open_files.append(len(proc_info['open_files']) if proc_info['open_files'] else 0)
-                self.num_ctx_switches.append(proc_info['num_ctx_switches'].voluntary + proc_info['num_ctx_switches'].involuntary)
+                total_cpu_percent = 0.0
+                total_memory_usage = 0.0
+                total_num_threads = 0
+                total_open_files = 0
+                total_ctx_switches = 0
 
-                # Sleep for the given interval
+                for p in all_processes:
+                    try:
+                        proc_info = p.as_dict(attrs=['cpu_percent', 'memory_info', 'num_threads', 'open_files', 'num_ctx_switches'])
+                        
+                        total_cpu_percent += proc_info['cpu_percent']
+                        total_memory_usage += proc_info['memory_info'].rss / (1024 * 1024)  # Memory in MB
+                        total_num_threads += proc_info['num_threads']
+                        total_open_files += len(proc_info['open_files']) if proc_info['open_files'] else 0
+                        total_ctx_switches += proc_info['num_ctx_switches'].voluntary + proc_info['num_ctx_switches'].involuntary
+
+                    except (psutil.NoSuchProcess, psutil.AccessDenied):
+                        # Handle case where a process ends while gathering stats
+                        continue
+
+                # Append the aggregated resource metrics for this interval
+                self.cpu_usage.append(total_cpu_percent)
+                self.memory_usage.append(total_memory_usage)
+                self.num_threads.append(total_num_threads)
+                self.open_files.append(total_open_files)
+                self.num_ctx_switches.append(total_ctx_switches)
+                self.num_children.append(len(children))
+
+                # Wait for the next interval
                 self.stop_event.wait(MONITOR_INTERVAL)
 
         except (psutil.NoSuchProcess, psutil.AccessDenied):
             pass
+
+
 
     def save_to_csv(self):
         # Save detailed metrics to a per-run CSV file
         filename = f"{self.extractor}_{self.pcap}_metrics.csv"
         with open(os.path.join(self.folder, filename), mode='w', newline='') as file:
             writer = csv.writer(file)
-            writer.writerow(["Interval", "CPU_Usage (%)", "Memory_Usage (MB)", "CPU_Num", "Num_Threads", "Open_Files", "Context_Switches"])
+            writer.writerow(["Interval", "CPU_Usage (%)", "Memory_Usage (MB)", "CPU_Num", "Num_Threads", "Open_Files", "Context_Switches", "Child Processes"])
 
-            for i, (cpu, mem, cpu_num, num_threads, open_files, ctx_switches) in enumerate(zip(self.cpu_usage, self.memory_usage, self.cpu_num, self.num_threads, self.open_files, self.num_ctx_switches)):
-                writer.writerow([i+1, cpu, mem, cpu_num, num_threads, open_files, ctx_switches])
+            for i, (cpu, mem, cpu_num, num_threads, open_files, ctx_switches, num_children) in enumerate(zip(self.cpu_usage, self.memory_usage, self.cpu_num, self.num_threads, self.open_files, self.num_ctx_switches, self.num_children)):
+                writer.writerow([i+1, cpu, mem, cpu_num, num_threads, open_files, ctx_switches, num_children])
 
         # Calculate average CPU and memory usage for summary
         avg_cpu_usage = sum(self.cpu_usage) / len(self.cpu_usage) if self.cpu_usage else 0
