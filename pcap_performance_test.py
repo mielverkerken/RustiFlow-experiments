@@ -149,8 +149,9 @@ class Experiment:
                         process_map[child.pid] = child
 
                 
-                # Remove processes that have finished
-                finished_pids = [pid for pid in process_map if pid not in children and pid != parent_process.pid]
+                # Remove child processes that have finished
+                children_pids = [child.pid for child in children]
+                finished_pids = [pid for pid in process_map if pid not in children_pids and pid != parent_process.pid]
                 for pid in finished_pids:
                     del process_map[pid]
 

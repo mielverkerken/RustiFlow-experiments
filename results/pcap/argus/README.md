@@ -209,68 +209,69 @@ Test for friday completed successfully.
 mverkerk@node0:~/RustiFlow-experiments$ ./pcap_run_cicids2017.sh argus 5
 Running test 1 with exporter argus...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 15:07:31
+Date: 2024-10-09 08:18:43
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.080631256103516 GB
+Available Memory: 44.087501525878906 GB
 
 Running flow exporter on cicids2017...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/cicids2017/cicids2017.pcap', '/data/cicids2017/cicids2017.csv']
-Process ID: 897494
-Finished after 206.38298678398132s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/cicids2017/cicids2017.pcap /data/cicids2017/cicids2017_argus.csv
+Process ID: 909368
+Finished after 168.36474466323853s
 Test 1 complete. Metrics copied to results/pcap/argus/cicids2017/1_argus_cicids2017_metrics.csv
 Running test 2 with exporter argus...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 15:10:57
+Date: 2024-10-09 08:21:31
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.06542205810547 GB
+Available Memory: 44.07545852661133 GB
 
 Running flow exporter on cicids2017...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/cicids2017/cicids2017.pcap', '/data/cicids2017/cicids2017.csv']
-Process ID: 897510
-Finished after 189.41655850410461s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/cicids2017/cicids2017.pcap /data/cicids2017/cicids2017_argus.csv
+Process ID: 909388
+Finished after 158.66098999977112s
 Test 2 complete. Metrics copied to results/pcap/argus/cicids2017/2_argus_cicids2017_metrics.csv
 Running test 3 with exporter argus...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 15:14:07
+Date: 2024-10-09 08:24:10
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.073448181152344 GB
+Available Memory: 44.076656341552734 GB
 
 Running flow exporter on cicids2017...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/cicids2017/cicids2017.pcap', '/data/cicids2017/cicids2017.csv']
-Process ID: 897520
-Finished after 173.5597059726715s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/cicids2017/cicids2017.pcap /data/cicids2017/cicids2017_argus.csv
+Process ID: 909400
+Finished after 166.49914717674255s
 Test 3 complete. Metrics copied to results/pcap/argus/cicids2017/3_argus_cicids2017_metrics.csv
 Running test 4 with exporter argus...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 15:17:00
+Date: 2024-10-09 08:26:57
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.07554626464844 GB
+Available Memory: 44.076263427734375 GB
 
 Running flow exporter on cicids2017...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/cicids2017/cicids2017.pcap', '/data/cicids2017/cicids2017.csv']
-Process ID: 897538
-Finished after 171.048996925354s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/cicids2017/cicids2017.pcap /data/cicids2017/cicids2017_argus.csv
+Process ID: 909417
+Finished after 170.2382571697235s
 Test 4 complete. Metrics copied to results/pcap/argus/cicids2017/4_argus_cicids2017_metrics.csv
 Running test 5 with exporter argus...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 15:19:51
+Date: 2024-10-09 08:29:47
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.073673248291016 GB
+Available Memory: 44.081443786621094 GB
 
 Running flow exporter on cicids2017...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/cicids2017/cicids2017.pcap', '/data/cicids2017/cicids2017.csv']
-Process ID: 897552
-Finished after 163.85650539398193s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/cicids2017/cicids2017.pcap /data/cicids2017/cicids2017_argus.csv
+Process ID: 909430
+Finished after 168.6198215484619s
 Test 5 complete. Metrics copied to results/pcap/argus/cicids2017/5_argus_cicids2017_metrics.csv
 All tests completed successfully.
+
 ```
