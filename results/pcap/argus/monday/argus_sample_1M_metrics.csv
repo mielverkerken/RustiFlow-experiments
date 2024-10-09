@@ -1,1 +1,4 @@
 Interval,CPU_Usage (%),Memory_Usage (MB),CPU_Num,Num_Threads,Open_Files,Context_Switches,Child Processes
+1,0.0,3.6640625,"[31, 26]",2,1,2,1
+2,0.0,161.3125,"[31, 26, 27, 12]",6,3,15,3
+3,129.5,47.1171875,"[31, 26, 27, 0]",5,2,26,3
