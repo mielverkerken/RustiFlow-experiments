@@ -52,6 +52,12 @@ exporters = {
         "cmd": "ntlflowlyzer -c /users/mverkerk/RustiFlow-experiments/ntlflowlyzer_config.json",
         "cwd": None, # Runs from any directory
     },
+    "nprobe": {
+        "name": "nprobe",
+        "shell": False,
+        "cmd": "nprobe -i {pcap_file}.pcap -n none -t 3600 -d 120 --csv-separator , -P {pcap_file}_nprobe.csv -V 9",
+        "cwd": None, # Runs from any directory
+    },
 }
 
 pcap_files = [
@@ -158,6 +164,7 @@ class Experiment:
                 # Aggregate CPU and memory statistics for all processes in the map
                 total_cpu_percent = 0.0
                 total_memory_usage = 0.0
+                total_cpu_num = []
                 total_num_threads = 0
                 total_open_files = 0
                 total_ctx_switches = 0
@@ -169,6 +176,7 @@ class Experiment:
                         
                         total_cpu_percent += proc_info['cpu_percent']
                         total_memory_usage += proc_info['memory_info'].rss / (1024 * 1024)  # Memory in MB
+                        total_cpu_num.append(proc_info['cpu_num'])
                         total_num_threads += proc_info['num_threads']
                         total_open_files += len(proc_info['open_files']) if proc_info['open_files'] else 0
                         total_ctx_switches += proc_info['num_ctx_switches'].voluntary + proc_info['num_ctx_switches'].involuntary
@@ -180,6 +188,7 @@ class Experiment:
                 # Append the aggregated resource metrics for this interval
                 self.cpu_usage.append(total_cpu_percent)
                 self.memory_usage.append(total_memory_usage)
+                self.cpu_num.append(total_cpu_num)
                 self.num_threads.append(total_num_threads)
                 self.open_files.append(total_open_files)
                 self.num_ctx_switches.append(total_ctx_switches)
@@ -195,6 +204,7 @@ class Experiment:
     def save_to_csv(self):
         # Save detailed metrics to a per-run CSV file
         filename = f"{self.extractor}_{self.pcap}_metrics.csv"
+        print(f"{len(self.cpu_usage)} {len(self.memory_usage)} {len(self.cpu_num)} {len(self.num_threads)} {len(self.open_files)} {len(self.num_ctx_switches)} {len(self.num_children)}")
         with open(os.path.join(self.folder, filename), mode='w', newline='') as file:
             writer = csv.writer(file)
             writer.writerow(["Interval", "CPU_Usage (%)", "Memory_Usage (MB)", "CPU_Num", "Num_Threads", "Open_Files", "Context_Switches", "Child Processes"])
