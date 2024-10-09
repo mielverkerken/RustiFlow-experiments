@@ -148,6 +148,12 @@ class Experiment:
                     if child.pid not in process_map:
                         process_map[child.pid] = child
 
+                
+                # Remove processes that have finished
+                finished_pids = [pid for pid in process_map if pid not in children and pid != parent_process.pid]
+                for pid in finished_pids:
+                    del process_map[pid]
+
                 # Aggregate CPU and memory statistics for all processes in the map
                 total_cpu_percent = 0.0
                 total_memory_usage = 0.0
@@ -168,7 +174,6 @@ class Experiment:
 
                     except (psutil.NoSuchProcess, psutil.AccessDenied):
                         # Handle the case where the (child) process ends before stats can be collected
-                        del process_map[p.pid]
                         continue
 
                 # Append the aggregated resource metrics for this interval

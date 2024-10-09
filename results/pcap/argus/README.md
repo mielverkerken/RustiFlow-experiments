@@ -6,197 +6,197 @@
 mverkerk@node0:~/RustiFlow-experiments$ ./pcap_run.sh argus
 Running test for monday in folder /data/monday...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 14:56:27
+Date: 2024-10-09 04:29:03
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.07833480834961 GB
+Available Memory: 44.06220626831055 GB
 
 Running flow exporter on sample_100k...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/monday/sample_100k.pcap', '/data/monday/sample_100k.csv']
-Process ID: 897231
-Finished after 0.6681137084960938s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/monday/sample_100k.pcap /data/monday/sample_100k_argus.csv
+Process ID: 908260
+Finished after 0.6216728687286377s
 
 Running flow exporter on sample_500k...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/monday/sample_500k.pcap', '/data/monday/sample_500k.csv']
-Process ID: 897237
-Finished after 2.823568105697632s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/monday/sample_500k.pcap /data/monday/sample_500k_argus.csv
+Process ID: 908267
+Finished after 2.291025161743164s
 
 Running flow exporter on sample_1M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/monday/sample_1M.pcap', '/data/monday/sample_1M.csv']
-Process ID: 897245
-Finished after 5.328506231307983s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/monday/sample_1M.pcap /data/monday/sample_1M_argus.csv
+Process ID: 908274
+Finished after 4.5767388343811035s
 
 Running flow exporter on sample_2M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/monday/sample_2M.pcap', '/data/monday/sample_2M.csv']
-Process ID: 897251
-Finished after 10.470855951309204s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/monday/sample_2M.pcap /data/monday/sample_2M_argus.csv
+Process ID: 908281
+Finished after 8.509057998657227s
 
 Running flow exporter on sample_4M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/monday/sample_4M.pcap', '/data/monday/sample_4M.csv']
-Process ID: 897257
-Finished after 20.131653308868408s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/monday/sample_4M.pcap /data/monday/sample_4M_argus.csv
+Process ID: 908291
+Finished after 15.473205804824829s
 
 Running flow exporter on sample_8M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/monday/sample_8M.pcap', '/data/monday/sample_8M.csv']
-Process ID: 897263
-Finished after 39.48915457725525s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/monday/sample_8M.pcap /data/monday/sample_8M_argus.csv
+Process ID: 908298
+Finished after 21.594590187072754s
 Test for monday completed successfully.
 ---------------------------------------------
 Running test for tuesday in folder /data/tuesday...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 14:57:46
+Date: 2024-10-09 04:29:56
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.07063293457031 GB
+Available Memory: 44.059852600097656 GB
 
 Running flow exporter on sample_100k...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/tuesday/sample_100k.pcap', '/data/tuesday/sample_100k.csv']
-Process ID: 897271
-Finished after 0.6603908538818359s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/tuesday/sample_100k.pcap /data/tuesday/sample_100k_argus.csv
+Process ID: 908306
+Finished after 0.6283683776855469s
 
 Running flow exporter on sample_500k...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/tuesday/sample_500k.pcap', '/data/tuesday/sample_500k.csv']
-Process ID: 897277
-Finished after 2.5954320430755615s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/tuesday/sample_500k.pcap /data/tuesday/sample_500k_argus.csv
+Process ID: 908313
+Finished after 2.313736915588379s
 
 Running flow exporter on sample_1M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/tuesday/sample_1M.pcap', '/data/tuesday/sample_1M.csv']
-Process ID: 897283
-Finished after 5.203146696090698s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/tuesday/sample_1M.pcap /data/tuesday/sample_1M_argus.csv
+Process ID: 908320
+Finished after 4.1745970249176025s
 
 Running flow exporter on sample_2M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/tuesday/sample_2M.pcap', '/data/tuesday/sample_2M.csv']
-Process ID: 897289
-Finished after 9.886297225952148s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/tuesday/sample_2M.pcap /data/tuesday/sample_2M_argus.csv
+Process ID: 908331
+Finished after 7.649147033691406s
 
 Running flow exporter on sample_4M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/tuesday/sample_4M.pcap', '/data/tuesday/sample_4M.csv']
-Process ID: 897295
-Finished after 20.684627771377563s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/tuesday/sample_4M.pcap /data/tuesday/sample_4M_argus.csv
+Process ID: 908338
+Finished after 15.968161582946777s
 
 Running flow exporter on sample_8M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/tuesday/sample_8M.pcap', '/data/tuesday/sample_8M.csv']
-Process ID: 897302
-Finished after 39.43488121032715s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/tuesday/sample_8M.pcap /data/tuesday/sample_8M_argus.csv
+Process ID: 908345
+Finished after 39.19119143486023s
 Test for tuesday completed successfully.
 ---------------------------------------------
 Running test for wednesday in folder /data/wednesday...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 14:59:04
+Date: 2024-10-09 04:31:06
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.06993865966797 GB
+Available Memory: 44.05868911743164 GB
 
 Running flow exporter on sample_100k...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/wednesday/sample_100k.pcap', '/data/wednesday/sample_100k.csv']
-Process ID: 897309
-Finished after 0.6801013946533203s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/wednesday/sample_100k.pcap /data/wednesday/sample_100k_argus.csv
+Process ID: 908355
+Finished after 0.6759097576141357s
 
 Running flow exporter on sample_500k...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/wednesday/sample_500k.pcap', '/data/wednesday/sample_500k.csv']
-Process ID: 897315
-Finished after 2.45076847076416s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/wednesday/sample_500k.pcap /data/wednesday/sample_500k_argus.csv
+Process ID: 908362
+Finished after 2.410456657409668s
 
 Running flow exporter on sample_1M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/wednesday/sample_1M.pcap', '/data/wednesday/sample_1M.csv']
-Process ID: 897321
-Finished after 5.001943111419678s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/wednesday/sample_1M.pcap /data/wednesday/sample_1M_argus.csv
+Process ID: 908369
+Finished after 4.96625828742981s
 
 Running flow exporter on sample_2M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/wednesday/sample_2M.pcap', '/data/wednesday/sample_2M.csv']
-Process ID: 897327
-Finished after 9.603524208068848s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/wednesday/sample_2M.pcap /data/wednesday/sample_2M_argus.csv
+Process ID: 908376
+Finished after 9.342541456222534s
 
 Running flow exporter on sample_4M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/wednesday/sample_4M.pcap', '/data/wednesday/sample_4M.csv']
-Process ID: 897336
-Finished after 20.8514142036438s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/wednesday/sample_4M.pcap /data/wednesday/sample_4M_argus.csv
+Process ID: 908383
+Finished after 20.639208793640137s
 
 Running flow exporter on sample_8M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/wednesday/sample_8M.pcap', '/data/wednesday/sample_8M.csv']
-Process ID: 897342
-Finished after 40.729621171951294s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/wednesday/sample_8M.pcap /data/wednesday/sample_8M_argus.csv
+Process ID: 908390
+Finished after 40.250659704208374s
 Test for wednesday completed successfully.
 ---------------------------------------------
 Running test for thursday in folder /data/thursday...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 15:00:24
+Date: 2024-10-09 04:32:24
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.071624755859375 GB
+Available Memory: 44.059364318847656 GB
 
 Running flow exporter on sample_100k...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/thursday/sample_100k.pcap', '/data/thursday/sample_100k.csv']
-Process ID: 897354
-Finished after 0.7922899723052979s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/thursday/sample_100k.pcap /data/thursday/sample_100k_argus.csv
+Process ID: 908399
+Finished after 0.6916835308074951s
 
 Running flow exporter on sample_500k...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/thursday/sample_500k.pcap', '/data/thursday/sample_500k.csv']
-Process ID: 897360
-Finished after 2.8952982425689697s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/thursday/sample_500k.pcap /data/thursday/sample_500k_argus.csv
+Process ID: 908406
+Finished after 2.894498109817505s
 
 Running flow exporter on sample_1M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/thursday/sample_1M.pcap', '/data/thursday/sample_1M.csv']
-Process ID: 897366
-Finished after 4.9980833530426025s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/thursday/sample_1M.pcap /data/thursday/sample_1M_argus.csv
+Process ID: 908413
+Finished after 4.96303391456604s
 
 Running flow exporter on sample_2M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/thursday/sample_2M.pcap', '/data/thursday/sample_2M.csv']
-Process ID: 897372
-Finished after 10.382128953933716s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/thursday/sample_2M.pcap /data/thursday/sample_2M_argus.csv
+Process ID: 908420
+Finished after 10.137907981872559s
 
 Running flow exporter on sample_4M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/thursday/sample_4M.pcap', '/data/thursday/sample_4M.csv']
-Process ID: 897378
-Finished after 20.18386149406433s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/thursday/sample_4M.pcap /data/thursday/sample_4M_argus.csv
+Process ID: 908427
+Finished after 19.981587886810303s
 
 Running flow exporter on sample_8M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/thursday/sample_8M.pcap', '/data/thursday/sample_8M.csv']
-Process ID: 897384
-Finished after 34.10660672187805s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/thursday/sample_8M.pcap /data/thursday/sample_8M_argus.csv
+Process ID: 908434
+Finished after 34.102049827575684s
 Test for thursday completed successfully.
 ---------------------------------------------
 Running test for friday in folder /data/friday...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 15:01:37
+Date: 2024-10-09 04:33:37
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.07251739501953 GB
+Available Memory: 44.05839538574219 GB
 
 Running flow exporter on sample_100k...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/friday/sample_100k.pcap', '/data/friday/sample_100k.csv']
-Process ID: 897392
-Finished after 0.8159029483795166s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/friday/sample_100k.pcap /data/friday/sample_100k_argus.csv
+Process ID: 908443
+Finished after 0.8100743293762207s
 
 Running flow exporter on sample_500k...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/friday/sample_500k.pcap', '/data/friday/sample_500k.csv']
-Process ID: 897398
-Finished after 2.4655985832214355s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/friday/sample_500k.pcap /data/friday/sample_500k_argus.csv
+Process ID: 908450
+Finished after 2.5480618476867676s
 
 Running flow exporter on sample_1M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/friday/sample_1M.pcap', '/data/friday/sample_1M.csv']
-Process ID: 897404
-Finished after 5.077438592910767s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/friday/sample_1M.pcap /data/friday/sample_1M_argus.csv
+Process ID: 908457
+Finished after 5.0425426959991455s
 
 Running flow exporter on sample_2M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/friday/sample_2M.pcap', '/data/friday/sample_2M.csv']
-Process ID: 897410
-Finished after 9.605901956558228s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/friday/sample_2M.pcap /data/friday/sample_2M_argus.csv
+Process ID: 908464
+Finished after 9.37454104423523s
 
 Running flow exporter on sample_4M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/friday/sample_4M.pcap', '/data/friday/sample_4M.csv']
-Process ID: 897416
-Finished after 19.60709857940674s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/friday/sample_4M.pcap /data/friday/sample_4M_argus.csv
+Process ID: 908471
+Finished after 19.44503092765808s
 
 Running flow exporter on sample_8M...
-Executing CMD: ['/users/mverkerk/RustiFlow-experiments/argus_script.sh', '/data/friday/sample_8M.pcap', '/data/friday/sample_8M.csv']
-Process ID: 897422
-Finished after 42.02572250366211s
+Executing CMD: /users/mverkerk/RustiFlow-experiments/argus_script.sh /data/friday/sample_8M.pcap /data/friday/sample_8M_argus.csv
+Process ID: 908478
+Finished after 41.95397758483887s
 Test for friday completed successfully.
 ---------------------------------------------
 ```
