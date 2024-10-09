@@ -136,19 +136,28 @@ class Experiment:
             parent_process = psutil.Process(proc.pid)
             print(f"Process ID: {parent_process.pid}")
 
-            while not self.stop_event.is_set() and parent_process.is_running():
-                # Get all child processes (recursive) of the parent process
-                children = parent_process.children(recursive=True)
-                all_processes = [parent_process] + children
+            # Initialize the process map with the parent process
+            process_map = {parent_process.pid: parent_process}
 
+            while not self.stop_event.is_set() and parent_process.is_running():
+                # Refresh children processes and update the process map
+                children = parent_process.children(recursive=True)
+
+                # Add new children to the process map
+                for child in children:
+                    if child.pid not in process_map:
+                        process_map[child.pid] = child
+
+                # Aggregate CPU and memory statistics for all processes in the map
                 total_cpu_percent = 0.0
                 total_memory_usage = 0.0
                 total_num_threads = 0
                 total_open_files = 0
                 total_ctx_switches = 0
 
-                for p in all_processes:
+                for p in process_map.values():
                     try:
+                        # Collect resource metrics from each (child) process
                         proc_info = p.as_dict(attrs=['cpu_percent', 'memory_info', 'num_threads', 'open_files', 'num_ctx_switches'])
                         
                         total_cpu_percent += proc_info['cpu_percent']
@@ -158,7 +167,8 @@ class Experiment:
                         total_ctx_switches += proc_info['num_ctx_switches'].voluntary + proc_info['num_ctx_switches'].involuntary
 
                     except (psutil.NoSuchProcess, psutil.AccessDenied):
-                        # Handle case where a process ends while gathering stats
+                        # Handle the case where the (child) process ends before stats can be collected
+                        del process_map[p.pid]
                         continue
 
                 # Append the aggregated resource metrics for this interval
@@ -174,7 +184,6 @@ class Experiment:
 
         except (psutil.NoSuchProcess, psutil.AccessDenied):
             pass
-
 
 
     def save_to_csv(self):
