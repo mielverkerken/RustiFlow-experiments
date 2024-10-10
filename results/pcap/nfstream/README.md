@@ -6,197 +6,197 @@
 mverkerk@node0:~/RustiFlow-experiments$ ./pcap_run.sh nfstream
 Running test for monday in folder /data/monday...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 11:01:48
+Date: 2024-10-10 07:57:04
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.03816223144531 GB
+Available Memory: 44.139286041259766 GB
 
 Running flow exporter on sample_100k...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/monday/sample_100k.pcap', '--output', '/data/monday']
-Process ID: 887240
-Finished after 1.4498798847198486s
+Process ID: 914346
+Finished after 1.8806581497192383s
 
 Running flow exporter on sample_500k...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/monday/sample_500k.pcap', '--output', '/data/monday']
-Process ID: 887304
-Finished after 3.8577561378479004s
+Process ID: 914410
+Finished after 4.259026050567627s
 
 Running flow exporter on sample_1M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/monday/sample_1M.pcap', '--output', '/data/monday']
-Process ID: 887368
-Finished after 7.890552759170532s
+Process ID: 914474
+Finished after 7.6318604946136475s
 
 Running flow exporter on sample_2M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/monday/sample_2M.pcap', '--output', '/data/monday']
-Process ID: 887432
-Finished after 14.468796014785767s
+Process ID: 914538
+Finished after 15.020101547241211s
 
 Running flow exporter on sample_4M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/monday/sample_4M.pcap', '--output', '/data/monday']
-Process ID: 887496
-Finished after 23.692274808883667s
+Process ID: 914602
+Finished after 27.072083234786987s
 
 Running flow exporter on sample_8M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/monday/sample_8M.pcap', '--output', '/data/monday']
-Process ID: 887561
-Finished after 52.2549946308136s
+Process ID: 914666
+Finished after 56.015650510787964s
 Test for monday completed successfully.
 ---------------------------------------------
 Running test for tuesday in folder /data/tuesday...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 11:03:31
+Date: 2024-10-10 07:58:56
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.001434326171875 GB
+Available Memory: 44.113922119140625 GB
 
 Running flow exporter on sample_100k...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/tuesday/sample_100k.pcap', '--output', '/data/tuesday']
-Process ID: 887627
-Finished after 1.5749385356903076s
+Process ID: 914732
+Finished after 1.5188055038452148s
 
 Running flow exporter on sample_500k...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/tuesday/sample_500k.pcap', '--output', '/data/tuesday']
-Process ID: 887691
-Finished after 4.3795154094696045s
+Process ID: 914796
+Finished after 4.258901596069336s
 
 Running flow exporter on sample_1M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/tuesday/sample_1M.pcap', '--output', '/data/tuesday']
-Process ID: 887755
-Finished after 7.098626613616943s
+Process ID: 914860
+Finished after 7.392763376235962s
 
 Running flow exporter on sample_2M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/tuesday/sample_2M.pcap', '--output', '/data/tuesday']
-Process ID: 887819
-Finished after 13.026906490325928s
+Process ID: 914924
+Finished after 14.184397220611572s
 
 Running flow exporter on sample_4M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/tuesday/sample_4M.pcap', '--output', '/data/tuesday']
-Process ID: 887883
-Finished after 25.62647271156311s
+Process ID: 914994
+Finished after 27.05554437637329s
 
 Running flow exporter on sample_8M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/tuesday/sample_8M.pcap', '--output', '/data/tuesday']
-Process ID: 887947
-Finished after 53.5047607421875s
+Process ID: 915059
+Finished after 54.87904906272888s
 Test for tuesday completed successfully.
 ---------------------------------------------
 Running test for wednesday in folder /data/wednesday...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 11:05:17
+Date: 2024-10-10 08:00:45
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.01548767089844 GB
+Available Memory: 44.107845306396484 GB
 
 Running flow exporter on sample_100k...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/wednesday/sample_100k.pcap', '--output', '/data/wednesday']
-Process ID: 888022
-Finished after 1.223914623260498s
+Process ID: 915131
+Finished after 1.182821273803711s
 
 Running flow exporter on sample_500k...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/wednesday/sample_500k.pcap', '--output', '/data/wednesday']
-Process ID: 888086
-Finished after 4.751862287521362s
+Process ID: 915195
+Finished after 4.386539459228516s
 
 Running flow exporter on sample_1M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/wednesday/sample_1M.pcap', '--output', '/data/wednesday']
-Process ID: 888150
-Finished after 8.572106838226318s
+Process ID: 915259
+Finished after 9.126343250274658s
 
 Running flow exporter on sample_2M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/wednesday/sample_2M.pcap', '--output', '/data/wednesday']
-Process ID: 888214
-Finished after 14.293373107910156s
+Process ID: 915323
+Finished after 17.540961027145386s
 
 Running flow exporter on sample_4M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/wednesday/sample_4M.pcap', '--output', '/data/wednesday']
-Process ID: 888278
-Finished after 28.648141860961914s
+Process ID: 915387
+Finished after 27.5535569190979s
 
 Running flow exporter on sample_8M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/wednesday/sample_8M.pcap', '--output', '/data/wednesday']
-Process ID: 888342
-Finished after 49.440706968307495s
+Process ID: 915451
+Finished after 49.96722197532654s
 Test for wednesday completed successfully.
 ---------------------------------------------
 Running test for thursday in folder /data/thursday...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 11:07:04
+Date: 2024-10-10 08:02:35
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.01176071166992 GB
+Available Memory: 44.122657775878906 GB
 
 Running flow exporter on sample_100k...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/thursday/sample_100k.pcap', '--output', '/data/thursday']
-Process ID: 888418
-Finished after 1.2460675239562988s
+Process ID: 915518
+Finished after 1.3819153308868408s
 
 Running flow exporter on sample_500k...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/thursday/sample_500k.pcap', '--output', '/data/thursday']
-Process ID: 888482
-Finished after 3.995673656463623s
+Process ID: 915582
+Finished after 4.020107269287109s
 
 Running flow exporter on sample_1M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/thursday/sample_1M.pcap', '--output', '/data/thursday']
-Process ID: 888546
-Finished after 7.395327806472778s
+Process ID: 915646
+Finished after 7.4485719203948975s
 
 Running flow exporter on sample_2M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/thursday/sample_2M.pcap', '--output', '/data/thursday']
-Process ID: 888610
-Finished after 16.340839385986328s
+Process ID: 915710
+Finished after 15.699281454086304s
 
 Running flow exporter on sample_4M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/thursday/sample_4M.pcap', '--output', '/data/thursday']
-Process ID: 888674
-Finished after 28.73656725883484s
+Process ID: 915774
+Finished after 28.617559671401978s
 
 Running flow exporter on sample_8M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/thursday/sample_8M.pcap', '--output', '/data/thursday']
-Process ID: 888738
-Finished after 53.5364351272583s
+Process ID: 915839
+Finished after 55.77167773246765s
 Test for thursday completed successfully.
 ---------------------------------------------
 Running test for friday in folder /data/friday...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 11:08:55
+Date: 2024-10-10 08:04:28
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.02576446533203 GB
+Available Memory: 44.102561950683594 GB
 
 Running flow exporter on sample_100k...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/friday/sample_100k.pcap', '--output', '/data/friday']
-Process ID: 888807
-Finished after 1.31087064743042s
+Process ID: 915904
+Finished after 1.2874786853790283s
 
 Running flow exporter on sample_500k...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/friday/sample_500k.pcap', '--output', '/data/friday']
-Process ID: 888871
-Finished after 4.081015586853027s
+Process ID: 915968
+Finished after 4.105242967605591s
 
 Running flow exporter on sample_1M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/friday/sample_1M.pcap', '--output', '/data/friday']
-Process ID: 888936
-Finished after 7.239326238632202s
+Process ID: 916032
+Finished after 7.158807039260864s
 
 Running flow exporter on sample_2M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/friday/sample_2M.pcap', '--output', '/data/friday']
-Process ID: 889000
-Finished after 14.408146858215332s
+Process ID: 916096
+Finished after 14.736443042755127s
 
 Running flow exporter on sample_4M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/friday/sample_4M.pcap', '--output', '/data/friday']
-Process ID: 889064
-Finished after 27.640501499176025s
+Process ID: 916160
+Finished after 27.449579000473022s
 
 Running flow exporter on sample_8M...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/friday/sample_8M.pcap', '--output', '/data/friday']
-Process ID: 889128
-Finished after 71.70615720748901s
+Process ID: 916233
+Finished after 72.36369299888611s
 Test for friday completed successfully.
 ---------------------------------------------
 ```
@@ -209,68 +209,68 @@ Test for friday completed successfully.
 mverkerk@node0:~/RustiFlow-experiments$ ./pcap_run_cicids2017.sh nfstream 5
 Running test 1 with exporter nfstream...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 11:20:32
+Date: 2024-10-10 08:16:33
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.0359001159668 GB
+Available Memory: 44.127464294433594 GB
 
 Running flow exporter on cicids2017...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/cicids2017/cicids2017.pcap', '--output', '/data/cicids2017']
-Process ID: 889371
-Finished after 372.46309781074524s
+Process ID: 916402
+Finished after 383.10602831840515s
 Test 1 complete. Metrics copied to results/pcap/nfstream/cicids2017/1_nfstream_cicids2017_metrics.csv
 Running test 2 with exporter nfstream...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 11:26:44
+Date: 2024-10-10 08:22:56
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.03852462768555 GB
+Available Memory: 44.106117248535156 GB
 
 Running flow exporter on cicids2017...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/cicids2017/cicids2017.pcap', '--output', '/data/cicids2017']
-Process ID: 889449
-Finished after 342.1391317844391s
+Process ID: 916483
+Finished after 347.26913571357727s
 Test 2 complete. Metrics copied to results/pcap/nfstream/cicids2017/2_nfstream_cicids2017_metrics.csv
 Running test 3 with exporter nfstream...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 11:32:27
+Date: 2024-10-10 08:28:43
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.04587936401367 GB
+Available Memory: 44.099090576171875 GB
 
 Running flow exporter on cicids2017...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/cicids2017/cicids2017.pcap', '--output', '/data/cicids2017']
-Process ID: 889526
-Finished after 367.1800673007965s
+Process ID: 916562
+Finished after 366.67500352859497s
 Test 3 complete. Metrics copied to results/pcap/nfstream/cicids2017/3_nfstream_cicids2017_metrics.csv
 Running test 4 with exporter nfstream...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 11:38:34
+Date: 2024-10-10 08:34:50
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.04157257080078 GB
+Available Memory: 44.10752868652344 GB
 
 Running flow exporter on cicids2017...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/cicids2017/cicids2017.pcap', '--output', '/data/cicids2017']
-Process ID: 889603
-Finished after 376.3434293270111s
+Process ID: 916638
+Finished after 363.37681889533997s
 Test 4 complete. Metrics copied to results/pcap/nfstream/cicids2017/4_nfstream_cicids2017_metrics.csv
 Running test 5 with exporter nfstream...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 11:44:50
+Date: 2024-10-10 08:40:54
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.04842758178711 GB
+Available Memory: 44.10367965698242 GB
 
 Running flow exporter on cicids2017...
 Executing CMD: ['python3', '/users/mverkerk/RustiFlow-experiments/nfstream_script.py', '--offline', '/data/cicids2017/cicids2017.pcap', '--output', '/data/cicids2017']
-Process ID: 889677
-Finished after 370.3864634037018s
+Process ID: 916719
+Finished after 361.66617465019226s
 Test 5 complete. Metrics copied to results/pcap/nfstream/cicids2017/5_nfstream_cicids2017_metrics.csv
 All tests completed successfully.
 ```
