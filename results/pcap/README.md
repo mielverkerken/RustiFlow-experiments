@@ -14,3 +14,5 @@ for day in "${days[@]}"; do
     destination_folder="results/pcap/${exporter}/${day}"
     find "/data/${day}" -name "*.pcap_Flow.csv" -exec mv {} "$destination_folder" \;
 done
+
+Single run: `python3 pcap_performance_test.py rustiflow /data/monday --pcap sample_1M`
