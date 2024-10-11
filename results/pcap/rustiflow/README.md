@@ -206,81 +206,71 @@ Test for friday completed successfully.
 5 times repeated
 
 ```sh
-mverkerk@node0:~/RustiFlow-experiments$ python3 pcap_performance_test.py rustiflow /data/cicids2017 --pcap cicids2017
+mverkerk@node0:~/RustiFlow-experiments$ ./pcap_run_cicids2017.sh rustiflow 5
+Running test 1 with exporter rustiflow...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 05:27:56
+Date: 2024-10-11 04:31:46
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.05051803588867 GB
+Available Memory: 44.1606330871582 GB
 
 Running flow exporter on cicids2017...
-Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/cicids2017/cicids2017.csv', 'pcap', '/data/cicids2017/cicids2017.pcap']
-Process ID: 878521
-Finished after 168.17799520492554s
-mverkerk@node0:~/RustiFlow-experiments$ cp /data/cicids2017/rustiflow_cicids2017_metrics.csv results/pcap/rustiflow/cicids2017/1_rustiflow_cicids2017_metrics.csv
-```
-
-```sh
-mverkerk@node0:~/RustiFlow-experiments$ python3 pcap_performance_test.py rustiflow /data/cicids2017 --pcap cicids2017
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/cicids2017/cicids2017_rustiflow.csv', 'pcap', '/data/cicids2017/cicids2017.pcap']
+Process ID: 920084
+Finished after 145.25783443450928s
+Test 1 complete. Metrics copied to results/pcap/rustiflow/cicids2017/1_rustiflow_cicids2017_metrics.csv
+Running test 2 with exporter rustiflow...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 05:35:53
+Date: 2024-10-11 04:34:11
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.047752380371094 GB
+Available Memory: 44.15215301513672 GB
 
 Running flow exporter on cicids2017...
-Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/cicids2017/cicids2017.csv', 'pcap', '/data/cicids2017/cicids2017.pcap']
-Process ID: 878631
-Finished after 159.0382535457611s
-mverkerk@node0:~/RustiFlow-experiments$ cp /data/cicids2017/rustiflow_cicids2017_metrics.csv results/pcap/rustiflow/cicids2017/2_rustiflow_cicids2017_metrics.csv
-```
-
-```sh
-mverkerk@node0:~/RustiFlow-experiments$ python3 pcap_performance_test.py rustiflow /data/cicids2017 --pcap cicids2017
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/cicids2017/cicids2017_rustiflow.csv', 'pcap', '/data/cicids2017/cicids2017.pcap']
+Process ID: 920132
+Finished after 138.10777831077576s
+Test 2 complete. Metrics copied to results/pcap/rustiflow/cicids2017/2_rustiflow_cicids2017_metrics.csv
+Running test 3 with exporter rustiflow...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 05:39:53
+Date: 2024-10-11 04:36:29
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.02451705932617 GB
+Available Memory: 44.152809143066406 GB
 
 Running flow exporter on cicids2017...
-Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/cicids2017/cicids2017.csv', 'pcap', '/data/cicids2017/cicids2017.pcap']
-Process ID: 878747
-Finished after 148.76947045326233s
-mverkerk@node0:~/RustiFlow-experiments$ cp /data/cicids2017/rustiflow_cicids2017_metrics.csv results/pcap/rustiflow/cicids2017/3_rustiflow_cicids2017_metrics.csv
-```
-
-```sh
-mverkerk@node0:~/RustiFlow-experiments$ python3 pcap_performance_test.py rustiflow /data/cicids2017 --pcap cicids2017
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/cicids2017/cicids2017_rustiflow.csv', 'pcap', '/data/cicids2017/cicids2017.pcap']
+Process ID: 920177
+Finished after 138.0516860485077s
+Test 3 complete. Metrics copied to results/pcap/rustiflow/cicids2017/3_rustiflow_cicids2017_metrics.csv
+Running test 4 with exporter rustiflow...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 05:42:43
+Date: 2024-10-11 04:38:47
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.03774642944336 GB
+Available Memory: 44.150386810302734 GB
 
 Running flow exporter on cicids2017...
-Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/cicids2017/cicids2017.csv', 'pcap', '/data/cicids2017/cicids2017.pcap']
-Process ID: 878788
-Finished after 147.3885579109192s
-mverkerk@node0:~/RustiFlow-experiments$ cp /data/cicids2017/rustiflow_cicids2017_metrics.csv results/pcap/rustiflow/cicids2017/4_rustiflow_cicids2017_metrics.csv
-```
-
-```sh
-mverkerk@node0:~/RustiFlow-experiments$ python3 pcap_performance_test.py rustiflow /data/cicids2017 --pcap cicids2017
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/cicids2017/cicids2017_rustiflow.csv', 'pcap', '/data/cicids2017/cicids2017.pcap']
+Process ID: 920217
+Finished after 148.09819221496582s
+Test 4 complete. Metrics copied to results/pcap/rustiflow/cicids2017/4_rustiflow_cicids2017_metrics.csv
+Running test 5 with exporter rustiflow...
 Starting pcap performance test with following stats:
-Date: 2024-10-08 05:48:39
+Date: 2024-10-11 04:41:16
 CPU Cores: 16
 CPU Logical Cores: 32
 Total Memory: 47.10600662231445 GB
-Available Memory: 44.041404724121094 GB
+Available Memory: 44.144493103027344 GB
 
 Running flow exporter on cicids2017...
-Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/cicids2017/cicids2017.csv', 'pcap', '/data/cicids2017/cicids2017.pcap']
-Process ID: 878836
-Finished after 140.97020745277405s
-mverkerk@node0:~/RustiFlow-experiments$ cp /data/cicids2017/rustiflow_cicids2017_metrics.csv results/pcap/rustiflow/cicids2017/5_rustiflow_cicids2017_metrics.csv
+Executing CMD: ['rustiflow', '-f', 'cic', '--header', '--idle-timeout', '120', '--active-timeout', '3600', '--output', 'csv', '--export-path', '/data/cicids2017/cicids2017_rustiflow.csv', 'pcap', '/data/cicids2017/cicids2017.pcap']
+Process ID: 920257
+Finished after 138.8546507358551s
+Test 5 complete. Metrics copied to results/pcap/rustiflow/cicids2017/5_rustiflow_cicids2017_metrics.csv
+All tests completed successfully.
 ```
