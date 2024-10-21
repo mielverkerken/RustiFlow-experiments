@@ -1,0 +1,156 @@
+Filename	Reviewed By	Title	First Author	Year	Venue	Dataset(s)	Flow Exporter(s)		tools
+46	Matisse	Stream-based machine learning for network security and anomaly detection	P. Mulinka	2018	SIGCOMM Workshop	MAWILab, MAWI			custom
+47	Matisse	Telemetry-based stream-learning of BGP anomalies	A. Putina	2018	SIGCOMM Workshop	Own	Pipeline (archived) (Cisco)		custom
+48	Matisse	IXP scrubber: Learning from blackholing traffic for ML-driven DDoS detection at scale	M. Wichtlhuber	2022	SIGCOMM	Own	sampled flow data from IXP's		custom
+49	Matisse	Host in danger? Detecting network intrusions from authentication logs	H. Bian	2019	CNSM	LANL	No mention, not even in the paper of the dataset. Dataset of systemlogs		
+50	Matisse	Temporal representations for detecting BGP blackjack attacks	R. Copstein	2020	CNSM	RVAP	https://www.routeviews.org/routeviews/index.php/collectors/		custom
+51	Matisse	MIMC: Anomaly detection in network data via multiple instances of micro-cluster detection	R. Copstein	2023	CNSM	CTU-IoT, CTU-13, UNSW-NB15			argus,bro
+52	Matisse	CML-IDS: Enhancing intrusion detection in SDN through collaborative machine learning	P. Golchin	2023	CNSM	CIC-IDS2017	nfstream		cicflowmeter,nfstream
+53	Matisse	Scope-based flow monitoring to improve traffic analysis in programmable networks	C. Hardegen	2022	CNSM	cic-ids2017, cic-dos2017	flowmoni, scapy (python)		flowmoni
+54	Matisse	Network traffic classification based on single flow time series analysis	J. Koumar	2023	CNSM	pcaps (from all known ids datasets, ex. ctu-13, cic-ids-2017,...)	own tool to get 69 features (no mention of what tool)		custom
+55	Matisse	An explainable-by-design ensemble learning system to detect unknown network attacks	C. Minh	2023	CNSM	cse-cic-ids2018			cicflowmeter
+56	Matisse	Artificial intelligence and big data driven IS security management solution with applications in higher education organizations	V. Minkevics	2021	CNSM	Own	NetFlow, nfdump (to dump certain features)		netflow
+57	Matisse	Time-based anomaly detection using autoencoder	M. A. Salahuddin	2020	CNSM	CICDDoS2019			cicflowmeter
+58	Matisse	ADAM & RAL: Adaptive memory learning and reinforcement active learning for network monitoring	S. Wassermann	2019	CNSM	MAWILab, MAWI			custom
+59	Matisse	Machine-learning-assisted DDoS attack detection with P4 language	F. Musumeci	2020	ICC	Own	P4		custom
+60	Matisse	Intrusion detection for softwarized networks with semi-supervised federated learning	O. Aouedi	2022	ICC	unsw-nb15			argus,bro
+61	Matisse	Exquisite feature selection for machine learning powered probing attack detection	H. Alanazi	2023	ICC	Own and KDDCUP99	Own that extracts 33 features out of pcap		custom
+62	Matisse	Subspace clustering for interpretable botnet traffic analysis	S. Araki	2019	ICC	Own	xFlow (NetFlow, sFlow, IPFIX)		netflow
+63	Matisse	Data poisoning attacks against autoencoder-based anomaly detection models: A robustness analysis	G. Bovenzi	2022	ICC	Kitsune2017	Own scripts		custom
+64	Matisse	DETPro: A high-efficiency and low-latency system against DDoS attacks in SDN based on decision tree	Y. Chen	2019	ICC	Own	openflow, sFlow		netflow
+65	Matisse	A Wasserstein GAN-based framework for adversarial attacks against intrusion detection systems	F. Cui	2023	ICC	cicids2017			cicflowmeter
+66	Matisse	LIFH: Learning interactive features from HTTP payload using image reconstruction	J. Geng	2021	ICC	Own, cicids_2017, IIE_data	LIFH -> feature construction, no mention of traffic extractor		custom,cicflowmeter
+67	Matisse	An efficient multi-stage approach for identifying domain shadowing	N. H. Hamilton	2020	ICC	Own, PDNS, MaxMind			custom
+68	Matisse	IV-IDM: Reliable intrusion detection method based on involution and voting	X. Han	2022	ICC	ISCX-IDS-2012, cic-ids-2017			cicflowmeter,custom
+69	Matisse	A hierarchical fog computing framework for network attack detection in SDN	Z. A. El Houda	2022	ICC	Own, UNSWNB15	sFlow-RT		netflow,argus,bro
+70	Matisse	Hybrid deep autoencoder with random forest in native SDN intrusion detection environment	M. M. Isa	2022	ICC	cic-ids-2017	openflow		cicflowmeter
+71	Matisse	A new intrusion detection system based on convolutional neural network	A. E. Kamali	2023	ICC	nsl-kdd, cic-ids-2018			cicflowmeter
+72	Matisse	Investigating resistance of deep learning-based IDS against adversaries using min-max optimization	R. A. Khamis	2020	ICC	Unsw-nb15	Orange Data Mining		argus,bro
+73	Matisse	Hierarchical autoencoder for network intrusion detection	H. Kye	2022	ICC	nsl-kdd			custom
+74	Matisse	Machine learning and multi-dimension features based adaptive intrusion detection in ICN	Z. Li	2020	ICC	Own	ICN nodes		custom
+75	Matisse	DART: Detecting unseen malware variants using adaptation regularization transfer learning	H. Li	2019	ICC	Unsw-nb15			argus,bro
+76	Matisse	Chronic poisoning against machine learning based IDSs using edge pattern detection	P. Li	2018	ICC	Kddcup99, nsl-kdd, kyoto 2006+			custom
+77	Matisse	TCCN: A network traffic classification and detection model based on capsule network	Z. Li	2023	ICC	Own -> IIE-Second			custom
+78	Matisse	Data poisoning attack against anomaly detectors in digital twin-based networks	S. Li	2023	ICC	cicids2017			cicflowmeter
+79	Matisse	An adaptive real-time architecture for zero-day threat detection	A. G. P. Lobato	2018	ICC		tcpdump (traffic capture) -> Storm (processing)		custom
+80	Matisse	A security-constrained reinforcement learning framework for software defined networks	A. Mudgerikar	2021	ICC	cicids			cicflowmeter
+81	Matisse	A method for network intrusion detection using flow sequence and BERT framework	L. G. Nguyen	2023	ICC	cidds-001, cidds-002	BERT for feature extraction		netflow
+82	Matisse	Feature selection evaluation towards a lightweight deep learning DDoS detector	O. R. Sanchez	2021	ICC	pcaps from cic datasets with dos/ddos attacks	cicflowmeter to generate the flows		cicflowmeter
+83	Matisse	TPDD: A two-phase DDoS detection system in software-defined networking	Y. Shen	2020	ICC	iscx2012	sFlow		netflow
+84	Matisse	Network flows-based malware detection using a combined approach of crawling and deep learning	Y. Sun	2021	ICC	Own	nfstream		nfstream
+85	Matisse	A multi-view intrusion detection model for reliable and autonomous model updates	R. L. Tomio	2021	ICC	MAWIFlow			
+86	Matisse	A reliable semi-supervised intrusion detection model: One year of network traffic anomalies	E. K. Viegas	2020	ICC	MAWIFlow	BigFlow		custom
+87	Matisse	Learning latent distribution for distinguishing network traffic in intrusion detection system	L. Vu	2019	ICC	NSL-KDD, UNSW-NB15			argus,bro
+88	Matisse	DeepEAD: Explainable anomaly detection from system logs	X. Wang	2023	ICC	LANL	Use of systemlogs, not network packets		
+89	Matisse	Evading machine learning botnet detection models via deep reinforcement learning	D. Wu	2019	ICC	MCFP	pkt2flow, argus		pkt2flow,argus
+90	Matisse	Few-shot network traffic anomaly detection based on Siamese neural network	S. Xu	2019	ICC		convert raw traffic data to 3D images, use SplitCap to turn raw traffic into sessions		custom
+91	Matisse	Detection of multi-stage attacks based on multi-layer long and short-term memory network	M. Xu	2020	ICC	CTU-13, GasWater, NSL-KDD			custom,argus
+92	Matisse	A semi-supervised learning approach for network anomaly detection in fog computing	S. Xu	2022	ICC	KDD99			custom
+93	Matisse	Two-stage DDoS mitigation with variational auto-encoder and cyclic queuing	R. Yaegashi	2020	ICC	A5M, B5M			custom
+94	Matisse	A network intrusion detection method based on stacked autoencoder and LSTM	Y. Yan	2023	ICC	unsw-nb15			argus,bro
+95	Matisse	A lightweight approach for network intrusion detection based on self-knowledge distillation	S. Yang	2023	ICC	NSL-KDD, CICIDS-2017			cicflowmeter,custom
+96	Matisse	An ensemble-based network intrusion detection scheme with Bayesian deep learning	J. Zhang	2020	ICC	NSL-KDD, UNSW-NB15			argus,bro,custom
+97	Matisse	An efficient and lightweight approach for intrusion detection based on knowledge distillation	R. Zhao	2021	ICC	KDD99, UNSW-NB15			argus,bro,custom
+98	Matisse	A lightweight semi-supervised learning method based on consistency regularization for intrusion detection	R. Zhao	2020	ICC	KDD99, NB15			custom
+99	Matisse	Machine-learning-based online distributed denial-of-service attack detection using spark streaming	B. Zhou	2018	ICC	Own			custom
+100	Matisse	Traffic classification with machine learning in a live network	J. Bakker	2019	IM	CAIDA, ISCX	nmeta2dpae		nmeta2dpae
+101	Matisse	A graph-based machine learning approach for bot detection	A. A. Daya	2019	IM	CTU-13, GasWater, NSL-KDD			custom
+102	Matisse	TMAS: A traffic monitoring analytics system leveraging machine learning	E. Jalalpour	2019	IM	didn't find it but they used a dataset of unlabeled traffic	used cicflowmeter to extract features from the raw traffic		cicflowmeter
+103	Matisse	ORACLE: An architecture for collaboration of data and control planes to detect DDoS attacks	S. G. MacÃ­as	2021	IM	own?	uses tcpreplay to replay the packets, openflow, p4 etc etc		custom
+104	Matisse	Detection of DoS/DDoS attacks: The UBM and GMM approach	J. S. M. Osorio	2021	IM	cicids2017			cicflowmeter
+105	Matisse	ATMoS: Autonomous threat mitigation in SDN using reinforcement learning	I. Akbari	2020	NOMS	Own			custom
+106	Matisse	Network-based intrusion detection: A one-class classification approach	P. Arregoces	2022	NOMS	unsw-nb15			argus,bro
+107	Matisse	Performance analysis of deep-learning based open set recognition algorithms for network intrusion detection systems	G. Baye	2023	NOMS	cicids2017	use raw pcap traffic data to put into their model		
+108	Matisse	BotFP: FingerPrints clustering for bot detection	A. Blaise	2020	NOMS	ctu-13	netflow		netflow
+109	Matisse	Enabling malware detection with machine learning on programmable switch	H.-F. Chang	2022	NOMS	Aposemat IoT-23	use Zeek as benchmark for their new method		custom
+110	Matisse	GNN-based malicious network entities identification in large-scale network data	S. Dvorak	2022	NOMS	Own	Used cisco		custom
+111	Matisse	Improving DDoS attack detection leveraging a multi-aspect ensemble feature selection	P. Golchin	2022	NOMS	cicddos2019, InSDN	InSDN used tcpdump and then cicflowmeter		cicflowmeter
+112	Matisse	FSA-IDS: A flow-based self-active intrusion detection system	M. Hajizadeh	2023	NOMS	ctu-13, cicids2017	argus		argus,bro,cicflowmeter
+113	Matisse	Intrusion detection system using semi-supervised learning with adversarial auto-encoder	K. Hara	2020	NOMS	nsl-kdd			custom
+114	Matisse	Distributed device-specific anomaly detection using deep feed-forward neural networks	C. LÃ¼bben	2023	NOMS	unsw-nb15			argus,bro
+115	Matisse	Pikachu: Temporal walk based dynamic graph embedding for network anomaly detection	R. Paudel	2022	NOMS	lanl	not focussed on normal network traffic, they use systemlogs etc		
+116	Matisse	DDoS attacks detection with AutoEncoder	K. Yang	2020	NOMS	Own (-> it was UNB2017, MAWI and SYNT but they used there own FEC to extract there features)	FEC (feature extraction component)		custom
+117	Matisse	Towards inference of DDoS mitigation rules	M. Å½Ã¡dnÃ­k	2022	NOMS	cicddos2019, ACONET, CESNET			cicflowmeter,
+118	Matisse	Evaluation of machine learning techniques for network intrusion detection	M. Zaman	2018	NOMS	kyoto 2006+			custom
+119	Matisse	An intelligent data-plane with a quantized ML model for traffic management	K. Zhang	2023	NOMS	ISCX, cicids2017	dpkt		custom
+120	Matisse	DDoS detection system: Using a set of classification algorithms controlled by fuzzy logic system in apache spark	A. Alsirhani	2019	TNSM	CAIDA	t-shark to extract packet fields out of pcaps into a csv		
+121	Matisse	Unsupervised GAN-based intrusion detection system using temporal convolutional networks and self-attention	P. F. de Araujo-Filho	2023	TNSM	cicddos2019	they mention cicflowmeterv3 but don't use it themselves		cicflowmeter
+122	Miel	Deep reinforcement adversarial learning against botnet evasion attacks	G. Apruzzese	2020	TNSM	ctu, botnet	nothing special		argus,custom
+123	Miel	R1DIT: Privacy-preserving malware traffic classification with attention-based neural networks	O. Barut	2023	TNSM	NetML, cicids2017,cicddos2019	computing embeddings of packets in flow		custom
+124	Miel	Lucid: A practical, lightweight deep learning solution for DDoS attack detection	R. Doriguzzi-Corin	2020	TNSM	iscx2012,cicids2017,cicids2018	time based window on network flows (using raw packets)		custom
+125	Miel	Network intrusion detection and comparative analysis using ensemble machine learning and feature selection	S. Das	2022	TNSM	NSL-KDD, UNSW-NB15, and CICIDS2017	nothing special		cicflowmeter,argus,bro,custom
+126	Miel	BotChase: Graph-based bot detection using machine learning	A. A. Daya	2020	TNSM	ctu-13	uses only 5 tuple		custom
+127	Miel	Semi-supervised range-based anomaly detection for cloud systems	P. Kr. Deka	2023	TNSM	Own, YAB, cicDDoS2019	other datasets are not flow based		cicflowmeter
+128	Miel	DAD: Domain adversarial defense system against DDoS attacks in cloud	D. IR	2022	TNSM	caida, cicddos2019,cicids2017,nslkdd	tshark,scapy for caida	packet based approach (latent space of packet)	
+129	Miel	Network abnormal traffic detection model based on semi-supervised deep reinforcement learning	S. Dong	2021	TNSM	nsl-kdd, awid	custom approach but not flow based	no flow based approach	
+130	Miel	A hybrid deep learning-based model for anomaly detection in cloud datacenter networks	S. Garg	2019	TNSM	Darpa 98, kdd99, own	custom approach, and also flow featuers		custom
+131	Miel	Detecting unseen anomalies in network systems by leveraging neural networks	M. J. Hashemi	2023	TNSM	cicids2017,CIC-ToN-IoT,NF-UNSW-NB15	In total, we extracted 29 features for each packet. Finally, within each group, we concatenated the feature vectors of every 20 consecutive packets together to feed them to the classifier Also evaluates using flow features of the datasets		cicflowmeter,nprobe,custom
+132	Miel	Bringing intelligence to software defined networks: Mitigating DDoS attacks	Z. A. El Houda	2020	TNSM	Own	uses sFlow protocol		custom
+133	Miel	Multi-stage optimized machine learning framework for network intrusion detection	M. Injadat	2021	TNSM	cicids2017, unsw-nb15	nothing special		cicflowmeter,argus,bro
+134	Miel	Machine learning for NetFlow anomaly detection with human-readable annotations	P. Krishnamurthy	2020	TNSM	Own real world netflow	undefined netflow data		netflow
+135	Miel	Analyzing data granularity levels for insider threat detection using machine learning	D. C. Le	2021	TNSM			does only mention flow as reference or "workflow"	
+136	Miel	ARCADE: Adversarially regularized convolutional autoencoder for network anomaly detection	W. T. Lunardi	2023	TNSM	iscx-ids, mirai-rgu, ustc-tfc	custom approach on first X packets, taking first x bytes		custom
+137	Miel	Hierarchical anomaly-based detection of distributed DNS attacks on enterprise networks	M. Lyu	2021	TNSM	Own		dns requests, no network flows	
+138	Miel	Detecting anomalies at a TLD name server based on DNS traffic predictions	D. Madariaga	2021	TNSM			dns requests, no network flows	
+139	Miel	Experimental review of neural-based approaches for network intrusion management	M. D. Mauro	2020	TNSM	cicids2017, cicids2018,cicddos			cicflowmeter
+140	Miel	Practical intrusion detection of emerging threats	R. Mills	2022	TNSM	LUFlow'20((own)	joy		joy
+141	Miel	Intrusion detection using hybrid enhanced CSA-PSO and multivariate WLS random-forest technique	G. Mohi-ud-din	2023	TNSM	unsw-nb15, cicids2018	some feature selection of default flow features		cicflowmeter,argus,bro
+142	Miel	DeepGuard: Efficient anomaly detection in SDN with fine-grained traffic flow monitoring	T. V. Phan	2020	TNSM	Own	custom sdn approach		custom
+143	Miel	DeepAir: Deep reinforcement learning for adaptive intrusion response in software-defined networks	T. V. Phan	2021	TNSM	Own	custom sdn approach		custom
+144	Miel	Online anomaly detection leveraging stream-based clustering and real-time telemetry	A. Putina	2021	TNSM	Own (released)		Not network flow based	
+145	Miel	Chronos: DDoS attack detection using time-based autoencoder	M. A. Salahuddin	2022	TNSM	CIDDDoS2019	also uses kitsune feature extractor to compare		cicflowmeter,kitsune
+146	Miel	Learning from network data changes for unsupervised botnet detection	B. H. Schwengber	2022	TNSM	Botnet, CTU-13	custom implementation using scapy, pandas, ..		custom
+147	Miel	AF-FDS: An accurate, fast, and fine-grained detection scheme for DDoS attacks in high-speed networks with asymmetric routing	Z. Shao	2023	TNSM	CIC-DDoS2019,MAWI	custom implementaiton		custom
+148	Miel	Per-host DDoS mitigation by direct-control reinforcement learning	K. A. Simpson	2020	TNSM	Own			custom
+149	Miel	FTMaster: A detection and mitigation system of low-rate flow table overflow attacks via SDN	D. Tang	2023	TNSM	IMC-10			custom
+150	Miel	Sneaking through security: Mutating live network traffic to evade learning-based NIDS	S. Tan	2022	TNSM	cicids2018	custom 26 features extracted from pcap per flow		custom,joy,cicflowmeter
+151	Miel	A novel multi-stage approach for hierarchical intrusion detection	M. Verkerken	2023	TNSM	cicids2017, cicids2018	nothing special		cicflowmeter
+152	Miel	MetaVSID: A robust meta-reinforced learning approach for VSI-DDoS detection on the edge	X.-S. Vu	2023	TNSM	Own, TON_IoT,cicDDos2019	only flows from cicddos are used		cicflowmeter
+153	Miel	An incremental learning method based on dynamic ensemble RVM for intrusion detection	Z. Wu	2022	TNSM	kddcup99,cicids2017	nothing special		custom,cicflowmeter
+154	Miel	MAP4: A pragmatic framework for in-network machine learning traffic classification	B. M. Xavier	2022	TNSM	cicids2017,unsw-IoT	custom per flow and packet features, implemented on P4 switches		custom
+155	Miel	Multi-perspective content delivery networks security framework using optimized unsupervised anomaly detection	L. Yang	2022	TNSM	custom CDN log data	only logs, no network flows	only mentions flow (in flow chart)	
+156	Miel	Griffin: Real-time network intrusion detection system via ensemble of autoencoder in SDN	L. Yang	2022	TNSM	Not sure, it gives only name of attacks (Mirai, Active Wiretap..)	Custom approach for SDN		custom
+157	Miel	Contrastive learning enhanced intrusion detection	Y. Yue	2022	TNSM	SCU-Malware-Mix, NSL-KDD, UNSW-NB15	malware set based on first 16 packets and first 256 bytes per packet in a flow		custom,argus,bro
+158	Miel	Improving the stability of intrusion detection with causal deep learning	Z. Zeng	2022	TNSM	CICDDoS2019, CICIDS2017, MalMem2022, UNSW-NB15	Malmem is not network flow based		cicflowmeter,argus,bro
+159	Miel	INSOMNIA: Towards concept-drift robustness in network intrusion detection	G. Andresini	2021	CCS Workshop	cicids2017	nothing special		cicflowmeter
+160	Miel	Should I (re)Learn or should I Go(on): Stream machine learning for adaptive defense against network attacks	P. Casas	2019	CCS Workshop	MAWILab 	custom features based on time slots		custom
+161	Miel	The more, the better: A study on collaborative machine learning for DGA detection	A. Drichel	2021	CCS Workshop	Own		domain generation algo, no network flows	
+162	Miel	Realtime robust malicious traffic detection via frequency domain analysis	C. Fu	2021	CCS	Own		per packet features, encoded and discrete fourier transformation	
+163	Miel	Point cloud analysis for ML-based malicious traffic detection: Reducing majorities of false positive alarms	C. Fu	2023	CCS	mawi backbone, ntp amplification attack traffic			cicflowmeter
+164	Miel	DeepAID: Interpreting and improving deep learning-based anomaly detection in security applications	D. Han	2021	CCS	kitsune, cicids2017			cicflowmeter,kitsune
+165	Miel	New directions in automated traffic analysis	J. Holland	2021	CCS	CICIDS2017, netML Challenge IoT Dataset		no flow based, packet based	
+166	Miel	AI/ML for network security: The emperor has no clothes	A. S. Jacobs	2022	CCS	ISCXVPN,cicids2017,mirai,unsw-iot,hsdpa Norway, own	others are based on pcap (autolearning)		cicflowmeter
+167	Miel	Flow-based detection and proxy-based evasion of encrypted malware C2 traffic	C. Novo	2020	CCS Workshop	MTA			tstat
+168	Miel	On the resilience of network-based moving target defense techniques against host profiling attacks	M. Piskozub	2019	CCS Workshop	custom (network activity form oxford university)	custom approach on top of netflows (macroflows)		netflow,custom
+169	Miel	Tiresias: Predicting security events through deep learning	Y. Shen	2018	CCS			security events, no network flows	
+170	Miel	Network anomaly detection using transfer learning based on auto-encoders loss normalization	A. Yehezkel	2021	CCS Workshop	cicids2017,cicids2018,iscx2012	uses pcaps then netflow with custom logic afterwards		netflow,custom
+171	Miel	Tiki-Taka: Attacking and defending deep learning-based intrusion detection systems	C. Zhang	2020	CCS Workshop	cicids2018	nothing special		cicflowmeter
+172	Miel	Throwing darts in the dark? Detecting bots with limited data using neural data augmentation	S. T. K. Jan	2020	S&P	Own		Web requests, no network flows	
+173	Miel	Detecting unknown encrypted malicious traffic in real time via flow interaction graph analysis	C. Fu	2023	NDSS	custom,Mawi project, kitsune, cicddos2019, cicids2017			custom
+174	Miel	Anomaly detection in the open world: Normality shift detection, explanation, and adaptation	D. Han	2023	NDSS	kyoto2006	custom NSLKDD and bro		custom,bro
+175	Miel	Kitsune: An ensemble of autoencoders for online network intrusion detection	Y. Mirsky	2018	NDSS	kitsune	custom		kitsune
+176	Miel	BARS: Local robustness certification for deep learning based traffic analysis systems	K. Wang	2023	NDSS	kitsune, mirai, ssdp-flood, cicids2018			custom,cicflowmeter,kitsune
+177	Miel	Network detection of interactive SSH impostors using deep learning	J. Piet	2023	Usenix Security	Own	packet sequence features in a flow		custom
+178	Miel	FANCI: Feature-based automated NXDomain classification and intelligence	S. SchÃ¼ppen	2018	Usenix Security	Own	DNS traffic	No network flows, only in related work	
+179	Miel	xNIDS: Explaining deep learning-based network intrusion detection systems for active intrusion responses	F. Wei	2023	Usenix Security	Kitsune, CIC DoS 2017, NSL-KDD			cicflowmeter,custom,kitsune
+180	Miel	CADE: Detecting and explaining concept drift samples for security applications	L. Yang	2021	Usenix Security	CICIDS2018	nothing special		cicflowmeter
+181	Miel	An efficient design of intelligent network data plane	G. Zhou	2023	Usenix Security	PeerRush, ISCXVPN	Custom (both packet and flow)		custom
+182	Miel	MORTON: Detection of malicious routines in large-scale DNS traffic	Y. Daihes	2023	ESORICS	Own DNS logs		No network flows	
+183	Miel	Network intrusion detection by variational component-based feature saliency Gaussian mixture clustering	X. Hong	2018	ESORICS Workshop	UNSW-NB15	nothing special		argus,bro
+184	Miel	Automatic detection of various malicious traffic using side channel features on TCP packets	G. Stergiopoulos	2018	ESORICS	First2015, Milicenso, CTU13-1	uses packet features from pcap	No network flows	
+185	Miel	Effective botnet detection through neural networks on convolutional features	S.-C. Chen	2020	TrustCom	PeerRush, CTU13	PeerRush only available on request		argus,custom
+186	Miel	Towards network traffic monitoring using deep transfer learning	H. Dhillon	2023	TrustCom	UNSW-NB15	feature selection, nothing special		argus,bro
+187	Miel	C2BID: Cluster change-based intrusion detection	T. Fernandes	2020	TrustCom	Own, CICIDS2018	netflow feature, later custom processing		netflow,custom
+188	Miel	Towards multi-source extension: A multi-classification method based on sampled NetFlow records	P. Fu	2021	TrustCom	ISCXVPN2016, malware caputre facility project	argus,softflowd: NetFlows + TTL, window size, ...		argus,netflow,custom
+189	Miel	STIDM: A spatial and temporal aware intrusion detection model	X. Han	2020	TrustCom	ISCX2012, CICIDS2017	Custom flow features, based on first X packets of flow		custom
+190	Miel	Anomaly detection in network traffic using dynamic graph mining with a sparse autoencoder	G. Jia	2019	TrustCom	Own	Custom algorithm (GAAD) using raw network traffic to use in graph model	No network flows	
+191	Miel	PGAN: A generative adversarial network based anomaly detection method for network intrusion detection system	Z. Li	2021	TrustCom	CICIDS2017	cicflowmeter		cicflowmeter
+192	Miel	FIDS: Detecting DDoS through federated learning based method	J. Li	2021	TrustCom	CICDDoS2019	Custom flow features on top of existing features		cicflowmeter,custom
+193	Miel	One intrusion detection method based on uniformed conditional dynamic mutual information	L. Lu	2018	TrustCom	KDD cup 99	Uniformed Conditional Dynamic Mutual Information (UCDMIFS) (proposed in the paper)	Does not work with flows, thus remove	
+194	Miel	BotCensor: Detecting DGA-based botnet using two-stage anomaly detection	B. Qi	2018	TrustCom	DNS datasets		DNS traces, not Flow based thus remove	
+195	Miel	FlowHacker: Detecting unknown network attacks in big traffic data using network flows	L. Sacramento	2018	TrustCom	ISCX IDS, real world portuguese ISP	NetFlow extractor (not specified), followed by Hadoop Map-Reduce		custom,netflow
+196	Miel	A three-stage machine learning network security solution for public entities	S. Saganowski	2020	TrustCom	NSL-KDD, UGR '16			custom,netflow
+197	Miel	Understanding the influence of graph kernels on deep learning architecture: A case study of flow-based network attack detection	L. Su	2019	TrustCom	UNSW-NB15, CICIDS2017	Selects (meta) features from the default flow features		argus,bro,cicflowmeter
+198	Miel	Hierarchical clustering based network traffic data reduction for improving suspicious flow detection	L. Su	2018	TrustCom	1999 DARPA	Feature extraction based on time interval (e.g. 10 minutes). Tools: nfcapd, softflowd, nfdump		netflow
+199	Miel	STDeepGraph: Spatialâ€“temporal deep learning on communication graphs for long-term network attack detection	Y. Yao	2019	TrustCom	UNSW-NB15, CICIDS2017	- Custom approach that aggregates flows by IP addresses to construct communication graphs instead of default 5 tuple. - Combined with statistical feature approach.		argus,bro,cicflowmeter,custom
+200	Miel	CMIRGen: Automatic signature generation algorithm for malicious network traffic	R. Zhang	2020	TrustCom	Webshell (Own), Spam ( TubeSpam: Comment Spam Filtering on YouTube[C].), and CSIC 2010(https://www.impactcybertrust.org/datasetview?idDataset=940)	Custom approach, that collects strings in payloads from all packets in a flow		custom
