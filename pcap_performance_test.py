@@ -67,8 +67,8 @@ exporters = {
     "joy": {
         "name": "joy",
         "shell": False,
-        "cmd": "joy bidir=1 output={pcap_file}_joy.json.gz {pcap_file}.pcap",
-        "cwd": None, # Runs from any directory
+        "cmd": "joy bidir=1 output=joy.json.gz {pcap_file}.pcap",
+        "cwd": "{output_folder}",
     },
 }
 
