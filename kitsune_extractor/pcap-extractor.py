@@ -12,7 +12,7 @@ def extract_features(pcap_file, output_file, packet_limit=np.inf):
         writer = csv.writer(csvfile)
         while True:
             features = extractor.get_next_vector()
-            if features is None or features.size == 0:
+            if features is None or len(features.size) == 0:
                 break
             writer.writerow(features)
     
