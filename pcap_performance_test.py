@@ -58,6 +58,18 @@ exporters = {
         "cmd": "nprobe -i {pcap_file}.pcap -n none -t 3600 -d 120 --csv-separator , -P {output_folder} -V 9  -T '%IPV4_SRC_ADDR %IPV4_DST_ADDR %L4_SRC_PORT %L4_DST_PORT %PROTOCOL %L7_PROTO %IN_BYTES %OUT_BYTES %IN_PKTS %OUT_PKTS %FLOW_DURATION_MILLISECONDS %TCP_FLAGS %CLIENT_TCP_FLAGS %SERVER_TCP_FLAGS %DURATION_IN %DURATION_OUT %MIN_TTL %MAX_TTL %LONGEST_FLOW_PKT %SHORTEST_FLOW_PKT %MIN_IP_PKT_LEN %MAX_IP_PKT_LEN %SRC_TO_DST_SECOND_BYTES %DST_TO_SRC_SECOND_BYTES %RETRANSMITTED_IN_BYTES %RETRANSMITTED_IN_PKTS %RETRANSMITTED_OUT_BYTES %RETRANSMITTED_OUT_PKTS %SRC_TO_DST_AVG_THROUGHPUT %DST_TO_SRC_AVG_THROUGHPUT %NUM_PKTS_UP_TO_128_BYTES %NUM_PKTS_128_TO_256_BYTES %NUM_PKTS_256_TO_512_BYTES %NUM_PKTS_512_TO_1024_BYTES %NUM_PKTS_1024_TO_1514_BYTES %TCP_WIN_MAX_IN %TCP_WIN_MAX_OUT %ICMP_TYPE %ICMP_IPV4_TYPE %DNS_QUERY_ID %DNS_QUERY_TYPE %DNS_TTL_ANSWER %FTP_COMMAND_RET_CODE'",
         "cwd": None, # Runs from any directory
     },
+    "kitsune": {
+        "name": "kitsune",
+        "shell": False,
+        "cmd": "kitsune -i",
+        "cwd": None, # Runs from any directory
+    },
+    "joy": {
+        "name": "joy",
+        "shell": False,
+        "cmd": "joy bidir=1 output={pcap_file}_joy.json.gz {pcap_file}.pcap",
+        "cwd": None, # Runs from any directory
+    },
 }
 
 pcap_files = [
