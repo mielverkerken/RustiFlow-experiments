@@ -111,7 +111,7 @@ class Experiment:
         if not shell:
             exporter_command = shlex.split(exporter_command)
 
-        if self.extractor == "zeek":
+        if self.extractor in ["zeek", "joy"]:
             cwd = cwd.format(output_folder=self.folder)
 
         if self.extractor == "ntlflowlyzer":
