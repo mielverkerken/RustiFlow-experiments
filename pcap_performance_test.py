@@ -61,8 +61,8 @@ exporters = {
     "kitsune": {
         "name": "kitsune",
         "shell": False,
-        "cmd": "kitsune -i",
-        "cwd": None, # Runs from any directory
+        "cmd": "python3 pcap-extractor.py {pcap_file}.pcap {pcap_file}_kitsune.csv",
+        "cwd": "/users/mverkerk/RustiFlow-experiments/kitsune_extractor",
     },
     "joy": {
         "name": "joy",
