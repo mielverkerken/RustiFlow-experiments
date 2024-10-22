@@ -93,6 +93,7 @@ class Experiment:
         self.runtime = 0
         self.datetime = time.strftime('%Y-%m-%d %H:%M:%S')
         self.stop_event = threading.Event()
+        self._terminate = False
 
     def run(self):
         exporter_command = exporters[self.extractor]['cmd'].format(interface=self.interface, output_folder=self.folder)
@@ -118,22 +119,28 @@ class Experiment:
 
         start_time = time.time()
 
-        # Start the flow exporter process
-        with subprocess.Popen(exporter_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd, shell=shell) as proc:
-            # Start the resource monitoring in a separate thread
-            monitor_thread = threading.Thread(target=self.monitor_resources, args=(proc,))
-            monitor_thread.start()
+        try:
+            # Start the flow exporter process
+            with subprocess.Popen(exporter_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd, shell=shell) as proc:
+                # Start the resource monitoring in a separate thread
+                monitor_thread = threading.Thread(target=self.monitor_resources, args=(proc,))
+                monitor_thread.start()
 
-            # Wait for process completion
-            _, stderr = proc.communicate()
+                # Wait for process completion
+                _, stderr = proc.communicate()
 
-            # Print error if it occurred
-            if proc.returncode != 0:
-                print(f"Error occurred while running the command:\n{stderr}")
+                # Print error if it occurred
+                if proc.returncode != 0:
+                    print(f"Error occurred while running the command:\n{stderr}")
 
-            # Signal the monitoring thread to stop and wait for it to finish
+                # Signal the monitoring thread to stop and wait for it to finish
+                self.stop_event.set()
+                monitor_thread.join()
+        except KeyboardInterrupt:
+            print("\nProcess interrupted by user (Ctrl+C). Stopping...")
             self.stop_event.set()
             monitor_thread.join()
+            self._terminate = True
 
         end_time = time.time()
         self.runtime = end_time - start_time
