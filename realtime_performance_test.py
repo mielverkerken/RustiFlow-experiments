@@ -15,7 +15,7 @@ exporters = {
     "rustiflow": {
         "name": "rustiflow", 
         "shell": False,
-        "cmd": "RUST_LOG=info sudo ./rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {output_folder}/rustiflow_realtime.csv realtime {interface}",
+        "cmd": "sudo ./rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {output_folder}/rustiflow_realtime.csv realtime {interface}",
         "cwd": "/users/mverkerk/RustiFlow/target/release/",
     },
     "cicflowmeter": {
@@ -118,12 +118,15 @@ class Experiment:
                 json.dump(config, file, indent=4)
 
         print(f"Executing CMD: {exporter_command}")
+        
+        env = os.environ.copy()  # Get a copy of the current environment variables
+        env['RUST_LOG'] = 'info'  # Set the RUST_LOG variable to 'info'
 
         start_time = time.time()
 
         try:
             # Start the flow exporter process
-            self.proc = subprocess.Popen(exporter_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd, shell=shell)
+            self.proc = subprocess.Popen(exporter_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd, shell=shell, env=env)
 
             # Start the resource monitoring in a separate thread
             monitor_thread = threading.Thread(target=self.monitor_resources, args=(self.proc,))
