@@ -15,7 +15,7 @@ exporters = {
     "rustiflow": {
         "name": "rustiflow", 
         "shell": False,
-        "cmd": "sudo ./rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {output_folder}/rustiflow_realtime.csv realtime {interface}",
+        "cmd": "RUST_LOG=info sudo ./rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {output_folder}/rustiflow_realtime.csv realtime {interface}",
         "cwd": "/users/mverkerk/RustiFlow/target/release/",
     },
     "cicflowmeter": {
@@ -145,7 +145,11 @@ class Experiment:
             print("\nProcess interrupted by user (Ctrl+C). Stopping...")
             if self.proc:
                 self.proc.send_signal(signal.SIGINT)  # Send SIGINT to the child process
-                self.proc.wait()  # Wait for the child process to terminate
+                stdout, stderr = self.proc.communicate()
+                if stdout:
+                    print(f"OUT:\n{stdout}")
+                if stderr:
+                    print(f"ERR:\n{stderr}")
             self.stop_event.set()
             monitor_thread.join()
 
