@@ -61,3 +61,33 @@ sudo ln -s ~/RustiFlow/target/release/rustiflow /usr/local/bin/rustiflow
     # change filenames in pcap_stat.go (change commented out code)
     go run pcap_stat.go /data/cicids2017
     ```
+
+## Setup Virtualwall
+
+```sh
+#!/bin/bash -e
+/users/mverkerk/.cargo/bin/rustup install stable
+/users/mverkerk/.cargo/bin/rustup toolchain install nightly --component rust-src
+/users/mverkerk/.cargo/bin/cargo install bpf-linker
+git clone https://github.com/idlab-discover/RustiFlow.git
+cd RustiFlow/
+/users/mverkerk/.cargo/bin/cargo xtask ebpf-ipv4 --release
+/users/mverkerk/.cargo/bin/cargo xtask ebpf-ipv6 --release
+sudo apt install libpcap-dev -y
+/users/mverkerk/.cargo/bin/cargo build --release
+cd ..
+git clone https://github.com/mielverkerken/RustiFlow-experiments
+cd RustiFlow-experiments
+sudo apt install python3-pip -y
+pip install -r requirements.txt --break-system-package
+sudo mkdir /rustiflow
+sudo chown mverkerk /rustiflow
+sudo apt install screen -y
+```
+
+```sh
+screen -dmS tcpdump bash -c "sudo tcpdump -i eno1 -n -w /rustiflow/dump.pcap"
+screen -dmS rustiflow bash -c "python3 /users/mverkerk/RustiFlow-experiments/realtime_performance_test.py rustiflow /rustiflow --interface eno1"
+cd /rustiflow
+screen -dmS iftop /users/mverkerk/RustiFlow-experiments/collect_iftop_data.sh
+```
