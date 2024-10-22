@@ -13,8 +13,8 @@ exporters = {
     "rustiflow": {
         "name": "rustiflow", 
         "shell": False,
-        "cmd": "rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {output_folder}/rustiflow_realtime.csv realtime {interface}",
-        "cwd": None, # Runs from any directory
+        "cmd": "sudo ./rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {output_folder}/rustiflow_realtime.csv realtime {interface}",
+        "cwd": "/users/mverkerk/RustiFlow/target/release/",
     },
     "cicflowmeter": {
         "name": "cicflowmeter", 
