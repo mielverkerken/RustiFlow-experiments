@@ -82,12 +82,12 @@ sudo apt install python3-pip -y
 pip install -r requirements.txt --break-system-package
 sudo mkdir /rustiflow
 sudo chown mverkerk /rustiflow
-sudo apt install screen -y
+sudo apt install screen iftop -y
 ```
 
 ```sh
 screen -dmS tcpdump bash -c "sudo tcpdump -i eno1 -n -w /rustiflow/dump.pcap"
 screen -dmS rustiflow bash -c "python3 /users/mverkerk/RustiFlow-experiments/realtime_performance_test.py rustiflow /rustiflow --interface eno1"
 cd /rustiflow
-screen -dmS iftop /users/mverkerk/RustiFlow-experiments/collect_iftop_data.sh
+screen -dmS iftop bash -c "/users/mverkerk/RustiFlow-experiments/collect_iftop_data.sh eno1"
 ```
