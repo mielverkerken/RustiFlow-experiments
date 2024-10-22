@@ -6,7 +6,9 @@ import csv
 import shlex
 import argparse
 import threading
+import signal
 import json
+import sys
 
 # Define the flow exporters
 exporters = {
@@ -93,7 +95,7 @@ class Experiment:
         self.runtime = 0
         self.datetime = time.strftime('%Y-%m-%d %H:%M:%S')
         self.stop_event = threading.Event()
-        self._terminate = False
+        self.proc = None  # To store the child process
 
     def run(self):
         exporter_command = exporters[self.extractor]['cmd'].format(interface=self.interface, output_folder=self.folder)
@@ -121,26 +123,30 @@ class Experiment:
 
         try:
             # Start the flow exporter process
-            with subprocess.Popen(exporter_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd, shell=shell) as proc:
-                # Start the resource monitoring in a separate thread
-                monitor_thread = threading.Thread(target=self.monitor_resources, args=(proc,))
-                monitor_thread.start()
+            self.proc = subprocess.Popen(exporter_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd, shell=shell)
 
-                # Wait for process completion
-                _, stderr = proc.communicate()
+            # Start the resource monitoring in a separate thread
+            monitor_thread = threading.Thread(target=self.monitor_resources, args=(self.proc,))
+            monitor_thread.start()
 
-                # Print error if it occurred
-                if proc.returncode != 0:
-                    print(f"Error occurred while running the command:\n{stderr}")
+            # Wait for process completion
+            _, stderr = self.proc.communicate()
 
-                # Signal the monitoring thread to stop and wait for it to finish
-                self.stop_event.set()
-                monitor_thread.join()
-        except KeyboardInterrupt:
-            print("\nProcess interrupted by user (Ctrl+C). Stopping...")
+            # Print error if it occurred
+            if self.proc.returncode != 0:
+                print(f"Error occurred while running the command:\n{stderr}")
+
+            # Signal the monitoring thread to stop and wait for it to finish
             self.stop_event.set()
             monitor_thread.join()
-            self._terminate = True
+
+        except KeyboardInterrupt:
+            print("\nProcess interrupted by user (Ctrl+C). Stopping...")
+            if self.proc:
+                self.proc.send_signal(signal.SIGINT)  # Send SIGINT to the child process
+                self.proc.wait()  # Wait for the child process to terminate
+            self.stop_event.set()
+            monitor_thread.join()
 
         end_time = time.time()
         self.runtime = end_time - start_time
@@ -238,8 +244,14 @@ class Experiment:
             # Write the summary data
             summary_writer.writerow([self.datetime, self.extractor, self.folder, self.interface, self.runtime, avg_cpu_usage, avg_memory_usage, max_memory_usage, self.cpu, self.cpu_logical, self.memory, self.memory_available])
 
+# Signal handler for graceful termination
+def signal_handler(sig, frame):
+    print("\nSignal received, exiting gracefully...")
+    sys.exit(0)
+
 # Main function
 if __name__ == "__main__":
+    signal.signal(signal.SIGINT, signal_handler)  # Capture Ctrl+C
 
     # Parsing command-line arguments
     parser = argparse.ArgumentParser(description="Run online performance tests using specified exporter and folder.")
