@@ -66,6 +66,11 @@ sudo ln -s ~/RustiFlow/target/release/rustiflow /usr/local/bin/rustiflow
 
 ```sh
 #!/bin/bash -e
+curl https://sh.rustup.rs -sSf | sh -s -- -y
+```
+
+```sh
+#!/bin/bash -e
 /users/mverkerk/.cargo/bin/rustup install stable
 /users/mverkerk/.cargo/bin/rustup toolchain install nightly --component rust-src
 /users/mverkerk/.cargo/bin/cargo install bpf-linker
