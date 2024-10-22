@@ -130,7 +130,8 @@ class Experiment:
             monitor_thread.start()
 
             # Wait for process completion
-            _, stderr = self.proc.communicate()
+            stdout, stderr = self.proc.communicate()
+            print(stdout)
 
             # Print error if it occurred
             if self.proc.returncode != 0:
@@ -244,15 +245,8 @@ class Experiment:
             # Write the summary data
             summary_writer.writerow([self.datetime, self.extractor, self.folder, self.interface, self.runtime, avg_cpu_usage, avg_memory_usage, max_memory_usage, self.cpu, self.cpu_logical, self.memory, self.memory_available])
 
-# Signal handler for graceful termination
-def signal_handler(sig, frame):
-    print("\nSignal received, exiting gracefully...")
-    sys.exit(0)
-
 # Main function
 if __name__ == "__main__":
-    signal.signal(signal.SIGINT, signal_handler)  # Capture Ctrl+C
-
     # Parsing command-line arguments
     parser = argparse.ArgumentParser(description="Run online performance tests using specified exporter and folder.")
     parser.add_argument("exporter", type=str, help="The name of the flow exporter to use (e.g., rustiflow or extractor1).")
