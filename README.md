@@ -96,3 +96,8 @@ screen -dmS rustiflow bash -c "python3 /users/mverkerk/RustiFlow-experiments/rea
 cd /rustiflow
 screen -dmS iftop bash -c "/users/mverkerk/RustiFlow-experiments/collect_iftop_data.sh eno1"
 ```
+
+```sh
+for session in $(screen -ls | grep -Eo '[0-9]+\.(tcpdump|rustiflow|iftop)'); do screen -X -S "$session" stuff "^C"; done
+for session in $(screen -ls | grep -Eo '[0-9]+\.(tcpdump|rustiflow|iftop)'); do screen -X -S "$session" stuff "^C"; done
+```
