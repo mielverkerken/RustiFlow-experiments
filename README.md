@@ -191,6 +191,15 @@ mv /data/friday/friday-reorder.pcap /data/friday/friday.pcap
 
 ## Setup Virtualwall
 
+Assign IPs to NIC
+
+```sh
+sudo ip link set eno3 up
+sudo ip addr add 192.168.0.1/24 dev eno3
+
+sudo ip addr add 192.168.0.2/24 dev eno3
+```
+
 ```sh
 #!/bin/bash -e
 curl https://sh.rustup.rs -sSf | sh -s -- -y
