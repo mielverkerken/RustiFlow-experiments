@@ -78,7 +78,7 @@ MONITOR_INTERVAL = 1  # Interval in seconds for resource monitoring
 THROUGHPUTS = ["1M", "10M", "100M", "1G", "10G"]
 
 iperf_server = "ssh -t mverkerk@192.168.0.1 'exec iperf3 -s -i {monitor_interval} --json --logfile iperf_server_{exporter}_{throughput}.json'"
-iperf_client = "iperf3 -c 192.168.0.1 -t 300 -i {monitor_interval} --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z -b {throughput}"
+iperf_client = "iperf3 -c 192.168.0.1 -t 10 -i {monitor_interval} --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z -b {throughput}"
 
 
 class Experiment:
@@ -143,7 +143,7 @@ class Experiment:
             server_cmd = iperf_server.format(
                 exporter=self.extractor,
                 throughput=self.throughput,
-                monitor_interval=MONITOR_INTERVAL
+                monitor_interval=MONITOR_INTERVAL,
             )
             server_proc = subprocess.Popen(
                 shlex.split(server_cmd),
@@ -157,7 +157,7 @@ class Experiment:
                 output_folder=self.folder,
                 exporter=self.extractor,
                 throughput=self.throughput,
-                monitor_interval=MONITOR_INTERVAL
+                monitor_interval=MONITOR_INTERVAL,
             )
             client_proc = subprocess.Popen(
                 shlex.split(client_cmd),
@@ -319,7 +319,7 @@ class Experiment:
             filename = f"{self.extractor}_realtime_iperf3_{self.throughput}_metrics.csv"
         else:
             filename = f"{self.extractor}_realtime_metrics.csv"
-        
+
         with open(os.path.join(self.folder, filename), mode="w", newline="") as file:
             writer = csv.writer(file)
             writer.writerow(
@@ -439,7 +439,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--throughput",
         type=str,
-        choices=THROUGHPUTS + ['all'],
+        choices=THROUGHPUTS + ["all"],
         help="Run with specific iperf3 throughput or 'all' for all throughputs",
     )
     args = parser.parse_args()
@@ -471,16 +471,20 @@ if __name__ == "__main__":
     print(f"\nRunning flow exporter on interface {args.interface}...")
 
     if args.throughput:
-        if args.throughput == 'all':
+        if args.throughput == "all":
             print("Running with all iperf3 throughputs")
             for throughput in THROUGHPUTS:
                 print(f"\nStarting test with throughput: {throughput}")
-                experiment = Experiment(exporter_name, folder, args.interface, throughput)
+                experiment = Experiment(
+                    exporter_name, folder, args.interface, throughput
+                )
                 experiment.run()
                 experiment.save_to_csv()
         else:
             print(f"Running with iperf3 throughput: {args.throughput}")
-            experiment = Experiment(exporter_name, folder, args.interface, args.throughput)
+            experiment = Experiment(
+                exporter_name, folder, args.interface, args.throughput
+            )
             experiment.run()
             experiment.save_to_csv()
     else:

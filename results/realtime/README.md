@@ -28,6 +28,9 @@ sudo tcprewrite --mtu=1500 --mtu-trunc --infile=/data/monday/monday.pcap --outfi
 
 ## IPerf3 results
 
-- Server: `iperf3 -s -i 1 --json --logfile iperf_server_{exporter}.json`
-- Client: `python3 ./realtime_performance_test.py <exporter>`
-  This will run Iperf3 client with increasing bitrates (1M, 10M, 100M, 1G, 10G) in bidirectional mode for 5 minutes while monitoring the flow exporter.
+Run from node1 (192.168.0.2)
+
+```sh
+iperf3_run.sh <exporter> <interface>
+```
+
