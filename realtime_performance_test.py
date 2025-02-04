@@ -187,12 +187,16 @@ class Experiment:
 
             # Wait for iperf3 client to finish
             if self.throughput:
+                print("Waiting for iperf3 client to finish...")
                 client_proc.wait()
+                print("Iperf3 client finished. Stopping exporter...")
                 # Terminate the exporter process after iperf3 client has finished
                 self.proc.send_signal(signal.SIGINT)
+                print("Waiting for exporter to finish...")
 
             # Wait for exporter process completion
             stdout, stderr = self.proc.communicate()
+            print("Exporter finished.")
             print(stdout)
 
             # Print error if it occurred
