@@ -84,8 +84,8 @@ THROUGHPUTS = [
     "5G",
 ]
 
-iperf_server = "ssh mverkerk@192.168.0.1 'iperf3 -s -i 1 --json --logfile iperf_server_{exporter}.json'"
-iperf_client = "iperf3 -c 192.168.0.1 -t 300 -i 1 --json --logfile {output_folder}/iperf_client_{exporter}.json -Z --bidir -b {throughput}"
+iperf_server = "ssh mverkerk@192.168.0.1 'iperf3 -s -i 1 --json --logfile iperf_server_{exporter}_{throughput}.json'"
+iperf_client = "iperf3 -c 192.168.0.1 -t 300 -i 1 --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z --bidir -b {throughput}"
 
 
 class Experiment:
@@ -145,8 +145,6 @@ class Experiment:
         env = os.environ.copy()  # Get a copy of the current environment variables
         env["RUST_LOG"] = "info"  # Set the RUST_LOG variable to 'info'
 
-        start_time = time.time()
-
         # Start iperf3 server if throughput is specified
         if self.throughput:
             server_cmd = iperf_server.format(exporter=self.extractor)
@@ -168,6 +166,8 @@ class Experiment:
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
             )
+
+        start_time = time.time()
 
         try:
             # Start the flow exporter process
