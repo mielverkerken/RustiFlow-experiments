@@ -85,7 +85,7 @@ THROUGHPUTS = [
 ]
 
 iperf_server = "ssh mverkerk@192.168.0.1 'iperf3 -s -i 1 --json --logfile iperf_server_{exporter}.json'"
-iperf_client = "iperf3 -c 192.168.0.1 -t 300 -i 1 --json --logfile {output_folder}iperf_client_{exporter}.json -Z --bidir -b {throughput}"
+iperf_client = "iperf3 -c 192.168.0.1 -t 300 -i 1 --json --logfile {output_folder}/iperf_client_{exporter}.json -Z --bidir -b {throughput}"
 
 
 class Experiment:
@@ -187,9 +187,13 @@ class Experiment:
             )
             monitor_thread.start()
 
-            # Wait for process completion
-            stdout, stderr = self.proc.communicate()
-            print(stdout)
+            # Wait for iperf3 client to finish
+            if self.throughput:
+                client_proc.wait()
+            else:
+                # Wait for exporter process completion
+                stdout, stderr = self.proc.communicate()
+                print(stdout)
 
             # Print error if it occurred
             if self.proc.returncode != 0:
@@ -201,9 +205,7 @@ class Experiment:
 
             # Cleanup iperf processes if they were started
             if self.throughput:
-                client_proc.terminate()
                 server_proc.terminate()
-                client_proc.wait()
                 server_proc.wait()
 
         except KeyboardInterrupt:
