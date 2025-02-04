@@ -189,16 +189,15 @@ class Experiment:
             if self.throughput:
                 client_proc.wait()
                 # Terminate the exporter process after iperf3 client has finished
-                self.proc.terminate()
-                self.proc.wait()
-            else:
-                # Wait for exporter process completion
-                stdout, stderr = self.proc.communicate()
-                print(stdout)
+                self.proc.send_signal(signal.SIGINT)
 
-                # Print error if it occurred
-                if self.proc.returncode != 0:
-                    print(f"Error occurred while running the command:\n{stderr}")
+            # Wait for exporter process completion
+            stdout, stderr = self.proc.communicate()
+            print(stdout)
+
+            # Print error if it occurred
+            if self.proc.returncode != 0:
+                print(f"Error occurred while running the command:\n{stderr}")
 
             # Signal the monitoring thread to stop and wait for it to finish
             self.stop_event.set()
