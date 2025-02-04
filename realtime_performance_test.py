@@ -192,6 +192,7 @@ class Experiment:
                 print("Iperf3 client finished. Stopping exporter...")
                 # Terminate the exporter process after iperf3 client has finished
                 self.proc.terminate()
+                self.proc.send_signal(signal.SIGINT)
                 print("Waiting for exporter to finish...")
 
             # Wait for exporter process completion
