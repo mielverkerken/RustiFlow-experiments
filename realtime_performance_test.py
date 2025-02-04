@@ -193,6 +193,7 @@ class Experiment:
                 print("Iperf3 client finished. Stopping exporter...")
                 # Terminate the exporter process after iperf3 client has finished
                 os.kill(self.proc.pid, signal.SIGINT)
+                os.kill(self.proc.pid, signal.SIGINT)
                 print("Waiting for exporter to finish...")
 
             # Wait for exporter process completion
