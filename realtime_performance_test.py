@@ -73,10 +73,12 @@ exporters = {
     },
 }
 
+MONITOR_INTERVAL = 1  # Interval in seconds for resource monitoring
+
 THROUGHPUTS = ["1M", "10M", "100M", "1G", "10G"]
 
-iperf_server = "ssh -t mverkerk@192.168.0.1 'exec iperf3 -s -i 1 --json --logfile iperf_server_{exporter}_{throughput}.json'"
-iperf_client = "iperf3 -c 192.168.0.1 -t 300 -i 1 --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z -b {throughput}"
+iperf_server = "ssh -t mverkerk@192.168.0.1 'exec iperf3 -s -i {monitor_interval} --json --logfile iperf_server_{exporter}_{throughput}.json'"
+iperf_client = "iperf3 -c 192.168.0.1 -t 300 -i {monitor_interval} --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z -b {throughput}"
 
 
 class Experiment:
@@ -138,7 +140,11 @@ class Experiment:
 
         # Start iperf3 server if throughput is specified
         if self.throughput:
-            server_cmd = iperf_server.format(exporter=self.extractor, throughput=self.throughput)
+            server_cmd = iperf_server.format(
+                exporter=self.extractor,
+                throughput=self.throughput,
+                monitor_interval=MONITOR_INTERVAL
+            )
             server_proc = subprocess.Popen(
                 shlex.split(server_cmd),
                 stdout=subprocess.PIPE,
@@ -150,7 +156,8 @@ class Experiment:
             client_cmd = iperf_client.format(
                 output_folder=self.folder,
                 exporter=self.extractor,
-                throughput=self.throughput
+                throughput=self.throughput,
+                monitor_interval=MONITOR_INTERVAL
             )
             client_proc = subprocess.Popen(
                 shlex.split(client_cmd),
