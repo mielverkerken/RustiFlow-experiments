@@ -73,16 +73,7 @@ exporters = {
     },
 }
 
-MONITOR_INTERVAL = 1  # Interval in seconds for resource monitoring
-
-# bidir thus results in total of ["1M", "10M", "100M", "1G", "10G"]
-THROUGHPUTS = [
-    "500K",
-    "5M",
-    "50M",
-    "500M",
-    "5G",
-]
+THROUGHPUTS = ["1M", "10M", "100M", "1G", "10G"]
 
 iperf_server = "ssh -t mverkerk@192.168.0.1 'exec iperf3 -s -i 1 --json --logfile iperf_server_{exporter}_{throughput}.json'"
 iperf_client = "iperf3 -c 192.168.0.1 -t 300 -i 1 --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z -b {throughput}"
