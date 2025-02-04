@@ -147,7 +147,7 @@ class Experiment:
 
         # Start iperf3 server if throughput is specified
         if self.throughput:
-            server_cmd = iperf_server.format(exporter=self.extractor)
+            server_cmd = iperf_server.format(exporter=self.extractor, throughput=self.throughput)
             server_proc = subprocess.Popen(
                 shlex.split(server_cmd),
                 stdout=subprocess.PIPE,
