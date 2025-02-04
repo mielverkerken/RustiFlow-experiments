@@ -191,11 +191,23 @@ class Experiment:
                 print("Waiting for iperf3 client to finish...")
                 client_proc.wait()
                 print("Iperf3 client finished. Stopping exporter...")
-                # Terminate the exporter process after iperf3 client has finished
-                os.kill(self.proc.pid, signal.SIGINT)
-                print("sleep inbetween kill signals")
-                time.sleep(1)
-                os.kill(self.proc.pid, signal.SIGINT)
+                
+                # Try SIGINT first
+                self.proc.send_signal(signal.SIGINT)
+                try:
+                    # Wait up to 5 seconds for the process to terminate
+                    self.proc.wait(timeout=5)
+                except subprocess.TimeoutExpired:
+                    print("SIGINT failed, trying SIGTERM...")
+                    # If SIGINT didn't work, try SIGTERM
+                    self.proc.terminate()
+                    try:
+                        self.proc.wait(timeout=5)
+                    except subprocess.TimeoutExpired:
+                        print("SIGTERM failed, using SIGKILL...")
+                        # If SIGTERM didn't work, use SIGKILL as last resort
+                        self.proc.kill()
+                
                 print("Waiting for exporter to finish...")
 
             # Wait for exporter process completion
