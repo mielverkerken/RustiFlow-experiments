@@ -21,6 +21,7 @@ python_script="realtime_performance_test.py"
 
 # Base folder path
 folder="/users/mverkerk/RustiFlow-experiments/results/realtime/${exporter}"
+mkdir -p "$folder"
 
 # Print the command being executed
 echo "Running test for ${exporter} with results in ${folder}..."
