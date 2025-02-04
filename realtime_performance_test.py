@@ -84,7 +84,7 @@ THROUGHPUTS = [
     "5G",
 ]
 
-iperf_server = "ssh mverkerk@192.168.0.1 'iperf3 -s -i 1 --json --logfile iperf_server_{exporter}_{throughput}.json'"
+iperf_server = "ssh -t mverkerk@192.168.0.1 'exec iperf3 -s -i 1 --json --logfile iperf_server_{exporter}_{throughput}.json'"
 iperf_client = "iperf3 -c 192.168.0.1 -t 300 -i 1 --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z --bidir -b {throughput}"
 
 
