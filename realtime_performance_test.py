@@ -8,6 +8,7 @@ import argparse
 import threading
 import signal
 import json
+import signal
 
 # Define the flow exporters
 exporters = {
@@ -191,9 +192,7 @@ class Experiment:
                 client_proc.wait()
                 print("Iperf3 client finished. Stopping exporter...")
                 # Terminate the exporter process after iperf3 client has finished
-                parent_process = psutil.Process(self.proc.pid)
-                print(f"parent_process: {parent_process.pid}, pid: {self.proc.pid}")
-                parent_process.send_signal(signal.SIGINT)
+                os.kill(self.proc.pid, signal.SIGINT)
                 print("Waiting for exporter to finish...")
 
             # Wait for exporter process completion
