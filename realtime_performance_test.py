@@ -195,9 +195,9 @@ class Experiment:
                 stdout, stderr = self.proc.communicate()
                 print(stdout)
 
-            # Print error if it occurred
-            if self.proc.returncode != 0:
-                print(f"Error occurred while running the command:\n{stderr}")
+                # Print error if it occurred
+                if self.proc.returncode != 0:
+                    print(f"Error occurred while running the command:\n{stderr}")
 
             # Signal the monitoring thread to stop and wait for it to finish
             self.stop_event.set()
