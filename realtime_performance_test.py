@@ -169,7 +169,7 @@ class Experiment:
         start_time = time.time()
 
         try:
-            # Start the flow exporter process
+            # Start the flow exporter process in its own process group
             self.proc = subprocess.Popen(
                 exporter_command,
                 stdout=subprocess.PIPE,
@@ -178,6 +178,7 @@ class Experiment:
                 cwd=cwd,
                 shell=shell,
                 env=env,
+                preexec_fn=os.setsid  # Create a new process group
             )
 
             # Start the resource monitoring in a separate thread
