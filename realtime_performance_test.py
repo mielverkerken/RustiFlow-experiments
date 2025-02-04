@@ -191,8 +191,8 @@ class Experiment:
                 client_proc.wait()
                 print("Iperf3 client finished. Stopping exporter...")
                 # Terminate the exporter process after iperf3 client has finished
-                self.proc.terminate()
-                self.proc.send_signal(signal.SIGINT)
+                parent_process = psutil.Process(self.proc.pid)
+                parent_process.send_signal(signal.SIGINT)
                 print("Waiting for exporter to finish...")
 
             # Wait for exporter process completion
