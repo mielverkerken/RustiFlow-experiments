@@ -78,8 +78,8 @@ MONITOR_INTERVAL = 1  # Interval in seconds for resource monitoring
 
 THROUGHPUTS = ["1M", "10M", "100M", "1G", "10G"]
 
-iperf_server = "ssh -t mverkerk@192.168.0.1 'exec iperf3 -s -i {monitor_interval} --json --logfile iperf_server_{exporter}_{throughput}.json'"
-iperf_client = "iperf3 -c 192.168.0.1 -t 10 -i {monitor_interval} --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z -b {throughput}"
+iperf_server = "ssh -t mverkerk@192.168.0.2 'exec iperf3 -s -i {monitor_interval} --json --logfile iperf_server_{exporter}_{throughput}.json'"
+iperf_client = "iperf3 -c 192.168.0.2 -t 10 -i {monitor_interval} --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z -b {throughput}"
 
 
 class Experiment:
@@ -178,7 +178,7 @@ class Experiment:
                 cwd=cwd,
                 shell=shell,
                 env=env,
-                preexec_fn=os.setsid  # Create a new process group
+                preexec_fn=os.setsid,  # Create a new process group
             )
 
             # Start the resource monitoring in a separate thread
@@ -192,7 +192,7 @@ class Experiment:
                 print("Waiting for iperf3 client to finish...")
                 client_proc.wait()
                 print("Iperf3 client finished. Stopping exporter...")
-                
+
                 # Try SIGINT first
                 self.proc.send_signal(signal.SIGINT)
                 try:
@@ -208,7 +208,7 @@ class Experiment:
                         print("SIGTERM failed, using SIGKILL...")
                         # If SIGTERM didn't work, use SIGKILL as last resort
                         self.proc.kill()
-                
+
                 print("Waiting for exporter to finish...")
 
             # Wait for exporter process completion
