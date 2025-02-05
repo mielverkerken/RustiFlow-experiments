@@ -77,9 +77,10 @@ exporters = {
 MONITOR_INTERVAL = 1  # Interval in seconds for resource monitoring
 
 THROUGHPUTS = ["1M", "10M", "100M", "1G", "10G"]
+DURATION = 300  # Duration in seconds for iperf3 throughput tests
 
 iperf_server = "ssh -t mverkerk@192.168.0.2 'exec iperf3 -s -i {monitor_interval} --json --logfile iperf_server_{exporter}_{throughput}.json'"
-iperf_client = "iperf3 -c 192.168.0.2 -t 10 -i {monitor_interval} --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z -b {throughput}"
+iperf_client = "iperf3 -c 192.168.0.2 -t {duration} -i {monitor_interval} --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z -b {throughput}"
 
 
 class Experiment:
@@ -159,6 +160,7 @@ class Experiment:
                 exporter=self.extractor,
                 throughput=self.throughput,
                 monitor_interval=MONITOR_INTERVAL,
+                duration=DURATION,
             )
             client_proc = subprocess.Popen(
                 shlex.split(client_cmd),
@@ -197,13 +199,13 @@ class Experiment:
                 self.proc.send_signal(signal.SIGINT)
                 try:
                     # Wait up to 5 seconds for the process to terminate
-                    self.proc.wait(timeout=5)
+                    self.proc.wait(timeout=2)
                 except subprocess.TimeoutExpired:
                     print("SIGINT failed, trying SIGTERM...")
                     # If SIGINT didn't work, try SIGTERM
                     self.proc.terminate()
                     try:
-                        self.proc.wait(timeout=5)
+                        self.proc.wait(timeout=2)
                     except subprocess.TimeoutExpired:
                         print("SIGTERM failed, using SIGKILL...")
                         # If SIGTERM didn't work, use SIGKILL as last resort
