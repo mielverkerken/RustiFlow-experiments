@@ -78,17 +78,26 @@ MONITOR_INTERVAL = 1  # Interval in seconds for resource monitoring
 
 THROUGHPUTS = ["1M", "10M", "100M", "1G", "10G", "0"]
 
-iperf_server = "ssh -t mverkerk@192.168.0.2 'exec iperf3 -s -i {monitor_interval} --json --logfile iperf_server_{exporter}_{throughput}.json'"
-iperf_client = "iperf3 -c 192.168.0.2 -t {duration} -i {monitor_interval} --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z -b {throughput}"
+iperf_server = "ssh -t mverkerk@{serverip} 'exec iperf3 -s -i {monitor_interval} --json --logfile iperf_server_{exporter}_{throughput}.json'"
+iperf_client = "iperf3 -c {serverip} -t {duration} -i {monitor_interval} --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z -b {throughput}"
 
 
 class Experiment:
-    def __init__(self, extractor, folder, interface, throughput=None, duration=None):
+    def __init__(
+        self,
+        extractor,
+        folder,
+        interface,
+        throughput=None,
+        duration=None,
+        serverip=None,
+    ):
         self.extractor = extractor
         self.folder = folder
         self.interface = interface
         self.throughput = throughput
         self.duration = duration
+        self.serverip = serverip
         self.cpu = psutil.cpu_count(logical=False)
         self.cpu_logical = psutil.cpu_count(logical=True)
         self.memory = psutil.virtual_memory().total / (1024 * 1024)  # MB
@@ -146,6 +155,7 @@ class Experiment:
                 exporter=self.extractor,
                 throughput=self.throughput,
                 monitor_interval=MONITOR_INTERVAL,
+                serverip=self.serverip,
             )
             server_proc = subprocess.Popen(
                 shlex.split(server_cmd),
@@ -161,6 +171,7 @@ class Experiment:
                 throughput=self.throughput,
                 monitor_interval=MONITOR_INTERVAL,
                 duration=self.duration,
+                serverip=self.serverip,
             )
             client_proc = subprocess.Popen(
                 shlex.split(client_cmd),
@@ -476,6 +487,12 @@ if __name__ == "__main__":
         type=int,
         help="Duration in seconds for the iperf3 throughput tests.",
     )
+    parser.add_argument(
+        "--serverip",
+        type=str,
+        default="127.0.0.1",
+        help="The IP address of the iperf3 server.",
+    )
     args = parser.parse_args()
 
     exporter_name = args.exporter
@@ -515,6 +532,7 @@ if __name__ == "__main__":
                     args.interface,
                     throughput,
                     duration=args.duration,
+                    serverip=args.serverip,
                 )
                 experiment.run()
                 experiment.save_to_csv()
@@ -526,6 +544,7 @@ if __name__ == "__main__":
                 args.interface,
                 args.throughput,
                 duration=args.duration,
+                serverip=args.serverip,
             )
             experiment.run()
             experiment.save_to_csv()

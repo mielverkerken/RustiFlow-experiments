@@ -14,7 +14,7 @@ sudo tcprewrite --mtu=1500 --mtu-trunc --infile=/data/monday/monday.pcap --outfi
 --srcipmap=0.0.0.0/0:192.168.0.2 --dstipmap=0.0.0.0/0:192.168.0.1
 ```
 
-## Experiments
+## Experiments ideas
 
 - Iperf (stability test, TCP vs UDP)
   - Max throughput localhost
@@ -26,12 +26,14 @@ sudo tcprewrite --mtu=1500 --mtu-trunc --infile=/data/monday/monday.pcap --outfi
   - measure throughput, cpu, mem and retries (lost packets)
 - Case study: Datacenter uplink (24h or whole week) (only Rustiflow)
 
-## IPerf3 results
+# Experiments Setup
+
+## IPerf3 Localhost
 
 Run from node0 (192.168.0.1) on localhost
 
 ```sh
-iperf3_run.sh <exporter> <interface> [duration]
+iperf3_run.sh <exporter> <interface> [duration] [serverip]
 
-iperf3_run.sh rustiflow lo 300
+iperf3_run.sh rustiflow lo 300 127.0.0.1
 ```
