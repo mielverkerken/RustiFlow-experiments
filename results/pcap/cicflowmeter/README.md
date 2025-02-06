@@ -353,3 +353,33 @@ Test for friday completed successfully.
 ### All Days Combined
 
 Flow extraction from cicids2017.pcap (50GB) did not finish within 2 hours.. Was stuck after bit over half milion flows (519579 flows).
+
+-> retry. OOM after 5,5 hours
+
+```sh
+mverkerk@node0:~/RustiFlow-experiments$ ./pcap_run_cicids2017.sh cicflowmeter 5
+Running test 1 with exporter cicflowmeter...
+Starting pcap performance test with following stats:
+Date: 2025-02-05 16:17:06
+CPU Cores: 16
+CPU Logical Cores: 32
+Total Memory: 47.09808349609375 GB
+Available Memory: 44.16987228393555 GB
+
+Running flow exporter on cicids2017...
+Executing CMD: ['./cfm', '/data/cicids2017/cicids2017.pcap', '/data/cicids2017']
+Process ID: 1450056
+Error occurred while running the command:
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+        at java.util.Arrays.copyOf(Arrays.java:3332)
+        at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:124)
+        at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:674)
+        at java.lang.StringBuilder.append(StringBuilder.java:213)
+        at cic.cs.unb.ca.jnetpcap.BasicPacketInfo.fwdFlowId(BasicPacketInfo.java:78)
+        at cic.cs.unb.ca.jnetpcap.FlowGenerator.addPacket(FlowGenerator.java:80)
+        at cic.cs.unb.ca.ifm.Cmd.readPcapFile(Cmd.java:167)
+        at cic.cs.unb.ca.ifm.Cmd.main(Cmd.java:80)
+
+Finished after 20033.54912996292s
+Test 1 complete. Metrics copied to results/pcap/cicflowmeter/cicids2017/1_cicflowmeter_cicids2017_metrics.csv
+```
