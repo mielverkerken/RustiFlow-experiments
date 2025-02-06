@@ -27,7 +27,7 @@ exporters = {
     "nfstream": {
         "name": "nfstream",
         "shell": False,
-        "cmd": "python3 /users/mverkerk/RustiFlow-experiments/nfstream_script.py --realtime {interface} --output {output_folder}",
+        "cmd": "sudo python3 /users/mverkerk/RustiFlow-experiments/nfstream_script.py --realtime {interface} --output {output_folder}",
         "cwd": None,  # Runs from any directory
     },
     "argus": {
