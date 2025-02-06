@@ -76,19 +76,19 @@ exporters = {
 
 MONITOR_INTERVAL = 1  # Interval in seconds for resource monitoring
 
-THROUGHPUTS = ["1M", "10M", "100M", "1G", "10G"]
-DURATION = 300  # Duration in seconds for iperf3 throughput tests
+THROUGHPUTS = ["1M", "10M", "100M", "1G", "10G", "0"]
 
 iperf_server = "ssh -t mverkerk@192.168.0.2 'exec iperf3 -s -i {monitor_interval} --json --logfile iperf_server_{exporter}_{throughput}.json'"
 iperf_client = "iperf3 -c 192.168.0.2 -t {duration} -i {monitor_interval} --json --logfile {output_folder}/iperf_client_{exporter}_{throughput}.json -Z -b {throughput}"
 
 
 class Experiment:
-    def __init__(self, extractor, folder, interface, throughput=None):
+    def __init__(self, extractor, folder, interface, throughput=None, duration=None):
         self.extractor = extractor
         self.folder = folder
         self.interface = interface
         self.throughput = throughput
+        self.duration = duration
         self.cpu = psutil.cpu_count(logical=False)
         self.cpu_logical = psutil.cpu_count(logical=True)
         self.memory = psutil.virtual_memory().total / (1024 * 1024)  # MB
@@ -160,7 +160,7 @@ class Experiment:
                 exporter=self.extractor,
                 throughput=self.throughput,
                 monitor_interval=MONITOR_INTERVAL,
-                duration=DURATION,
+                duration=self.duration,
             )
             client_proc = subprocess.Popen(
                 shlex.split(client_cmd),
@@ -190,12 +190,19 @@ class Experiment:
             monitor_thread.start()
 
             # Wait for iperf3 client to finish
-            if self.throughput:
-                print("Waiting for iperf3 client to finish...")
-                client_proc.wait()
-                print("Iperf3 client finished. Stopping exporter...")
+            if self.throughput or self.duration:
+                if self.throughput:
+                    print(
+                        "Waiting for iperf3 client to finish in {self.duration} seconds..."
+                    )
+                    client_proc.wait()
+                    print("Iperf3 client finished.")
+                elif self.duration:
+                    print("Running for {duration} seconds...")
+                    time.sleep(self.duration)
 
                 # Try SIGINT first
+                print("Stopping exporter...")
                 self.proc.send_signal(signal.SIGINT)
                 try:
                     # Wait up to 5 seconds for the process to terminate
@@ -211,7 +218,7 @@ class Experiment:
                         # If SIGTERM didn't work, use SIGKILL as last resort
                         self.proc.kill()
 
-                print("Waiting for exporter to finish...")
+            print("Waiting for exporter to finish...")
 
             # Wait for exporter process completion
             stdout, stderr = self.proc.communicate()
@@ -464,6 +471,11 @@ if __name__ == "__main__":
         choices=THROUGHPUTS + ["all"],
         help="Run with specific iperf3 throughput or 'all' for all throughputs",
     )
+    parser.add_argument(
+        "--duration",
+        type=int,
+        help="Duration in seconds for the iperf3 throughput tests.",
+    )
     args = parser.parse_args()
 
     exporter_name = args.exporter
@@ -498,20 +510,30 @@ if __name__ == "__main__":
             for throughput in THROUGHPUTS:
                 print(f"\nStarting test with throughput: {throughput}")
                 experiment = Experiment(
-                    exporter_name, folder, args.interface, throughput
+                    exporter_name,
+                    folder,
+                    args.interface,
+                    throughput,
+                    duration=args.duration,
                 )
                 experiment.run()
                 experiment.save_to_csv()
         else:
             print(f"Running with iperf3 throughput: {args.throughput}")
             experiment = Experiment(
-                exporter_name, folder, args.interface, args.throughput
+                exporter_name,
+                folder,
+                args.interface,
+                args.throughput,
+                duration=args.duration,
             )
             experiment.run()
             experiment.save_to_csv()
     else:
         # Run without traffic generation
         print("Running without traffic generation")
-        experiment = Experiment(exporter_name, folder, args.interface)
+        experiment = Experiment(
+            exporter_name, folder, args.interface, duration=args.duration
+        )
         experiment.run()
         experiment.save_to_csv()

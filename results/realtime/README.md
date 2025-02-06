@@ -28,10 +28,10 @@ sudo tcprewrite --mtu=1500 --mtu-trunc --infile=/data/monday/monday.pcap --outfi
 
 ## IPerf3 results
 
-Run from node0 (192.168.0.1)
+Run from node0 (192.168.0.1) on localhost
 
 ```sh
-iperf3_run.sh <exporter> <interface>
+iperf3_run.sh <exporter> <interface> [duration]
 
-iperf3_run.sh rustiflow eno3
+iperf3_run.sh rustiflow lo 300
 ```
