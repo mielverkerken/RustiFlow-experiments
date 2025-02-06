@@ -1,0 +1,2 @@
+DateTime,Extractor,Folder,Interface,Throughput,Runtime (s),Avg_CPU_Usage (%),Avg_Memory_Usage (MB),Max_Memory_Usage (MB),CPU Cores,CPU Logical Cores,Total Memory (MB),Available Memory (MB)
+2025-02-05 09:11:15,rustiflow,/data/rustiflow,eno3,,89258.78111553192,64.49463937624267,156.7251451363389,175.0390625,16,32,128868.3828125,124797.27734375
