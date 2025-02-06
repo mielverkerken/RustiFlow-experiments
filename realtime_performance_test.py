@@ -18,58 +18,58 @@ exporters = {
         "cmd": "sudo ./rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {output_folder}/rustiflow_realtime.csv realtime {interface}",
         "cwd": "/users/mverkerk/RustiFlow/target/release/",
     },
-    "cicflowmeter": {
+    "cicflowmeter": {  # no realtime support in cli mode, issues requesting this, even PR but never merged by maintainers. Upstream fixed version can't benefit.
         "name": "cicflowmeter",
         "shell": False,
-        "cmd": "./cfm {pcap_file}.pcap {output_folder}",
-        "cwd": "/users/mverkerk/CICFlowMeter/build/distributions/CICFlowMeter-4.0/bin",  # Issues with libraries is running from other directory
+        "cmd": "",
+        "cwd": "",
     },
     "nfstream": {
         "name": "nfstream",
         "shell": False,
-        "cmd": "python3 /users/mverkerk/RustiFlow-experiments/nfstream_script.py --offline {pcap_file}.pcap --output {output_folder}",
+        "cmd": "python3 /users/mverkerk/RustiFlow-experiments/nfstream_script.py --realtime {interface}.pcap --output {output_folder}",
         "cwd": None,  # Runs from any directory
     },
     "argus": {
         "name": "argus",
         "shell": True,
-        "cmd": "/users/mverkerk/RustiFlow-experiments/argus_script.sh {pcap_file}.pcap {pcap_file}_argus.csv",
+        "cmd": "/users/mverkerk/RustiFlow-experiments/argus_script_realtime.sh {interface} {interface}_argus.csv",
         "cwd": None,  # Runs from any directory
     },
-    "go-flows": {
+    "go-flows": {  # No default realtime support, recommend to use system specific packet capture
         "name": "go-flows",
         "shell": False,
-        "cmd": "/users/mverkerk/go-flows/go-flows run features /users/mverkerk/RustiFlow-experiments/go-flows-features.json export csv {pcap_file}_go-flows.csv source libpcap {pcap_file}.pcap",
+        "cmd": "",
         "cwd": None,  # Runs from any directory
     },
     "zeek": {
         "name": "zeek",
         "shell": False,
-        "cmd": "/opt/zeek/bin/zeek -r {pcap_file}.pcap",
+        "cmd": "sudo /opt/zeek/bin/zeek -i {interface}",
         "cwd": "{output_folder}",  # Write all output here
     },
-    "ntlflowlyzer": {
+    "ntlflowlyzer": {  # no realtime support
         "name": "ntlflowlyzer",
         "shell": False,
-        "cmd": "ntlflowlyzer -c /users/mverkerk/RustiFlow-experiments/ntlflowlyzer_config.json",
+        "cmd": "",
         "cwd": None,  # Runs from any directory
     },
     "nprobe": {
         "name": "nprobe",
         "shell": False,
-        "cmd": "nprobe -i {pcap_file}.pcap -n none -t 3600 -d 120 --csv-separator , -P {output_folder} -V 9  -T '%IPV4_SRC_ADDR %IPV4_DST_ADDR %L4_SRC_PORT %L4_DST_PORT %PROTOCOL %L7_PROTO %IN_BYTES %OUT_BYTES %IN_PKTS %OUT_PKTS %FLOW_DURATION_MILLISECONDS %TCP_FLAGS %CLIENT_TCP_FLAGS %SERVER_TCP_FLAGS %DURATION_IN %DURATION_OUT %MIN_TTL %MAX_TTL %LONGEST_FLOW_PKT %SHORTEST_FLOW_PKT %MIN_IP_PKT_LEN %MAX_IP_PKT_LEN %SRC_TO_DST_SECOND_BYTES %DST_TO_SRC_SECOND_BYTES %RETRANSMITTED_IN_BYTES %RETRANSMITTED_IN_PKTS %RETRANSMITTED_OUT_BYTES %RETRANSMITTED_OUT_PKTS %SRC_TO_DST_AVG_THROUGHPUT %DST_TO_SRC_AVG_THROUGHPUT %NUM_PKTS_UP_TO_128_BYTES %NUM_PKTS_128_TO_256_BYTES %NUM_PKTS_256_TO_512_BYTES %NUM_PKTS_512_TO_1024_BYTES %NUM_PKTS_1024_TO_1514_BYTES %TCP_WIN_MAX_IN %TCP_WIN_MAX_OUT %ICMP_TYPE %ICMP_IPV4_TYPE %DNS_QUERY_ID %DNS_QUERY_TYPE %DNS_TTL_ANSWER %FTP_COMMAND_RET_CODE'",
+        "cmd": "nprobe -i {interface} -n none -t 3600 -d 120 --csv-separator , -P {output_folder} -V 9  -T '%IPV4_SRC_ADDR %IPV4_DST_ADDR %L4_SRC_PORT %L4_DST_PORT %PROTOCOL %L7_PROTO %IN_BYTES %OUT_BYTES %IN_PKTS %OUT_PKTS %FLOW_DURATION_MILLISECONDS %TCP_FLAGS %CLIENT_TCP_FLAGS %SERVER_TCP_FLAGS %DURATION_IN %DURATION_OUT %MIN_TTL %MAX_TTL %LONGEST_FLOW_PKT %SHORTEST_FLOW_PKT %MIN_IP_PKT_LEN %MAX_IP_PKT_LEN %SRC_TO_DST_SECOND_BYTES %DST_TO_SRC_SECOND_BYTES %RETRANSMITTED_IN_BYTES %RETRANSMITTED_IN_PKTS %RETRANSMITTED_OUT_BYTES %RETRANSMITTED_OUT_PKTS %SRC_TO_DST_AVG_THROUGHPUT %DST_TO_SRC_AVG_THROUGHPUT %NUM_PKTS_UP_TO_128_BYTES %NUM_PKTS_128_TO_256_BYTES %NUM_PKTS_256_TO_512_BYTES %NUM_PKTS_512_TO_1024_BYTES %NUM_PKTS_1024_TO_1514_BYTES %TCP_WIN_MAX_IN %TCP_WIN_MAX_OUT %ICMP_TYPE %ICMP_IPV4_TYPE %DNS_QUERY_ID %DNS_QUERY_TYPE %DNS_TTL_ANSWER %FTP_COMMAND_RET_CODE'",
         "cwd": None,  # Runs from any directory
     },
-    "kitsune": {
+    "kitsune": {  # depends on external libaries to packet cpature and parsing.
         "name": "kitsune",
         "shell": False,
-        "cmd": "python3 pcap-extractor.py {pcap_file}.pcap {pcap_file}_kitsune.csv",
-        "cwd": "/users/mverkerk/RustiFlow-experiments/kitsune_extractor",
+        "cmd": "",
+        "cwd": "",
     },
     "joy": {
         "name": "joy",
         "shell": False,
-        "cmd": "joy bidir=1 output=joy.json.gz {pcap_file}.pcap",
+        "cmd": "sudo joy interface={interface} bidir=1 output=joy-{interface}.json.gz",
         "cwd": "{output_folder}",
     },
 }
