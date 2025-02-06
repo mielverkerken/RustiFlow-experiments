@@ -27,7 +27,7 @@ exporters = {
     "nfstream": {
         "name": "nfstream",
         "shell": False,
-        "cmd": "python3 /users/mverkerk/RustiFlow-experiments/nfstream_script.py --realtime {interface}.pcap --output {output_folder}",
+        "cmd": "python3 /users/mverkerk/RustiFlow-experiments/nfstream_script.py --realtime {interface} --output {output_folder}",
         "cwd": None,  # Runs from any directory
     },
     "argus": {
@@ -205,12 +205,12 @@ class Experiment:
             if self.throughput or self.duration:
                 if self.throughput:
                     print(
-                        "Waiting for iperf3 client to finish in {self.duration} seconds..."
+                        f"Waiting for iperf3 client to finish in {self.duration} seconds..."
                     )
                     client_proc.wait()
                     print("Iperf3 client finished.")
                 elif self.duration:
-                    print("Running for {duration} seconds...")
+                    print(f"Running for {self.duration} seconds...")
                     time.sleep(self.duration)
 
                 # Try SIGINT first
