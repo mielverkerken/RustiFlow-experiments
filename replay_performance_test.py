@@ -76,7 +76,13 @@ exporters = {
 
 MONITOR_INTERVAL = 1  # Interval in seconds for resource monitoring
 
-THROUGHPUTS = ["1M", "10M", "100M", "1G", "10G"]
+THROUGHPUTS = [
+    "1",
+    "10",
+    "100",
+    "1000",
+    "10000",
+]  # mbps ["1M", "10M", "100M", "1G", "10G"]
 
 replay_server = "ssh -t mverkerk@{serverip} 'exec sudo tcpreplay -K -i {interface} --duration={duration} --mbps={throughput} /data/cicids2017/cicids2017-trunc.pcap > {output_folder}/tcpreplay_server_{exporter}_{throughput}.log 2>&1'"
 ifstat_client = " ifstat -i eno3 -n -t 1 > {output_folder}/ifstat_client_{exporter}_{throughput}.log 2>&1"
