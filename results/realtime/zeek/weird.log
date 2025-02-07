@@ -1,0 +1,12 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	weird
+#open	2025-02-07-05-33-29
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer	source
+#types	time	string	addr	port	addr	port	string	string	bool	string	string
+1738931609.815316	Cz0VxX2YjWJnapbYc5	192.168.0.1	60282	192.168.0.2	5201	bad_TCP_checksum	-	F	zeek	TCP
+1738931609.875764	Cz0VxX2YjWJnapbYc5	192.168.0.1	60282	192.168.0.2	5201	TCP_ack_underflow_or_misorder	-	F	zeek	TCP
+1738931613.480507	Cz0VxX2YjWJnapbYc5	192.168.0.1	60282	192.168.0.2	5201	TCP_seq_underflow_or_misorder	-	F	zeek	TCP
+#close	2025-02-07-05-38-29
