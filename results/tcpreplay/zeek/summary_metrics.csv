@@ -1,0 +1,6 @@
+DateTime,Extractor,Folder,Interface,Throughput,Runtime (s),Avg_CPU_Usage (%),Avg_Memory_Usage (MB),Max_Memory_Usage (MB),CPU Cores,CPU Logical Cores,Total Memory (MB),Available Memory (MB)
+2025-02-07 09:22:57,zeek,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/zeek,eno3,1,406.9447591304779,1.4151364764267986,250.0990229528536,261.23828125,16,32,48228.4453125,42124.39453125
+2025-02-07 09:29:47,zeek,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/zeek,eno3,10,417.1998710632324,2.8915254237288135,270.7347911622276,284.1484375,16,32,48228.4453125,42146.49609375
+2025-02-07 09:36:47,zeek,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/zeek,eno3,100,409.0264070034027,12.000246913580305,326.03523341049384,406.25,16,32,48228.4453125,42147.3984375
+2025-02-07 09:43:39,zeek,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/zeek,eno3,1000,393.200003862381,75.5131105398458,1071.9507250160668,2558.9921875,16,32,48228.4453125,42150.296875
+2025-02-07 09:50:15,zeek,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/zeek,eno3,10000,237.76858401298523,61.11355932203391,912.0065214512712,2078.71875,16,32,48228.4453125,42111.21875

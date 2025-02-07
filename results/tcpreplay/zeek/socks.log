@@ -1,0 +1,15 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	socks
+#open	2025-02-07-09-51-43
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	version	user	password	status	request.host	request.name	request_p	bound.host	bound.name	bound_p
+#types	time	string	addr	port	addr	port	count	string	string	string	addr	string	port	addr	string	port
+1738947096.044650	CGw6ol281Tez3i6dP9	192.168.10.9	1028	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\x0c\x01\x00\x00\x02\x00\x00\x00\xf4\x00\x00\x00\x01	0
+1738947096.102165	CGvvlc20iNy3KOKbba	192.168.10.14	49414	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\x98\x00\x00\x00\x02\x00\x00\x00\x80\x00\x00\x00\x00	0
+1738947096.199344	CBzLPa1i2POJbfEHF2	192.168.10.5	49157	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\x0c\x01\x00\x00\x02\x00\x00\x00\xf4\x00\x00\x00\x01	0
+1738947184.077545	CcJsOs4uygs78rCu71	192.168.10.8	54007	192.168.10.3	49666	5	-	-	succeeded	-	-	-	-	\x00\x00\x00i\x00)\x00\x01\x00\x00\x00\xd0\x16\xd0\x16\x01	27136
+1738947135.250394	C1xTLk15siFfoEzoN	192.168.10.5	56821	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\x0c\x01\x00\x00\x02\x00\x00\x00\xf4\x00\x00\x00\x01	0
+1738947178.793170	Cwx4nG40G8uC7NBaR3	192.168.10.15	53741	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xac\x00\x00\x00\x02\x00\x00\x00\x94\x00\x00\x00\x01	0
+#close	2025-02-07-09-54-13

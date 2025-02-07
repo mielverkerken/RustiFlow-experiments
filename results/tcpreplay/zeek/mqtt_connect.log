@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	mqtt_connect
+#open	2025-02-07-09-52-49
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto_name	proto_version	client_id	connect_status	will_topic	will_payload
+#types	time	string	addr	port	addr	port	string	string	string	string	string	string
+1738947160.345422	CzUEwA1BcucvDaXTcd	172.16.0.1	39398	192.168.10.50	80	-	-	-	unknown-return-code-70	-	-
+#close	2025-02-07-09-54-13

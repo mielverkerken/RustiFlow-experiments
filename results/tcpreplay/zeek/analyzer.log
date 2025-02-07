@@ -1,0 +1,704 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	analyzer
+#open	2025-02-07-09-51-36
+#fields	ts	cause	analyzer_kind	analyzer_name	uid	fuid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	failure_reason	failure_data
+#types	time	string	string	string	string	string	addr	port	addr	port	string	string
+1738947096.043605	violation	protocol	LDAP_TCP	CKpiGq8M43urgUI2l	-	192.168.10.9	1035	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947096.044985	violation	protocol	LDAP_TCP	CpKNnP3WdxjQsbsVA	-	192.168.10.9	1049	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.045068	violation	protocol	LDAP_TCP	CObeqD3IDC4Xj7codj	-	192.168.10.9	1051	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.045888	violation	protocol	LDAP_TCP	CfXqKT3ENiuh3tGTcj	-	192.168.10.9	1059	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.045913	violation	protocol	LDAP_TCP	Cq22ZY2EPdk5kA7Ln	-	192.168.10.9	1060	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.048022	violation	protocol	LDAP_TCP	CFyt9M2LrVWAA5BG03	-	192.168.10.12	56542	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.048084	violation	protocol	LDAP_TCP	Cef0sG4osrOVKRH2X4	-	192.168.10.12	56544	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.048529	violation	protocol	LDAP_TCP	CUef4x2drTXPY1GNh4	-	192.168.10.12	56548	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.049256	violation	protocol	LDAP_TCP	CAsdwE3zPay7cAk2Qk	-	192.168.10.12	56552	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.049319	violation	protocol	LDAP_TCP	CK1LgE3xi9k6ToVpUe	-	192.168.10.12	34936	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.051958	violation	protocol	LDAP_TCP	CK8J8y3AQvdrpZIUTl	-	192.168.10.17	42095	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.052025	violation	protocol	LDAP_TCP	CgL5VR2i5xBCYTyNpl	-	192.168.10.17	42096	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947096.052284	violation	protocol	LDAP_TCP	CP7XmU2mmHAxfHElXl	-	192.168.10.17	42098	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947096.052795	violation	protocol	LDAP_TCP	CL7tV036NbGn4nUoll	-	192.168.10.17	45249	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.054222	violation	protocol	LDAP_TCP	CJ2b3pjz3MUfRNjy1	-	192.168.10.50	55724	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.054300	violation	protocol	LDAP_TCP	CwyhJC3UcRHTKSnfta	-	192.168.10.50	55726	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947096.054756	violation	protocol	LDAP_TCP	CdKCce1HJ4GXVkJP9i	-	192.168.10.50	56772	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.056302	violation	protocol	LDAP_TCP	CAS7D41VjhmJg7mFHb	-	192.168.10.50	55736	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.058547	violation	protocol	LDAP_TCP	Cm9UAi1SiSVvx6xFH5	-	192.168.10.12	56558	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.058832	violation	protocol	LDAP_TCP	C1o13D3lqRs9Oj60ll	-	192.168.10.12	56562	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.058892	violation	protocol	LDAP_TCP	CeQXKZ2987hguW8Gue	-	192.168.10.12	34946	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.059238	violation	protocol	LDAP_TCP	CXc6cT18xA1oYHKMr1	-	192.168.10.12	56568	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.061158	violation	protocol	LDAP_TCP	CSTzXM1THQTnVy4STc	-	192.168.10.25	49153	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947096.061310	violation	protocol	LDAP_TCP	CRlD3Y2ZknI9reiKJf	-	192.168.10.25	49155	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.062365	violation	protocol	LDAP_TCP	C0wAQg2B4994idNsc3	-	192.168.10.25	49157	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.062512	violation	protocol	LDAP_TCP	CNHLlkFMHSpJrcDzc	-	192.168.10.25	49158	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.062561	violation	protocol	LDAP_TCP	CTPTiM1qRBmrWbaO4	-	192.168.10.25	49159	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.069141	violation	protocol	LDAP_TCP	CmgiUF1MZuq3LvCov	-	192.168.10.25	49160	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947096.069177	violation	protocol	LDAP_TCP	CMT39T32BylLHE4FF8	-	192.168.10.25	49161	192.168.10.3	3268	&size amount not consumed: expected 1 bytes, but got 0 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:46-211:63)	-
+1738947096.069660	violation	protocol	LDAP_TCP	CMCIR84O0jsfnnQHm	-	192.168.10.25	49162	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.069734	violation	protocol	LDAP_TCP	CDiH052k53f7hJ7mK7	-	192.168.10.25	49163	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.080022	violation	protocol	SSH	C4TACUi72v90Hh8Cf	-	192.168.10.9	1075	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947096.080061	violation	protocol	SSH	C4TACUi72v90Hh8Cf	-	192.168.10.9	1075	192.168.10.50	22	Binpac exception: binpac exception: out_of_bound: ssh_string:val: 1960438392 > 244	-
+1738947096.092451	violation	protocol	LDAP_TCP	CNQNGw4HbGXigDRS5c	-	192.168.10.19	55404	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.092504	violation	protocol	LDAP_TCP	CCFir51Uyr1ikGigC9	-	192.168.10.19	55405	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.092788	violation	protocol	LDAP_TCP	C5gMutORxTMxjHaRi	-	192.168.10.19	55407	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947096.093192	violation	protocol	LDAP_TCP	CxDAId3OiZyPQoQwQl	-	192.168.10.19	55411	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.093235	violation	protocol	LDAP_TCP	CRp6t7kmPsRE0CF5a	-	192.168.10.19	53651	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947096.095484	violation	protocol	LDAP_TCP	C4qeCu2rk2rWV5Ii2f	-	192.168.10.14	49410	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.103044	violation	protocol	LDAP_TCP	Cf8FON2Bo56uEGE1Ma	-	192.168.10.14	49430	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947096.103169	violation	protocol	LDAP_TCP	CY7VnI1EEWSvxqeyP6	-	192.168.10.14	49432	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.104190	violation	protocol	LDAP_TCP	COfVbf3GTpL1hcxnW2	-	192.168.10.14	49436	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947096.104864	violation	protocol	LDAP_TCP	C5GEbH3Lmo6n0l2li	-	192.168.10.14	49439	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.113333	violation	protocol	LDAP_TCP	CCSaAo17x9PrBswcyk	-	192.168.10.14	49479	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947096.113360	violation	protocol	LDAP_TCP	Cs1ZYU3Hvsbog6Rchj	-	192.168.10.14	49480	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947096.115581	violation	protocol	LDAP_TCP	CkOqRH1yjYavvdIT6c	-	192.168.10.16	33608	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.116396	violation	protocol	LDAP_TCP	CeV3Bm5vwxVASBFWe	-	192.168.10.16	33610	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947096.116671	violation	protocol	LDAP_TCP	CGJDCc41PrpLkXurda	-	192.168.10.16	33614	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.116763	violation	protocol	LDAP_TCP	CDD83kuql8baXV2Ma	-	192.168.10.16	38534	192.168.10.3	3268	&size amount not consumed: expected 23 bytes, but got 21 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:16-115:26)	-
+1738947096.117630	violation	protocol	LDAP_TCP	Ca1wkk2L6F2fqoyGx5	-	192.168.10.16	33620	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.199318	violation	protocol	LDAP_TCP	CINqNF4uSxqVuxyT7e	-	192.168.10.5	49164	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.199650	violation	protocol	LDAP_TCP	CXJadt17GTQj27rOId	-	192.168.10.5	49170	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947096.199725	violation	protocol	LDAP_TCP	CBUkgqJVrCCxSwLCl	-	192.168.10.5	49172	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947096.201831	violation	protocol	LDAP_TCP	Cq29iz2j15yc5DZOLg	-	192.168.10.5	49180	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947096.201908	violation	protocol	LDAP_TCP	CjP7WB3aObhFsUZiY7	-	192.168.10.5	49181	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947096.202483	violation	protocol	LDAP_TCP	CBsOkE1PUSD1IXoIub	-	192.168.10.25	49167	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947096.202548	violation	protocol	LDAP_TCP	CZhzwc9fGtk1d8qqd	-	192.168.10.25	49168	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947096.204415	violation	protocol	LDAP_TCP	C2yRso4UaSufpXpwM4	-	192.168.10.5	49194	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947096.204449	violation	protocol	LDAP_TCP	CCZxf73FQj32AbaVd2	-	192.168.10.5	49196	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947096.205217	violation	protocol	LDAP_TCP	CUa1pK1Q54lfgTJHO1	-	192.168.10.5	49198	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947096.226014	violation	protocol	LDAP_TCP	CwxZwN25vs0JcwsNuf	-	192.168.10.50	55758	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.230536	violation	protocol	LDAP_TCP	C2ZlAw23t9fHDxD0n4	-	192.168.10.25	49169	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947096.230572	violation	protocol	LDAP_TCP	CbDnt412VJZYgRAXua	-	192.168.10.25	49170	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947098.502046	violation	protocol	LDAP_TCP	C8Fe9c3XyKyDwKT7Fj	-	192.168.10.8	49190	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947099.641741	violation	protocol	LDAP_TCP	CGCy5a2fXirjKe1Qyj	-	192.168.10.17	45285	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947099.642125	violation	protocol	LDAP_TCP	CtS0QY1QFrWCv5NAXd	-	192.168.10.17	42141	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947100.070779	violation	protocol	LDAP_TCP	CgndxvnUtI2kSjFBi	-	192.168.10.15	49424	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947100.107446	violation	protocol	LDAP_TCP	CbfGgw2PcY4XDhL2j4	-	192.168.10.15	49427	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947100.131302	violation	protocol	LDAP_TCP	Cw6w3i4QURMF9JFN4f	-	192.168.10.17	58179	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947100.133764	violation	protocol	LDAP_TCP	CDCVtr0s0zqyxcxv	-	192.168.10.17	58186	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947100.133820	violation	protocol	LDAP_TCP	Cq5yJ1gUckGyKunq2	-	192.168.10.17	35834	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947100.190136	violation	protocol	LDAP_TCP	CiDA0B2jMq8ijt8Sre	-	192.168.10.15	49462	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947100.190169	violation	protocol	LDAP_TCP	CK0beh1qeopIf1Pk9	-	192.168.10.15	49463	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947100.345187	violation	protocol	LDAP_TCP	Cqofdj4O8Ho6dUdgIb	-	192.168.10.19	53693	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947100.345430	violation	protocol	LDAP_TCP	C8hWlm1kiRcLy7GKAl	-	192.168.10.19	55456	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947100.380837	violation	protocol	LDAP_TCP	CBUGMo1FaKxZIDxGbb	-	192.168.10.25	49275	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947100.380904	violation	protocol	LDAP_TCP	CWxjOs4SSWr1XwDrO5	-	192.168.10.25	49276	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947100.483924	violation	protocol	LDAP_TCP	CJqPw54J0wuY2aA0G6	-	192.168.10.25	49333	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947100.483978	violation	protocol	LDAP_TCP	CmtCkMLEwaUAKz3B1	-	192.168.10.25	49334	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947100.650075	violation	protocol	LDAP_TCP	Cln5qG3kKwilvokNml	-	192.168.10.19	45610	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947100.650142	violation	protocol	LDAP_TCP	CGGYmr1uO4zZz8OH4	-	192.168.10.19	45611	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947100.650384	violation	protocol	LDAP_TCP	C1yAZV1JHnKDoOon9	-	192.168.10.19	45613	192.168.10.3	389	&size amount not consumed: expected 23 bytes, but got 21 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:16-115:26)	-
+1738947100.651456	violation	protocol	LDAP_TCP	CAxWXmQoEyFDbg0O2	-	192.168.10.19	45800	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947100.928403	violation	protocol	LDAP_TCP	CxmrLD2cMeKBemAAld	-	192.168.10.25	49336	192.168.10.3	3268	&size amount not consumed: expected 1 bytes, but got 0 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:46-211:63)	-
+1738947100.928847	violation	protocol	LDAP_TCP	CXpjxv19gUslrc7Y11	-	192.168.10.25	49337	192.168.10.3	389	&size amount not consumed: expected 1 bytes, but got 0 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:46-211:63)	-
+1738947104.958950	violation	protocol	LDAP_TCP	CROQQY1zwDt9ylPtKb	-	192.168.10.25	49662	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947104.959276	violation	protocol	LDAP_TCP	COwaS24XR78CSgfST5	-	192.168.10.25	49663	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947105.795482	violation	protocol	SSH	CcAj903BNtB8Ndv2Qe	-	192.168.10.16	52878	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947106.557496	violation	protocol	LDAP_TCP	CKWUQvdbq0hVPEbj7	-	192.168.10.25	49683	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947106.557564	violation	protocol	LDAP_TCP	CLxt2aZ5M4xdWxQxf	-	192.168.10.25	49684	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947106.646773	violation	protocol	LDAP_TCP	CcCNKyYf4vgFZ6SO	-	192.168.10.25	49798	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947106.646845	violation	protocol	LDAP_TCP	CfJrTV5dr0zhdMoe4	-	192.168.10.25	49799	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947106.724948	violation	protocol	LDAP_TCP	C19mvz3CABDfXYRaHh	-	192.168.10.50	53068	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947106.725305	violation	protocol	LDAP_TCP	CI5oAL3IS6hZ3pbzi2	-	192.168.10.50	53070	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947106.731483	violation	protocol	LDAP_TCP	CnyfAJ3UpA94MmzzO2	-	192.168.10.50	53078	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947106.782396	violation	protocol	LDAP_TCP	Cj7BRv2GP4bSJPq9Qa	-	192.168.10.50	53100	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947106.782445	violation	protocol	LDAP_TCP	CFvprS2REden7y4Vb2	-	192.168.10.50	52094	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947108.016699	violation	protocol	LDAP_TCP	CGQ8X446oidqN4mKS1	-	192.168.10.25	50065	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947108.016790	violation	protocol	LDAP_TCP	Cpr81SHZeWpgqXF6j	-	192.168.10.25	50066	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947108.088550	violation	protocol	DNP3_UDP	CpZepy1o1sLMWb7Tca	-	192.168.10.8	55459	192.168.10.3	53	broken_checksum	-
+1738947108.394670	violation	protocol	LDAP_TCP	Cnomuh1ck2bgyXWrh3	-	192.168.10.25	50748	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947108.394714	violation	protocol	LDAP_TCP	CyGrtRx9MjzLMQBe3	-	192.168.10.25	50749	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947108.656923	violation	protocol	LDAP_TCP	CgiSV43nxyknjH3CKa	-	192.168.10.17	58573	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947108.656950	violation	protocol	LDAP_TCP	C6fPe53j02yKyAtYpj	-	192.168.10.17	36221	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947108.706718	violation	protocol	LDAP_TCP	CGirgG12QEQ8u87SP3	-	192.168.10.50	53156	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947108.706773	violation	protocol	LDAP_TCP	C0wp8O3ec0vcea55Se	-	192.168.10.50	52150	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947108.706823	violation	protocol	LDAP_TCP	CnLGOJT4K4Jkk2pTk	-	192.168.10.50	53160	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947109.183139	violation	protocol	LDAP_TCP	CzR9Hz4v3k1nm6sVvi	-	192.168.10.25	51949	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947109.183213	violation	protocol	LDAP_TCP	CyeLx62NTAP81ulPN6	-	192.168.10.25	51950	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947109.342586	violation	protocol	LDAP_TCP	ClpDXh36PxZTpPjod1	-	192.168.10.25	52520	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947109.342739	violation	protocol	LDAP_TCP	C9gwhv4lbfOOXj64i2	-	192.168.10.25	52521	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947109.382516	violation	protocol	LDAP_TCP	C7Ikpz43P0aGtL4nve	-	192.168.10.25	52654	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947109.382571	violation	protocol	LDAP_TCP	C8Ehmn1e0TzoaDdA4i	-	192.168.10.25	52655	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947109.394060	violation	protocol	LDAP_TCP	CztXtk1DkZydJO0li6	-	192.168.10.25	52676	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947109.394098	violation	protocol	LDAP_TCP	C3hOP74ReXsup4jDw6	-	192.168.10.25	52677	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947109.541186	violation	protocol	SSH	CztIXr3swdII2CQ29d	-	192.168.10.14	53030	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947109.541200	violation	protocol	SSH	CztIXr3swdII2CQ29d	-	192.168.10.14	53030	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947109.541228	violation	protocol	SSH	CztIXr3swdII2CQ29d	-	192.168.10.14	53030	192.168.10.50	22	Binpac exception: binpac exception: out_of_bound: ssh_string:val: 255771741 > 30	-
+1738947109.553428	violation	protocol	LDAP_TCP	CSiYx84LQZYK481p75	-	192.168.10.25	53407	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947109.553476	violation	protocol	LDAP_TCP	CkRGdb45C12433tPqe	-	192.168.10.25	53408	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947109.610166	violation	protocol	LDAP_TCP	CAAgez1pW4DBMyyPIe	-	192.168.10.25	53616	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947109.610244	violation	protocol	LDAP_TCP	CHiX7X1f5VWsItJUkd	-	192.168.10.25	53617	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947109.673450	violation	protocol	LDAP_TCP	CWRJgZ19tWuVFqscxl	-	192.168.10.50	53180	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947109.673498	violation	protocol	LDAP_TCP	CzkCyr1LYyQ7sB2zz5	-	192.168.10.50	52174	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947109.673942	violation	protocol	LDAP_TCP	CR2Kok4iDPoQulTv32	-	192.168.10.50	53188	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947109.681953	violation	protocol	LDAP_TCP	CyucLA2orZslNzXeK9	-	192.168.10.25	53783	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947109.682000	violation	protocol	LDAP_TCP	CJ0hdD2ZpyBT9FWn3	-	192.168.10.25	53784	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947109.682900	violation	protocol	LDAP_TCP	CaUeAB2FR8kDThn8gb	-	192.168.10.14	53115	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947109.682992	violation	protocol	LDAP_TCP	CJYUEr1UvJRCzrShml	-	192.168.10.14	53116	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947109.747437	violation	protocol	LDAP_TCP	CFvl663tkHfhAmMWVf	-	192.168.10.25	53809	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947109.747504	violation	protocol	LDAP_TCP	C5wp5sp6Dg9vZDnd	-	192.168.10.25	53810	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947110.019009	violation	protocol	LDAP_TCP	CAOUN23vOveE7hlAob	-	192.168.10.16	39494	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947110.019134	violation	protocol	LDAP_TCP	CHg2mF1ahujBh5CAPi	-	192.168.10.16	39498	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947110.019163	violation	protocol	LDAP_TCP	CqSxJ9wuJWtPL5dba	-	192.168.10.16	44418	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947110.451530	violation	protocol	LDAP_TCP	CMINGc4cgENZdrCMg2	-	192.168.10.25	57553	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947110.451585	violation	protocol	LDAP_TCP	CbNNiGByhG08gbe1k	-	192.168.10.25	57554	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947110.707592	violation	protocol	LDAP_TCP	Cwuc1d4DehwPDVeYoj	-	192.168.10.25	59140	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947110.707662	violation	protocol	LDAP_TCP	CHlBYC264i4TDXypZj	-	192.168.10.25	59141	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947110.938784	violation	protocol	LDAP_TCP	Cuo3TX3I74hc4fmQtc	-	192.168.10.25	60428	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947110.938841	violation	protocol	LDAP_TCP	CCBEMB2dwrosiieevg	-	192.168.10.25	60429	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947111.180100	violation	protocol	LDAP_TCP	CSZrhC2MqAK9NQaBka	-	192.168.10.25	60953	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947111.180152	violation	protocol	LDAP_TCP	CqmTc51wmrYglGkDDi	-	192.168.10.25	60954	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947111.481023	violation	protocol	LDAP_TCP	CwlEHM1vJNETGWCCVl	-	192.168.10.12	40360	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947111.627550	violation	protocol	LDAP_TCP	CloJph4KNvo9cyx8I6	-	192.168.10.50	52222	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947111.627606	violation	protocol	LDAP_TCP	CZugyd4bwRh9taIjVg	-	192.168.10.50	53232	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947111.627932	violation	protocol	LDAP_TCP	CCp99w496oVOHliIL2	-	192.168.10.50	53236	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947112.626685	violation	protocol	LDAP_TCP	CTYwY01rwWedYed9T8	-	192.168.10.25	53837	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947112.626747	violation	protocol	LDAP_TCP	CqAUyOTP2Nfe63uti	-	192.168.10.25	53838	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947112.899842	violation	protocol	LDAP_TCP	CdLrnN3AToLzXA0y9	-	192.168.10.25	55849	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947112.899888	violation	protocol	LDAP_TCP	CB7Fti1TEQs8G5IuJ8	-	192.168.10.25	55850	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947113.144450	violation	protocol	LDAP_TCP	ChJ0dQ3I5WtejFjfPi	-	192.168.10.8	52863	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947113.613835	violation	protocol	LDAP_TCP	C2CpWl20PLqY4J9ljc	-	192.168.10.25	61753	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947113.614155	violation	protocol	LDAP_TCP	C5R5EjGtOaNwoZ6d8	-	192.168.10.50	53322	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947113.614213	violation	protocol	LDAP_TCP	CD0uEa4bMrTJLN3K5j	-	192.168.10.50	52316	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947113.614267	violation	protocol	LDAP_TCP	C8WoB81L374M09sPL1	-	192.168.10.50	53326	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947113.614839	violation	protocol	LDAP_TCP	C1JdXX1Wtay1XYvyf6	-	192.168.10.50	53330	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947113.615588	violation	protocol	LDAP_TCP	CJegcr23SzIkF59x37	-	192.168.10.19	48545	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947113.615612	violation	protocol	LDAP_TCP	C29bziBuKe1bMAAOb	-	192.168.10.19	48726	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947113.873122	violation	protocol	LDAP_TCP	CAeB4d1vdeoswGt8P8	-	192.168.10.25	61799	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947113.873191	violation	protocol	LDAP_TCP	CkRHVj1Iolel1B59W5	-	192.168.10.25	61800	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947113.899259	violation	protocol	LDAP_TCP	C6WY2C2oUsfZmjViMl	-	192.168.10.50	53334	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947113.899310	violation	protocol	LDAP_TCP	CV1Fov3jlBuFX7HPe	-	192.168.10.50	52328	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947113.899356	violation	protocol	LDAP_TCP	CcoeWo4xJPjLp9OfF4	-	192.168.10.50	53338	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947113.899696	violation	protocol	LDAP_TCP	CvwGlK1ep83buGQ0sg	-	192.168.10.50	53342	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947115.961815	violation	protocol	HTTP	CJoSOE45UlMn1CdgJ6	-	192.168.10.8	55906	180.76.142.12	8080	not a http request line	-
+1738947116.026913	violation	protocol	LDAP_TCP	CFUcSy1MsCw1hZ2ie1	-	192.168.10.50	52400	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947116.027297	violation	protocol	LDAP_TCP	CMGx3v2NBizJKFFKJj	-	192.168.10.50	53414	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947116.887214	violation	protocol	SSH	COZpI5161A1MxUvQi2	-	192.168.10.16	35706	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947117.417036	violation	protocol	SSH	CPSZ2c4AXwXBSmPTnk	-	192.168.10.17	38866	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947117.417040	violation	protocol	SSH	CPSZ2c4AXwXBSmPTnk	-	192.168.10.17	38866	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947117.417058	violation	protocol	SSH	CPSZ2c4AXwXBSmPTnk	-	192.168.10.17	38866	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947117.417058	violation	protocol	SSH	CPSZ2c4AXwXBSmPTnk	-	192.168.10.17	38866	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947117.417058	violation	protocol	SSH	CPSZ2c4AXwXBSmPTnk	-	192.168.10.17	38866	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947117.417058	violation	protocol	SSH	CPSZ2c4AXwXBSmPTnk	-	192.168.10.17	38866	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947117.771656	violation	protocol	LDAP_TCP	CU7RGU1JLHH01fpdwk	-	192.168.10.50	53466	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947117.771714	violation	protocol	LDAP_TCP	CW2Gic26nDI8AqP0u4	-	192.168.10.50	52460	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947117.771735	violation	protocol	LDAP_TCP	Cs5tUs4ysVHsSfnDLc	-	192.168.10.50	53470	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947117.772085	violation	protocol	LDAP_TCP	ChC0Dp2QO7dQuCp2ae	-	192.168.10.50	53474	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947118.171024	violation	protocol	LDAP_TCP	Czz5Fo3nBYk5Nl2SN8	-	192.168.10.50	53478	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947118.171085	violation	protocol	LDAP_TCP	C9qk0R1yV3ihTBuh13	-	192.168.10.50	52472	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947118.171117	violation	protocol	LDAP_TCP	C5LM6d3VUWv2N8bD4j	-	192.168.10.50	53482	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947118.171700	violation	protocol	LDAP_TCP	C6yOyM3z1wE6f9kaYf	-	192.168.10.50	53486	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947118.570399	violation	protocol	LDAP_TCP	CdDS2k1nY01oHMB7v5	-	192.168.10.25	64626	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947118.570445	violation	protocol	LDAP_TCP	Cp52Cw1MW0Gl7xxK04	-	192.168.10.25	64627	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947118.865805	violation	protocol	LDAP_TCP	ChcNBhJqOszMNS9Rh	-	192.168.10.9	7163	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947118.866100	violation	protocol	LDAP_TCP	C9TcHG1pNGLFJi4Mo1	-	192.168.10.9	7164	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947118.866490	violation	protocol	LDAP_TCP	C8j48U1cUUYmEujsEi	-	192.168.10.25	64674	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947118.866558	violation	protocol	LDAP_TCP	CXyXg14OScN0ZHFe94	-	192.168.10.25	64675	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947119.148598	violation	protocol	LDAP_TCP	CSvbNCewhdDhN1jNc	-	192.168.10.5	49199	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947119.148683	violation	protocol	LDAP_TCP	CKXicO216yeBVE534	-	192.168.10.5	49201	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947119.149029	violation	protocol	LDAP_TCP	CcNew74npOAryGJ4Q8	-	192.168.10.5	49203	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947119.623225	violation	protocol	LDAP_TCP	Ci5qYr4rMPUaoPS8E5	-	192.168.10.17	59885	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947119.623287	violation	protocol	LDAP_TCP	Cg7NWDlSgSJmQur4c	-	192.168.10.17	59886	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947127.290834	violation	protocol	LDAP_TCP	C03YQR3lwK1gfXb915	-	192.168.10.25	49584	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947128.875630	violation	protocol	LDAP_TCP	CHYxjh2ybT2QoITkDj	-	192.168.10.25	49658	192.168.10.3	389	&size amount not consumed: expected 23 bytes, but got 21 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:16-115:26)	-
+1738947129.284226	violation	protocol	SSL	CNRPSfLR7WP21Grri	-	192.168.10.8	50733	46.229.145.52	443	Invalid version in TLS connection. Version: 17748	-
+1738947129.669417	violation	protocol	SSL	CaQZE64XxXR98xk9Nb	-	192.168.10.8	50735	46.229.145.52	443	Invalid version in TLS connection. Version: 17748	-
+1738947130.302232	violation	protocol	DNP3_UDP	CEeJjx1SZg5JEMvwR5	-	192.168.10.5	63915	192.168.10.3	53	broken_checksum	-
+1738947130.330059	violation	protocol	LDAP_TCP	CsGcaE1FsB5gESoXz4	-	192.168.10.50	52828	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947130.330485	violation	protocol	LDAP_TCP	CiQ9lnucKlILQ9Vn7	-	192.168.10.50	53842	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947130.330756	violation	protocol	LDAP_TCP	Cu0zPy2PPAan4rmlna	-	192.168.10.25	49824	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947130.330893	violation	protocol	LDAP_TCP	CcDpAu1hb8B2JFJLEd	-	192.168.10.25	49825	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947130.426722	violation	protocol	LDAP_TCP	CKxOx94ukOWLdfm8Cj	-	192.168.10.25	49830	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947130.479038	violation	protocol	LDAP_TCP	CfdvHm3aSXseAc3IFl	-	192.168.10.25	49831	192.168.10.3	389	&requires failed: ($$.tag._anon_40.class == ASN1::ASN1Class::Universal &* $$.tag._anon_40.type_ == ASN1::ASN1Type::Sequence) (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/ldap.spicy:306:31-306:128)	\x00\x00\x00C\x05\x04\x06\xff\x00\x00\x00\x00\x00\x00\x00\x00\x17rQ\x09B\x1f\x01\xdf\x17\x80&KAA\xb8\x99\xf4\xf4\x02c\x19\xe8$\xcf
+1738947130.503603	violation	protocol	LDAP_TCP	CXYjyA32DyKmfkBHm1	-	192.168.10.25	49881	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947130.613386	violation	protocol	LDAP_TCP	CyGNpG32y0TlSq8a43	-	192.168.10.50	52838	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947130.613759	violation	protocol	LDAP_TCP	CMQX0p3i6Abm74nchk	-	192.168.10.50	53850	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947130.616867	violation	protocol	LDAP_TCP	CkwD824Of60hLjHGKh	-	192.168.10.50	52846	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947130.617153	violation	protocol	LDAP_TCP	CC49e2ac5zux3m6ta	-	192.168.10.50	53858	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947134.031043	violation	protocol	LDAP_TCP	CTZ8Hv26lHt78p03j	-	192.168.10.17	33961	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947134.031055	violation	protocol	LDAP_TCP	CPksOF4U5O2XiFvX56	-	192.168.10.17	38874	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947134.102850	violation	protocol	LDAP_TCP	CNhy772I2Wbggzikn6	-	192.168.10.25	52556	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947134.367440	violation	protocol	LDAP_TCP	CQzG8U2cQtKIxIuxli	-	192.168.10.25	52804	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947134.367517	violation	protocol	LDAP_TCP	CkSGRo1CrrLIrEUxK3	-	192.168.10.25	52805	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947134.743233	violation	protocol	LDAP_TCP	CdbMrs2EuTOZ1TYL25	-	192.168.10.25	53095	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947134.743366	violation	protocol	LDAP_TCP	Cqi07rHInpWTXsDxc	-	192.168.10.25	53096	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947134.959908	violation	protocol	LDAP_TCP	CqzMKU2z3B378DgQv5	-	192.168.10.50	53968	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947134.959971	violation	protocol	LDAP_TCP	CA7aPihUd4NpELNCk	-	192.168.10.50	52962	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947134.960002	violation	protocol	LDAP_TCP	CCsuBRAJHFh0xHt4e	-	192.168.10.50	53972	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947134.983497	violation	protocol	LDAP_TCP	CiRDT778KkCDZkcTh	-	192.168.10.25	53378	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947134.995863	violation	protocol	LDAP_TCP	CeRDJ34CYNT0tW1bya	-	192.168.10.25	53432	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947134.995926	violation	protocol	LDAP_TCP	ChwzZt2a05zopc8Hie	-	192.168.10.25	53433	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.066027	violation	protocol	LDAP_TCP	CfTcMi2VY0yIIFLFck	-	192.168.10.16	38700	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947135.066039	violation	protocol	LDAP_TCP	Cgqpjd31cxmN8SOtb8	-	192.168.10.16	38796	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.123683	violation	protocol	LDAP_TCP	COtA5z3dgj92uNBie4	-	192.168.10.12	44278	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.123779	violation	protocol	LDAP_TCP	CoyeVaF45mwKrRM73	-	192.168.10.12	44282	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947135.123807	violation	protocol	LDAP_TCP	C2ZUAN3220fpgRP6b8	-	192.168.10.12	49420	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.221038	violation	protocol	LDAP_TCP	CULK12IHzQIxB3YRb	-	192.168.10.25	53827	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947135.221094	violation	protocol	LDAP_TCP	CfXHVq2DftPROI6WIg	-	192.168.10.25	53828	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.240592	violation	protocol	LDAP_TCP	CE3KP62UBDcYsZY1Kc	-	192.168.10.25	53885	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.254790	violation	protocol	SSH	CjrCbA4yz0OIer534a	-	192.168.10.51	55062	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947135.254790	violation	protocol	SSH	CjrCbA4yz0OIer534a	-	192.168.10.51	55062	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947135.271214	violation	protocol	SSH	CYr4M71muDE5u9vix8	-	192.168.10.9	4840	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947135.271215	violation	protocol	SSH	CYr4M71muDE5u9vix8	-	192.168.10.9	4840	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947135.271226	violation	protocol	SSH	CAWdL345pYs7LII8qa	-	192.168.10.9	4840	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947135.271566	violation	protocol	LDAP_TCP	Cki3qQ18zofPfIm1S8	-	192.168.10.25	53957	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.271627	violation	protocol	LDAP_TCP	CADgmk2iNGslE66Nmk	-	192.168.10.25	53958	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.279544	violation	protocol	LDAP_TCP	Cz1LDC2BmMEAOZbP	-	192.168.10.25	53991	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.292097	violation	protocol	LDAP_TCP	CWB8ld3m6dyxnjQ6t6	-	192.168.10.25	54045	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.292162	violation	protocol	LDAP_TCP	CEz6mh2yGdzmxObFWh	-	192.168.10.25	54046	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.319864	violation	protocol	LDAP_TCP	CYURqD38L2SznSc9T5	-	192.168.10.9	4847	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.320001	violation	protocol	LDAP_TCP	CZci89zv5LaXED784	-	192.168.10.9	4850	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.352052	violation	protocol	LDAP_TCP	Cu2t6b2s9H24Cp8Kph	-	192.168.10.15	54778	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.352096	violation	protocol	LDAP_TCP	Ci7AXU17oQT0oUKoK2	-	192.168.10.15	54779	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.355046	violation	protocol	LDAP_TCP	CiP71yaEakW4WnWv1	-	192.168.10.14	54266	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.357453	violation	protocol	LDAP_TCP	C54RV2l8z7oXE4owi	-	192.168.10.25	54222	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.357515	violation	protocol	LDAP_TCP	C1cfKoeIt7hmk1zmc	-	192.168.10.25	54223	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.371531	violation	protocol	SSH	CEsgha3cgVYYygH2m1	-	192.168.10.5	56858	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947135.444030	violation	protocol	LDAP_TCP	CE3fh510LG1ZoaqiCe	-	192.168.10.25	54382	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947135.444096	violation	protocol	LDAP_TCP	CyuoCoWt5CkSKMLH2	-	192.168.10.25	54383	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947135.472992	violation	protocol	LDAP_TCP	CKFhAl195GJZ2HrrXb	-	192.168.10.25	54434	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947135.473053	violation	protocol	LDAP_TCP	CdkIyW3XWXq8AsC4Vh	-	192.168.10.25	54435	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.495820	violation	protocol	LDAP_TCP	CWubZF15dcSNhbStsd	-	192.168.10.25	54515	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.495876	violation	protocol	LDAP_TCP	ClTDN52uK0NkCzF7f6	-	192.168.10.25	54516	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947135.498521	violation	protocol	SSH	CTvJ6r2AoFB0rIQOx1	-	192.168.10.5	56866	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947135.498521	violation	protocol	SSH	CTvJ6r2AoFB0rIQOx1	-	192.168.10.5	56866	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947135.498527	violation	protocol	SSH	CRMm6C3Rhi37tGQKzd	-	192.168.10.5	56866	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947135.572298	violation	protocol	LDAP_TCP	C2ZL7k2aoABQVgWhyi	-	192.168.10.25	54640	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.572378	violation	protocol	LDAP_TCP	CXVGWO1FTv3MF1Sld4	-	192.168.10.25	54641	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.581239	violation	protocol	SSH	CHfKHE32SYNSSrmjqc	-	192.168.10.9	5026	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947135.613476	violation	protocol	LDAP_TCP	CnkKjf1iTRDzwvHBoc	-	192.168.10.25	54730	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.613524	violation	protocol	LDAP_TCP	CaW0LS2E7egu92rz6g	-	192.168.10.25	54731	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947135.638699	violation	protocol	LDAP_TCP	C2o85B1Jwytq3JVAQ7	-	192.168.10.25	54766	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947135.638761	violation	protocol	LDAP_TCP	CjCsiS2OSTSErwwAUe	-	192.168.10.25	54767	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947135.660652	violation	protocol	LDAP_TCP	CbT5zI13Hw62sAUxW6	-	192.168.10.50	53034	192.168.10.3	3268	&size amount not consumed: expected 23 bytes, but got 15 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:16-115:26)	-
+1738947135.660681	violation	protocol	LDAP_TCP	C7Genl3TWyQ7PIzbv3	-	192.168.10.50	54044	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.722455	violation	protocol	LDAP_TCP	CmUMKM3BdCkUnu2IM2	-	192.168.10.17	35109	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.722510	violation	protocol	LDAP_TCP	CQUK5P31r7OVuLk3Ph	-	192.168.10.17	40022	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947135.766202	violation	protocol	LDAP_TCP	CjqcJB1BUxdi7gPOyj	-	192.168.10.25	55123	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.766278	violation	protocol	LDAP_TCP	CN5Mxy22QcwHtMVvoi	-	192.168.10.25	55124	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947135.823563	violation	protocol	LDAP_TCP	CI5Cyg3gDqQFy7MPI9	-	192.168.10.50	54064	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947135.823625	violation	protocol	LDAP_TCP	CtT5Za2gdJ5xUvTG2d	-	192.168.10.50	53058	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947135.823952	violation	protocol	LDAP_TCP	CGTMB33EzGA2jpWlfk	-	192.168.10.50	54070	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947135.842531	violation	protocol	LDAP_TCP	CTDy9949zBMlXMCUSk	-	192.168.10.25	55169	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947135.842578	violation	protocol	LDAP_TCP	C7WVDn1HzdiFT5f08i	-	192.168.10.25	55170	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947136.128734	violation	protocol	LDAP_TCP	Cqditd4uL4iKGSA7m4	-	192.168.10.25	55976	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947136.653726	violation	protocol	LDAP_TCP	CSaL45hd0RDtOG25j	-	192.168.10.16	39776	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947136.653747	violation	protocol	LDAP_TCP	CxgXAo1evgowN0Sl	-	192.168.10.16	39872	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947136.760854	violation	protocol	LDAP_TCP	CWsJBR2V6HLtQXWWu7	-	192.168.10.50	54104	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947136.760908	violation	protocol	LDAP_TCP	CGNvxCKHBqRQWOF1j	-	192.168.10.50	53098	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947136.760933	violation	protocol	LDAP_TCP	CvqjOi3NL6754i5zsj	-	192.168.10.50	54108	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947136.761300	violation	protocol	LDAP_TCP	Ci5xyGNKWv2ErLaj9	-	192.168.10.50	54112	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947137.213106	violation	protocol	LDAP_TCP	C7tENx22SyjFe4znbl	-	192.168.10.25	57083	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947137.213164	violation	protocol	LDAP_TCP	CfRRt74qxqNrxK03Cb	-	192.168.10.25	57084	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947137.255400	violation	protocol	SSH	C4nFeI1KMVFTZOjcH3	-	172.16.0.1	46590	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947137.312400	violation	protocol	SSH	CXUKocOSfPXy2sDc5	-	172.16.0.1	46758	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947137.312443	violation	protocol	SSH	CECPPf45b0k20uTBAk	-	172.16.0.1	46758	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947137.508368	violation	protocol	LDAP_TCP	C1EcCp3ejFhnCvd05a	-	192.168.10.25	58317	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947137.508519	violation	protocol	LDAP_TCP	CDgykk4FMiZq1InF3a	-	192.168.10.25	58319	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947137.704753	violation	protocol	SSH	Ct4o9YqoALgBdzuhf	-	172.16.0.1	47556	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947137.704763	violation	protocol	SSH	Cf0DpMhIWeKYiJoQ8	-	172.16.0.1	47556	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947137.796995	violation	protocol	SSH	CUSADQ36C5gs3ZSXyb	-	172.16.0.1	47726	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947137.834391	violation	protocol	SSH	CaRITK2ecQ5bNBSwcg	-	172.16.0.1	47788	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947137.943667	violation	protocol	LDAP_TCP	CoEVWQ2HPiJVJ2fzic	-	192.168.10.25	59257	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947138.097919	violation	protocol	LDAP_TCP	C6abw91LRuOj3vaWrh	-	192.168.10.25	59430	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947138.175100	violation	protocol	LDAP_TCP	CZxpIe4jvlN5U3RQBc	-	192.168.10.25	59702	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947138.294588	violation	protocol	LDAP_TCP	CrYYbM115r8TyIP4X8	-	192.168.10.25	59849	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947138.655942	violation	protocol	SSH	CttyfL2ZGCO7SJGt1a	-	172.16.0.1	50070	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947138.655971	violation	protocol	SSH	CttyfL2ZGCO7SJGt1a	-	172.16.0.1	50070	192.168.10.50	22	Binpac exception: binpac exception: out_of_bound: ssh_string:val: -1569232918 > 244	-
+1738947138.715980	violation	protocol	LDAP_TCP	CBwZO01fhD707mlOqd	-	192.168.10.25	60623	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947138.821780	violation	protocol	LDAP_TCP	CrWDGD28rjmRvamOC3	-	192.168.10.25	61216	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947138.825696	violation	protocol	LDAP_TCP	CWZfnn11Go6E6XkZji	-	192.168.10.19	45500	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947138.826007	violation	protocol	LDAP_TCP	ClpqUBlfDwYuINGEb	-	192.168.10.19	42169	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/ldap.spicy:148:24-151:1)	-
+1738947138.857979	violation	protocol	LDAP_TCP	CUoI9x11jOqpKAhB49	-	192.168.10.50	54186	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947138.968120	violation	protocol	SSH	C1190Zjq0VjwErajg	-	172.16.0.1	51190	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947138.968133	violation	protocol	SSH	C1190Zjq0VjwErajg	-	172.16.0.1	51190	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947138.995180	violation	protocol	LDAP_TCP	Cq766v2KlosHLYaWm9	-	192.168.10.25	61432	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947138.995228	violation	protocol	LDAP_TCP	CVOn9i423JrtDS26Ti	-	192.168.10.25	61433	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947139.108947	violation	protocol	SSH	CJwzRZ1NzYg71bXkp5	-	172.16.0.1	51744	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947139.108947	violation	protocol	SSH	CJwzRZ1NzYg71bXkp5	-	172.16.0.1	51744	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947139.108960	violation	protocol	SSH	CJwzRZ1NzYg71bXkp5	-	172.16.0.1	51744	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947139.108960	violation	protocol	SSH	CJwzRZ1NzYg71bXkp5	-	172.16.0.1	51744	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947139.108960	violation	protocol	SSH	CJwzRZ1NzYg71bXkp5	-	172.16.0.1	51744	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947139.108964	violation	protocol	SSH	CJwzRZ1NzYg71bXkp5	-	172.16.0.1	51744	192.168.10.50	22	Binpac exception: binpac exception: out_of_bound: ssh_string:val: -1835388427 > 30	-
+1738947139.249481	violation	protocol	SSH	C10ufF162275WC28N1	-	192.168.10.19	52301	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947139.674860	violation	protocol	LDAP_TCP	C2AJaoiD8MkBboJCa	-	192.168.10.25	63129	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947139.674951	violation	protocol	LDAP_TCP	CYIoRB1NtaXXbXaEoh	-	192.168.10.25	63130	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947139.732582	violation	protocol	LDAP_TCP	CV118R4M1HBgwFlTl	-	192.168.10.25	63136	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947139.732647	violation	protocol	LDAP_TCP	CkIBtC2AZi37aJpsVb	-	192.168.10.25	63137	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947139.796832	violation	protocol	LDAP_TCP	C6PvqA3kYrJ2xuYS19	-	192.168.10.25	63142	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947139.796879	violation	protocol	LDAP_TCP	CKxbkw2eljFOUKgfVa	-	192.168.10.25	63143	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947139.892308	violation	protocol	LDAP_TCP	CVKhD81nzpRlKUz89f	-	192.168.10.25	63171	192.168.10.3	3268	&size amount not consumed: expected 1 bytes, but got 0 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:46-211:63)	-
+1738947139.892312	violation	protocol	LDAP_TCP	CKrvI92jtGeOqT88i3	-	192.168.10.25	63172	192.168.10.3	389	&size amount not consumed: expected 23 bytes, but got 21 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:16-115:26)	-
+1738947140.066264	violation	protocol	LDAP_TCP	Cl73i92P13sBJSwOSf	-	192.168.10.25	63199	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947140.066346	violation	protocol	LDAP_TCP	CkL4gWWqp5VRc8SB8	-	192.168.10.25	63200	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947140.322590	violation	protocol	LDAP_TCP	CUpGDlXPYinE6CdD5	-	192.168.10.25	63259	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947140.322651	violation	protocol	LDAP_TCP	C89ysl3wc7tE7Wrcel	-	192.168.10.25	63260	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947140.370518	violation	protocol	LDAP_TCP	CEbcb73hGGYuDvLmTg	-	192.168.10.16	44584	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947140.370550	violation	protocol	LDAP_TCP	CtNzWh17LX3en1C31g	-	192.168.10.16	44680	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947140.481951	violation	protocol	LDAP_TCP	CtAfiX3WRdZOblmXZj	-	192.168.10.8	56354	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947140.482064	violation	protocol	LDAP_TCP	CR11OU1G0wwlPJ6CId	-	192.168.10.8	56355	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947141.298247	violation	protocol	LDAP_TCP	CKxU2S37aNKjAgU79b	-	192.168.10.50	54282	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947141.298316	violation	protocol	LDAP_TCP	CLeDSA2Dm71lGyp1c8	-	192.168.10.50	53276	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947141.298697	violation	protocol	LDAP_TCP	CpDSEa2N7p1zn6L6ai	-	192.168.10.50	54290	192.168.10.3	389	&size amount not consumed: expected 23 bytes, but got 15 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:16-115:26)	-
+1738947141.448606	violation	protocol	LDAP_TCP	CatOUk16da9CkPkWQl	-	192.168.10.25	64159	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947141.448658	violation	protocol	LDAP_TCP	CGJFWHMGtObk2aty1	-	192.168.10.25	64160	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947141.587100	violation	protocol	LDAP_TCP	C0fIhe20VZVSx9q0x2	-	192.168.10.17	38136	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947141.587145	violation	protocol	LDAP_TCP	CWwEdqc3G4cvQLRgd	-	192.168.10.17	43049	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947141.600890	violation	protocol	LDAP_TCP	CXl3Ch3NtPsAAcSS3i	-	192.168.10.25	64292	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947141.600926	violation	protocol	LDAP_TCP	CqHZwj2bKtPBagL4P7	-	192.168.10.25	64293	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947141.723742	violation	protocol	LDAP_TCP	CTfU3b2kxCxtpC4ctf	-	192.168.10.50	54294	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947141.723812	violation	protocol	LDAP_TCP	CTYe6X3rSo0ouKCZH7	-	192.168.10.50	53288	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947141.723846	violation	protocol	LDAP_TCP	CXwjz74EGDzJVyQsD	-	192.168.10.50	54298	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947141.724186	violation	protocol	LDAP_TCP	CqF99d38OPQDB8WTQe	-	192.168.10.50	54302	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947141.798190	violation	protocol	LDAP_TCP	CEq0I51eITviS7u4bk	-	192.168.10.14	62700	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947141.798556	violation	protocol	LDAP_TCP	CAE8Qh3EHv42l4QkAd	-	192.168.10.14	62701	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947141.818411	violation	protocol	LDAP_TCP	CMhefF4b9xEErBopV5	-	192.168.10.25	64457	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947141.818469	violation	protocol	LDAP_TCP	CqIUCn2VN3kHqVoh3	-	192.168.10.25	64458	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947141.905269	violation	protocol	LDAP_TCP	CWNYcU3QPBhQh20ZHj	-	192.168.10.25	49157	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947141.905431	violation	protocol	LDAP_TCP	Ch9iElbLA3MHW6Ade	-	192.168.10.25	49158	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947145.304227	violation	protocol	LDAP_TCP	Cr5SYi1LkB0UIukhLh	-	192.168.10.19	48327	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947151.492410	violation	protocol	LDAP_TCP	C9Sk3G38z2HvABZ3vk	-	192.168.10.25	49810	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947153.061522	violation	protocol	LDAP_TCP	CDpIAh21oIl5Tc6i9e	-	192.168.10.25	49832	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947153.061607	violation	protocol	LDAP_TCP	CO71ci3oXx03Zx31Ik	-	192.168.10.25	49833	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.174950	violation	protocol	LDAP_TCP	CjLyTd2SVTM0sv7OKe	-	192.168.10.25	49852	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947153.175001	violation	protocol	LDAP_TCP	Cj0ToH11UboxEIaLpd	-	192.168.10.25	49853	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947153.186072	violation	protocol	LDAP_TCP	CvzSJ019uJ9UGcH1Oe	-	192.168.10.50	54638	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.186140	violation	protocol	LDAP_TCP	C0lk6l1bkXRIW1Ulxj	-	192.168.10.50	53632	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947153.186170	violation	protocol	LDAP_TCP	C3wakn4G0dyU4Yd9Yg	-	192.168.10.50	54642	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.186532	violation	protocol	LDAP_TCP	CS1r0v3gdHTDdGJVh4	-	192.168.10.50	54646	192.168.10.3	389	&size amount not consumed: expected 23 bytes, but got 15 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:16-115:26)	-
+1738947153.216460	violation	protocol	SSH	CMsPvF1CLIyfRQz2Hi	-	192.168.10.5	50260	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947153.216478	violation	protocol	SSH	CMsPvF1CLIyfRQz2Hi	-	192.168.10.5	50260	192.168.10.50	22	Binpac exception: binpac exception: out_of_bound: ssh_string:val: 807815603 > 244	-
+1738947153.217611	violation	protocol	LDAP_TCP	CVnKoH3K9cAZLvzVKh	-	192.168.10.9	15231	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.217685	violation	protocol	LDAP_TCP	C1cfBw4w4Nrr8hRrtl	-	192.168.10.9	15232	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947153.226984	violation	protocol	LDAP_TCP	Cjtxlq3NkSoQkKXVfb	-	192.168.10.25	49857	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.227056	violation	protocol	LDAP_TCP	CcHCx41COFSfL0Hpu3	-	192.168.10.25	49858	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947153.336641	violation	protocol	LDAP_TCP	CvsDna4hmKfxrQp9Bi	-	192.168.10.25	49950	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.336691	violation	protocol	LDAP_TCP	C1NayB4I6x2Fltl4	-	192.168.10.25	49951	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.428406	violation	protocol	LDAP_TCP	Cu34a0245hVvdZCYI1	-	192.168.10.25	49973	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947153.428474	violation	protocol	LDAP_TCP	Ca9qln3kmeujw8MaP4	-	192.168.10.25	49974	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.449219	violation	protocol	LDAP_TCP	C1qzmw5AtuXbawOrh	-	192.168.10.25	49976	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.449273	violation	protocol	LDAP_TCP	CpNfUGsSb3RsrgFgk	-	192.168.10.25	49977	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.496573	violation	protocol	LDAP_TCP	CPeFkj1QLgZNuEFRya	-	192.168.10.12	45882	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.496625	violation	protocol	LDAP_TCP	CsPqJwNxW7YEf27Fl	-	192.168.10.12	45884	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.496688	violation	protocol	LDAP_TCP	C8iEhl4O8tzwFgFSp6	-	192.168.10.12	45886	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.496705	violation	protocol	LDAP_TCP	CLkgY44z9NSeHLMyPj	-	192.168.10.12	33492	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.519598	violation	protocol	LDAP_TCP	CgP0uY221vnOIvpAE7	-	192.168.10.50	54680	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.519664	violation	protocol	LDAP_TCP	CyT50m4ezRVTNjcpH7	-	192.168.10.50	53674	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.519693	violation	protocol	LDAP_TCP	CFvwuO2TLIM7f4Ihxh	-	192.168.10.50	54684	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.520065	violation	protocol	LDAP_TCP	CsYjCb4HD4cxBMUjR4	-	192.168.10.50	54688	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.523520	violation	protocol	LDAP_TCP	CVLQQG2bJtZpIsEK2b	-	192.168.10.25	50145	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.523604	violation	protocol	LDAP_TCP	CjQ0x6YEXPKTkBXec	-	192.168.10.25	50146	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.558466	violation	protocol	LDAP_TCP	CNJgSa4HYeL7DvR8Sj	-	192.168.10.25	50188	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947153.558522	violation	protocol	LDAP_TCP	CIpJzC42OnYkOZTyFl	-	192.168.10.25	50189	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.577739	violation	protocol	LDAP_TCP	CPFRcE21J2zADhFsPk	-	192.168.10.16	55484	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.577816	violation	protocol	LDAP_TCP	C7oZ9c4IBUTiBk4Uf	-	192.168.10.16	55486	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.577863	violation	protocol	LDAP_TCP	CaQn183CshPwYL9Vdb	-	192.168.10.16	55488	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947153.577894	violation	protocol	LDAP_TCP	CG7FI72tIVv5d43G6c	-	192.168.10.16	36566	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947153.597208	violation	protocol	LDAP_TCP	CQuXAD3JUy7px0VEal	-	192.168.10.25	50203	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947153.597287	violation	protocol	LDAP_TCP	C7LDpY1eThbPEVedZ3	-	192.168.10.25	50204	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947153.747391	violation	protocol	LDAP_TCP	CHFUhH2XJu4r58GDF6	-	192.168.10.19	49108	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947153.747399	violation	protocol	LDAP_TCP	CqL8hp4UWaV5HUy1b8	-	192.168.10.19	43277	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/ldap.spicy:148:24-151:1)	-
+1738947154.793000	violation	protocol	LDAP_TCP	CO8fBB4Qg2OfSaBICa	-	192.168.10.25	50653	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947154.793053	violation	protocol	LDAP_TCP	C9Kjtk2jK9uSQxr83	-	192.168.10.25	50654	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947154.911174	violation	protocol	LDAP_TCP	CWY6wa9ubFgz5DfIc	-	192.168.10.25	50677	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947154.911226	violation	protocol	LDAP_TCP	CVYJ1qT7Kk8AwWOb7	-	192.168.10.25	50678	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947156.303664	violation	protocol	LDAP_TCP	Cubzgz4rSSBzlsJLmb	-	192.168.10.25	50740	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947156.303739	violation	protocol	LDAP_TCP	CRG2Sg24d1qBktbmri	-	192.168.10.25	50741	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947162.459627	violation	protocol	LDAP_TCP	CBGwnV38vl1QABEMX8	-	192.168.10.50	33076	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947162.461051	violation	protocol	LDAP_TCP	CXhEvcheGLtfSO0o	-	192.168.10.50	33118	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947162.461114	violation	protocol	LDAP_TCP	CD0TnC2XQ1YNmYfYu4	-	192.168.10.50	60344	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947162.573734	violation	protocol	LDAP_TCP	C2P4Vm22g41XD68Jwl	-	192.168.10.25	51102	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947162.573809	violation	protocol	LDAP_TCP	CikBOf4siRERyA5SCg	-	192.168.10.25	51103	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947162.765573	violation	protocol	LDAP_TCP	CqPCPh2WkOpgIDSBG5	-	192.168.10.25	51176	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947162.765683	violation	protocol	LDAP_TCP	CLUV3U2x0axsbp6rlf	-	192.168.10.25	51177	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947162.896339	violation	protocol	LDAP_TCP	CNIEnV3A6fkyXXE441	-	192.168.10.50	33136	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947163.483942	violation	protocol	LDAP_TCP	Cn39dm2VNO4gMCThja	-	192.168.10.15	55887	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947163.484019	violation	protocol	LDAP_TCP	CuU7fT2uiJgDNKuUL6	-	192.168.10.15	55888	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947163.673494	violation	protocol	LDAP_TCP	C40F17gV5DI6VLHF9	-	192.168.10.16	33654	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947163.673540	violation	protocol	LDAP_TCP	C2UKbu1SKYQotp4Ug9	-	192.168.10.16	33656	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947163.673615	violation	protocol	LDAP_TCP	C4kyz54x050FF3F4x9	-	192.168.10.16	42968	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947163.673618	violation	protocol	LDAP_TCP	CcvPRa2O1TBZ8Uix93	-	192.168.10.16	33658	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/ldap.spicy:148:24-151:1)	-
+1738947163.674629	violation	protocol	LDAP_TCP	C23aQH2ZypEJKFvtI8	-	192.168.10.50	60390	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947163.816270	violation	protocol	LDAP_TCP	CdFl2P2RbbWrIc8NC8	-	192.168.10.50	33184	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947163.892863	violation	protocol	LDAP_TCP	CpDIp6fL9wWllNk17	-	192.168.10.25	51987	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947163.892965	violation	protocol	LDAP_TCP	CFc54T07VtUqqWf3l	-	192.168.10.25	51988	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947164.418912	violation	protocol	LDAP_TCP	C7tq5i1s92SyV3hfB	-	192.168.10.12	57096	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947164.418996	violation	protocol	LDAP_TCP	CQOMaw3n6zq0l6BTyf	-	192.168.10.12	57098	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947164.419006	violation	protocol	LDAP_TCP	CzXeElheh8tjOjHBl	-	192.168.10.12	44704	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947164.627179	violation	protocol	LDAP_TCP	CZH68c3KCawnFFVZif	-	192.168.10.50	33216	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947164.691713	violation	protocol	LDAP_TCP	CiTriD4QOYZb5qwzU9	-	192.168.10.19	52537	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947164.691834	violation	protocol	LDAP_TCP	CzKlWIy0rHTLTTIB8	-	192.168.10.19	52539	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947164.691837	violation	protocol	LDAP_TCP	Ch6ife4O6FEiDs4PE9	-	192.168.10.19	46708	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/ldap.spicy:148:24-151:1)	-
+1738947164.749271	violation	protocol	LDAP_TCP	CxLC3g2rr9RPpd73Mh	-	192.168.10.14	54778	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947164.749321	violation	protocol	LDAP_TCP	CIJjLNwnQJ4X4GcD	-	192.168.10.14	54779	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947165.527236	violation	protocol	LDAP_TCP	C8Kz8H35YRCT4x2Iy7	-	192.168.10.9	19918	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947166.779871	violation	protocol	SSH	CJeiPh18eKe2GaVWx3	-	192.168.10.15	56939	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947166.779871	violation	protocol	SSH	CJeiPh18eKe2GaVWx3	-	192.168.10.15	56939	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947167.910587	violation	protocol	LDAP_TCP	CXErQp21mlDBlpU2Z6	-	192.168.10.25	53183	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947167.910645	violation	protocol	LDAP_TCP	Chtqxm4GrxJ8ROvNt1	-	192.168.10.25	53184	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947168.093606	violation	protocol	LDAP_TCP	CUOpbm2R2WO8DbEXi2	-	192.168.10.17	36604	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947168.093634	violation	protocol	LDAP_TCP	CTJk9j199adGbLjvL9	-	192.168.10.17	48779	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947168.255376	violation	protocol	LDAP_TCP	CBuuRT14VQ17GdtiJd	-	192.168.10.25	53319	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947168.255537	violation	protocol	LDAP_TCP	CGod01YRFw4aAb9sj	-	192.168.10.25	53320	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947168.512195	violation	protocol	LDAP_TCP	CQHIoK1sCH87DrT7Dc	-	192.168.10.50	33360	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947168.562871	violation	protocol	LDAP_TCP	CqEhNpbanumkJ6RKk	-	192.168.10.25	53387	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947169.019394	violation	protocol	LDAP_TCP	COdSv5nniZCHgMjTj	-	192.168.10.9	23128	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947169.019434	violation	protocol	LDAP_TCP	CmkgsB4aqPkW6EKGM	-	192.168.10.9	23129	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947169.502231	violation	protocol	LDAP_TCP	CJlU0h3JdOwuSAhgxb	-	192.168.10.15	57752	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947169.502811	violation	protocol	LDAP_TCP	C6fsEq9hjQIvdxRlb	-	192.168.10.15	57753	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947169.788616	violation	protocol	LDAP_TCP	C98Hs02kpKqtXSTvff	-	192.168.10.25	53808	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947169.788672	violation	protocol	LDAP_TCP	C9CFMQChK0x93BAog	-	192.168.10.25	53809	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947169.874757	violation	protocol	LDAP_TCP	CmQwOJ16fFYAphJ801	-	192.168.10.14	58633	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947169.874812	violation	protocol	LDAP_TCP	CJ2wXC3rsUx9YtFM36	-	192.168.10.14	58634	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947169.944657	violation	protocol	LDAP_TCP	Cyrfm23Zp8Q9sgIm06	-	192.168.10.25	53981	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947169.944722	violation	protocol	LDAP_TCP	CaIUZ32xAzaBUYFlg	-	192.168.10.25	53982	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947169.998260	violation	protocol	LDAP_TCP	CA8E9T3Pnpkgmsahz3	-	192.168.10.5	49173	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947169.998409	violation	protocol	LDAP_TCP	C1zsLdMlqZULWCA4	-	192.168.10.5	49175	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947170.058835	violation	protocol	LDAP_TCP	Cc2ayQ3489vi3Zxcjj	-	192.168.10.17	36927	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947170.058894	violation	protocol	LDAP_TCP	CnR1jY2dzB2oMWifh6	-	192.168.10.17	36928	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947170.059182	violation	protocol	LDAP_TCP	CyIjYM1bU5K5e3upGb	-	192.168.10.17	36930	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947170.060032	violation	protocol	LDAP_TCP	ChVsqf4lYTlf1rRBd	-	192.168.10.17	36936	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947170.100453	violation	protocol	LDAP_TCP	CsW2SG13S91ccEhtEf	-	192.168.10.25	49160	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947170.100535	violation	protocol	LDAP_TCP	CQ3j2m2kRjsRnM4FNe	-	192.168.10.25	49161	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947170.102290	violation	protocol	LDAP_TCP	CzFqQh1Pjmy7Lar0Ea	-	192.168.10.8	49192	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/ldap.spicy:271:8-271:13)	-
+1738947170.102320	violation	protocol	LDAP_TCP	Cj8apP3JHOiVgtB5y7	-	192.168.10.8	49194	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947176.511937	violation	protocol	LDAP_TCP	CPXE7f1kkRlkKUZd25	-	192.168.10.25	49550	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947176.511998	violation	protocol	LDAP_TCP	C74v7Y1EM4f0eBLu8	-	192.168.10.25	49551	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947177.310012	violation	protocol	LDAP_TCP	CarpbdupVjKzS3rqd	-	192.168.10.25	49555	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947177.310072	violation	protocol	LDAP_TCP	Cd1bX43ffpC0e2wVKd	-	192.168.10.25	49556	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947177.817687	violation	protocol	LDAP_TCP	CJNtDw396NZFURBZyc	-	192.168.10.25	49664	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947177.817752	violation	protocol	LDAP_TCP	COkx2WxcYPVYv3DT4	-	192.168.10.25	49665	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947177.852355	violation	protocol	LDAP_TCP	CwuWyQ1RAY5WnZKJX6	-	192.168.10.19	34115	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947177.852382	violation	protocol	LDAP_TCP	CUFIGjJ7nPTphPbL3	-	192.168.10.19	46083	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947177.862602	violation	protocol	LDAP_TCP	Cd2KvH2CVpETLGG6pl	-	192.168.10.25	49669	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947177.862680	violation	protocol	LDAP_TCP	CyGVeR1RVdaWGEhSY4	-	192.168.10.25	49670	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947177.923062	violation	protocol	LDAP_TCP	C3iTPA32bgANB1WSf	-	192.168.10.25	49778	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947177.923129	violation	protocol	LDAP_TCP	CrEbKz2F8j9TfpItz3	-	192.168.10.25	49779	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947178.003518	violation	protocol	LDAP_TCP	CsKnWp3PeBOigv1Ut6	-	192.168.10.16	60400	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947178.003610	violation	protocol	LDAP_TCP	CWDylc3ZCGhPIH3Vf5	-	192.168.10.16	60402	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947178.003619	violation	protocol	LDAP_TCP	CnmRmg2lOyGB0QteU9	-	192.168.10.16	36574	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/ldap.spicy:148:24-151:1)	-
+1738947178.012532	violation	protocol	LDAP_TCP	CNPud42VRplUdwWnE1	-	192.168.10.25	49782	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947178.012598	violation	protocol	LDAP_TCP	Cqla5g2N3OuF9GRO7b	-	192.168.10.25	49783	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947178.244458	violation	protocol	LDAP_TCP	CWwHhE3dbTKQ1y4WTb	-	192.168.10.25	49974	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947178.244527	violation	protocol	LDAP_TCP	CxanFB4heRcZXTmRk	-	192.168.10.25	49975	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947178.793258	violation	protocol	LDAP_TCP	C62PWr1LwZnNzdoiS9	-	192.168.10.15	53744	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947178.793315	violation	protocol	LDAP_TCP	CKjm5nsIafUzMmKX7	-	192.168.10.15	53745	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947178.878513	violation	protocol	LDAP_TCP	Cbe8pH2vXOaxqIznCg	-	192.168.10.25	50156	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947178.878613	violation	protocol	LDAP_TCP	ChmtcW3UEct4AzVLri	-	192.168.10.25	50157	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947178.909806	violation	protocol	LDAP_TCP	CSCmDq1K9OY8GPuRzi	-	192.168.10.5	51032	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947178.909860	violation	protocol	LDAP_TCP	C0nUPRxUsiGybdX7j	-	192.168.10.5	51033	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947179.091065	violation	protocol	LDAP_TCP	CmGCTj4MAqqsb2PO19	-	192.168.10.9	2936	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947179.091090	violation	protocol	LDAP_TCP	Ca18Ai18VJW5uaUsj5	-	192.168.10.9	2937	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947179.099135	violation	protocol	LDAP_TCP	C3ZQwSeLJ1YavDvfj	-	192.168.10.19	34655	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947179.099149	violation	protocol	LDAP_TCP	CZ0MZT3xtT8jEwyLFk	-	192.168.10.19	46623	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947179.206591	violation	protocol	LDAP_TCP	CjqL2425ba6K0umqFf	-	192.168.10.25	50178	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947179.206653	violation	protocol	LDAP_TCP	CoRUYV2xiPUKxGDLyl	-	192.168.10.25	50179	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947179.210572	violation	protocol	LDAP_TCP	CInxhs2PD5oeoiv157	-	192.168.10.16	33566	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947179.210595	violation	protocol	LDAP_TCP	CD6OKdvCHGikW1wwa	-	192.168.10.16	33568	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947179.210665	violation	protocol	LDAP_TCP	C9z9XR1bYXzApiHGR6	-	192.168.10.16	33570	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947179.210705	violation	protocol	LDAP_TCP	CqgeJF1w7BYJFISbdc	-	192.168.10.16	37974	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947179.216392	violation	protocol	LDAP_TCP	CmpS1b1S4oDVo7C8lf	-	192.168.10.25	50182	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947179.302638	violation	protocol	LDAP_TCP	CatjQH2kdzcnXPZYga	-	192.168.10.12	39062	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947179.302696	violation	protocol	LDAP_TCP	CPhbDT3PMxWdqI6hQc	-	192.168.10.12	39064	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947179.302769	violation	protocol	LDAP_TCP	CxJBCI2xkRKXifXqLg	-	192.168.10.12	39066	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947179.302773	violation	protocol	LDAP_TCP	CvNEqf2NZ4eSbnmnK4	-	192.168.10.12	38958	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947179.880735	violation	protocol	LDAP_TCP	CAG4Td33QCxLq04gbe	-	192.168.10.25	50484	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947179.880806	violation	protocol	LDAP_TCP	CqzZhp1EWKMFn3ntwe	-	192.168.10.25	50485	192.168.10.3	389	&size amount not consumed: expected 1 bytes, but got 0 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:46-211:63)	-
+1738947179.979508	violation	protocol	SSH	CwXcTH2BEn60ZfdYFb	-	192.168.10.51	46145	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947179.979508	violation	protocol	SSH	CwXcTH2BEn60ZfdYFb	-	192.168.10.51	46145	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947179.979524	violation	protocol	SSH	CwXcTH2BEn60ZfdYFb	-	192.168.10.51	46145	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947179.979525	violation	protocol	SSH	CwXcTH2BEn60ZfdYFb	-	192.168.10.51	46145	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947179.979537	violation	protocol	SSH	CwXcTH2BEn60ZfdYFb	-	192.168.10.51	46145	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947179.979537	violation	protocol	SSH	CwXcTH2BEn60ZfdYFb	-	192.168.10.51	46145	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947181.495220	violation	protocol	LDAP_TCP	CkrdNk18b6txDiTww6	-	192.168.10.12	40300	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947181.495320	violation	protocol	LDAP_TCP	CIxCQ91HUKNpFueuLa	-	192.168.10.12	40304	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947181.495354	violation	protocol	LDAP_TCP	C1lE2eRCMEMDCaqyc	-	192.168.10.12	40196	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947181.657583	violation	protocol	LDAP_TCP	CGaTLw21DMAkANVI6f	-	192.168.10.15	55238	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947181.657695	violation	protocol	LDAP_TCP	CDbKzS3qWVNbrK6lTe	-	192.168.10.15	55239	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947181.739485	violation	protocol	LDAP_TCP	CQssaxv75JFWTVkud	-	192.168.10.8	52254	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947181.739561	violation	protocol	LDAP_TCP	CByZHw4fhGpNI7kxL2	-	192.168.10.8	52255	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947181.789963	violation	protocol	LDAP_TCP	Cx6YSQ2dLHUmjpjJLk	-	192.168.10.5	53410	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947181.790011	violation	protocol	LDAP_TCP	Croohcd49en8plXFg	-	192.168.10.5	53411	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947181.795248	violation	protocol	SSH	CZHCmu1AbQtA41vcC3	-	192.168.10.15	55298	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947181.795249	violation	protocol	SSH	CZHCmu1AbQtA41vcC3	-	192.168.10.15	55298	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947181.856066	violation	protocol	LDAP_TCP	CePn2N2O93aTFBDzRl	-	192.168.10.19	48447	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947181.856066	violation	protocol	LDAP_TCP	CZFs2j4vmXmubZ736g	-	192.168.10.19	36479	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947181.865920	violation	protocol	SSH	CJun2B12v4QrdGOsak	-	192.168.10.14	63193	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947182.965882	violation	protocol	DNP3_UDP	Cr3QAJpp0i1GPa0ud	-	192.168.10.12	20826	192.168.10.3	53	broken_checksum	-
+1738947183.099003	violation	protocol	LDAP_TCP	CSFDCi2CrOY6QUCcbb	-	192.168.10.5	54265	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947183.099057	violation	protocol	LDAP_TCP	C6IXzt4ic28jjWphce	-	192.168.10.5	54266	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947183.104931	violation	protocol	LDAP_TCP	CCDT4N23Tn4arenRB7	-	192.168.10.25	51005	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947183.835970	violation	protocol	LDAP_TCP	CmdcDTaFglCxX0Hb1	-	192.168.10.9	6345	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947183.835993	violation	protocol	LDAP_TCP	Cj4hZ01fJ2Bu4AIz7b	-	192.168.10.9	6346	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947183.956767	violation	protocol	SSH	CbajOlPzdEnvWQIvg	-	192.168.10.8	53969	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947184.076998	violation	protocol	DNP3_UDP	Cobwtl3TH9bXv19Oj	-	192.168.10.5	65160	192.168.10.3	53	broken_checksum	-
+1738947184.571777	violation	protocol	LDAP_TCP	Cgo8FC24q5VLxkOyr7	-	192.168.10.25	51082	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947184.571829	violation	protocol	LDAP_TCP	ClFKdh4w9MwFkNDYU5	-	192.168.10.25	51083	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947184.821245	violation	protocol	LDAP_TCP	CqJGzl1NdG97EwK9Yk	-	192.168.10.25	51148	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947184.821320	violation	protocol	LDAP_TCP	CTPGsIx3TgWtppWqi	-	192.168.10.25	51149	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947185.717738	violation	protocol	LDAP_TCP	CpPo1c2XEp6WkRQ4g2	-	192.168.10.8	1058	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947185.839888	violation	protocol	LDAP_TCP	Cpjuzs4r2W8ssR3Ui7	-	192.168.10.25	52451	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947185.839992	violation	protocol	LDAP_TCP	ChEqOm1gbuVKdDyfjf	-	192.168.10.25	52452	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947186.135616	violation	protocol	LDAP_TCP	CQEscC2HjQODL1fiRg	-	192.168.10.25	53209	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947186.135672	violation	protocol	LDAP_TCP	CtUIVp4voQPdPHqdl9	-	192.168.10.25	53210	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947186.163815	violation	protocol	DCE_RPC	CrOVxJ3POAWIyFlZi4	-	192.168.10.8	1467	192.168.10.15	135	Binpac exception: binpac exception: &enforce violation : DCE_RPC_Header:rpc_vers	-
+1738947186.278414	violation	protocol	SSH	CZUY013dGdRzADT4v8	-	192.168.10.8	1526	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947186.278443	violation	protocol	SSH	CaeabajlEYwGALPWg	-	192.168.10.8	1532	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947186.312927	violation	protocol	DCE_RPC	Cx1kuX3n79Nz0UStC9	-	192.168.10.8	1661	192.168.10.5	135	Binpac exception: binpac exception: &enforce violation : DCE_RPC_Header:rpc_vers	-
+1738947186.374147	violation	protocol	DCE_RPC	C5rdaB4E8es3NK97qk	-	192.168.10.8	1732	192.168.10.9	135	Binpac exception: binpac exception: &enforce violation : DCE_RPC_Header:rpc_vers	-
+1738947186.374182	violation	protocol	HTTP	CGroMykzJNlaao6va	-	192.168.10.8	1733	192.168.10.9	139	not a http reply line	-
+1738947186.374185	violation	protocol	DCE_RPC	C4dyTp45oESyisOVC3	-	192.168.10.8	1735	192.168.10.9	1025	Binpac exception: binpac exception: &enforce violation : DCE_RPC_Header:rpc_vers	-
+1738947186.374194	violation	protocol	DCE_RPC	Ci0s9VzFjxhWXHnJk	-	192.168.10.8	1737	192.168.10.9	1027	Binpac exception: binpac exception: &enforce violation : DCE_RPC_Header:rpc_vers	-
+1738947186.374286	violation	protocol	DCE_RPC	CJCGgm3Uzx1s0qEew9	-	192.168.10.8	1741	192.168.10.9	135	Binpac exception: binpac exception: &enforce violation : DCE_RPC_Header:rpc_vers	-
+1738947186.811341	violation	protocol	DCE_RPC	CHUolf1TNSY6w9KJd7	-	192.168.10.8	2222	192.168.10.9	135	Binpac exception: binpac exception: &enforce violation : DCE_RPC_Header:rpc_vers	-
+1738947186.811386	violation	protocol	HTTP	CT7aO52aZ3Hj4vQCE4	-	192.168.10.8	2223	192.168.10.9	139	not a http reply line	-
+1738947186.811410	violation	protocol	DCE_RPC	CWh3cV1hM8sC50Ykbi	-	192.168.10.8	2225	192.168.10.9	1025	Binpac exception: binpac exception: &enforce violation : DCE_RPC_Header:rpc_vers	-
+1738947186.811426	violation	protocol	DCE_RPC	CSD6ZL2t9P5askuI55	-	192.168.10.8	2227	192.168.10.9	1027	Binpac exception: binpac exception: &enforce violation : DCE_RPC_Header:rpc_vers	-
+1738947186.811470	violation	protocol	DCE_RPC	Cc5Qk72DJsFmy9qqKc	-	192.168.10.8	2231	192.168.10.9	135	Binpac exception: binpac exception: &enforce violation : DCE_RPC_Header:rpc_vers	-
+1738947187.528166	violation	protocol	SSH	CbaLGl2LQ1laVHgsh4	-	192.168.10.8	3170	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947187.528203	violation	protocol	SSH	C5U6Jv1L26OAaG6Y1c	-	192.168.10.8	3178	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947187.779886	violation	protocol	LDAP_TCP	CfCOal23fCSNagyn6j	-	192.168.10.8	1065	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947187.779938	violation	protocol	LDAP_TCP	CAAutG4W4r3PcUosE7	-	192.168.10.8	1066	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947187.796084	violation	protocol	LDAP_TCP	CTATGd2whEPpTYmBE7	-	192.168.10.12	47312	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947187.796226	violation	protocol	LDAP_TCP	CR18xj30fWO6e8v8I7	-	192.168.10.12	47316	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947187.796236	violation	protocol	LDAP_TCP	C81v2d4YNdwhUEDOU1	-	192.168.10.12	47208	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947189.033586	violation	protocol	LDAP_TCP	CF1MN51ZRJJpGKy1M3	-	192.168.10.25	53722	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947189.033656	violation	protocol	LDAP_TCP	C65uF83KkxFXfqvYwg	-	192.168.10.25	53723	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947189.679211	violation	protocol	LDAP_TCP	Cv1QMU3ElrUwvaUXO7	-	192.168.10.25	49155	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947189.679219	violation	protocol	LDAP_TCP	CCb8Uf2aOBjFyZAm4e	-	192.168.10.25	49154	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947189.687304	violation	protocol	LDAP_TCP	Ciw6AQ3Tjh30bC4Dg1	-	192.168.10.17	51950	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947189.756015	violation	protocol	LDAP_TCP	C3Vmfv2uJV0V319YRl	-	192.168.10.17	51952	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/ldap.spicy:148:24-151:1)	-
+1738947189.756335	violation	protocol	LDAP_TCP	CtWZJh1KqEQGVEgbW1	-	192.168.10.5	49202	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947189.756387	violation	protocol	LDAP_TCP	C2J5os4qkjL0bZ26ba	-	192.168.10.5	49204	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947189.756773	violation	protocol	LDAP_TCP	C98sAxMa42IibSJ3i	-	192.168.10.5	49206	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947190.232225	violation	protocol	LDAP_TCP	Cjlyad2QjUVC5ywNo	-	192.168.10.25	49204	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947190.232300	violation	protocol	LDAP_TCP	Cnx9D511PfAznNNi1b	-	192.168.10.25	49205	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947190.235015	violation	protocol	LDAP_TCP	CLOMio1G2fYjpMiC4b	-	192.168.10.50	42166	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947190.235090	violation	protocol	LDAP_TCP	CBK61h2w4jAWmOZXFf	-	192.168.10.50	42168	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947190.240561	violation	protocol	LDAP_TCP	Cje02c32CFc4DW9d5	-	192.168.10.50	42172	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947190.240624	violation	protocol	LDAP_TCP	C1TpvJ3gcPrWF1zS99	-	192.168.10.50	56132	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947190.243972	violation	protocol	LDAP_TCP	CvtYFk35ymqzkltj9d	-	192.168.10.19	50483	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947190.244269	violation	protocol	LDAP_TCP	CjEM2k6UE3Pl4ebx4	-	192.168.10.19	50485	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947190.245064	violation	protocol	LDAP_TCP	Ca1wi04SI8PpOiUQDj	-	192.168.10.19	50489	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947190.245137	violation	protocol	LDAP_TCP	CUn3wz4t7rRrhofJyf	-	192.168.10.19	56831	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947190.533681	violation	protocol	LDAP_TCP	Cqkaih1zKa8JrQSLR	-	192.168.10.25	49273	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947190.533751	violation	protocol	LDAP_TCP	CP59Ud4CKUQoHw5NI9	-	192.168.10.25	49274	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947195.310785	violation	protocol	LDAP_TCP	CO2LtE2PaOVtK2F9Ud	-	192.168.10.25	49563	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947197.067011	violation	protocol	LDAP_TCP	CUa9a93BLpgzWYCXId	-	192.168.10.25	49566	192.168.10.3	3268	&size amount not consumed: expected 1 bytes, but got 0 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:46-211:63)	-
+1738947197.895273	violation	protocol	LDAP_TCP	CVL9Ek1Ol3ct7q8WRh	-	192.168.10.25	49636	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947197.895363	violation	protocol	LDAP_TCP	CD5XQU23PL7Cs5i9x4	-	192.168.10.25	49637	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947197.935922	violation	protocol	LDAP_TCP	ChjQxbkDXdp9oiAd9	-	192.168.10.25	49692	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947197.936016	violation	protocol	LDAP_TCP	CrdYcF1GuubWV6BfD1	-	192.168.10.25	49693	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947198.091216	violation	protocol	LDAP_TCP	C9DQe915skRxnG79il	-	192.168.10.25	49701	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947198.091278	violation	protocol	LDAP_TCP	CteSyMYFXwdoezmR8	-	192.168.10.25	49702	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947198.187046	violation	protocol	LDAP_TCP	C9alnX1fEK6XFMygz3	-	192.168.10.19	56984	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947198.187130	violation	protocol	LDAP_TCP	Ca9fJk4BLYgStOqSwb	-	192.168.10.19	50645	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947199.517998	violation	protocol	LDAP_TCP	Cz4ELu1RtTcaLOnC2d	-	192.168.10.25	49716	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947199.518151	violation	protocol	LDAP_TCP	C2XP5E4eZoeOjOpBhd	-	192.168.10.25	49717	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947199.536794	violation	protocol	SSH	CkLTl53hrAathUwmPf	-	192.168.10.8	1610	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947199.536814	violation	protocol	SSH	CkLTl53hrAathUwmPf	-	192.168.10.8	1610	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947199.536839	violation	protocol	SSH	CkLTl53hrAathUwmPf	-	192.168.10.8	1610	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947199.536850	violation	protocol	SSH	CkLTl53hrAathUwmPf	-	192.168.10.8	1610	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947199.537059	violation	protocol	SSH	CkLTl53hrAathUwmPf	-	192.168.10.8	1610	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947199.537060	violation	protocol	SSH	CkLTl53hrAathUwmPf	-	192.168.10.8	1610	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947199.952871	violation	protocol	LDAP_TCP	C9fnML1XC5eL2mFyvc	-	192.168.10.25	49988	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947199.952951	violation	protocol	LDAP_TCP	Cv5xyn3nKJE4Xhppjb	-	192.168.10.25	49989	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947199.974808	violation	protocol	LDAP_TCP	CyMNPb44xggKMfmgSd	-	192.168.10.25	49999	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947199.974877	violation	protocol	LDAP_TCP	CzVI1FyKT3GypunBd	-	192.168.10.25	50000	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947200.068544	violation	protocol	LDAP_TCP	CcsMm324uqEG4Y5o6k	-	192.168.10.25	50004	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947200.068611	violation	protocol	LDAP_TCP	CmgLOh3vkjsku0CvKg	-	192.168.10.25	50005	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947200.080175	violation	protocol	LDAP_TCP	CmKtgc4T848bxY8YM7	-	192.168.10.19	57320	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947200.080505	violation	protocol	LDAP_TCP	CEphvm3VtGgb1tbV75	-	192.168.10.19	50981	192.168.10.3	389	&size amount not consumed: expected 23 bytes, but got 15 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:16-115:26)	-
+1738947200.135755	violation	protocol	LDAP_TCP	CaJlYx2D5FImRSsVJh	-	192.168.10.16	38136	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947200.135850	violation	protocol	LDAP_TCP	C3fNhg4gTCbV4BWtHh	-	192.168.10.16	38140	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947200.135868	violation	protocol	LDAP_TCP	CPKdZ12YYR0iADl8fg	-	192.168.10.16	38138	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947200.135945	violation	protocol	LDAP_TCP	CnVB601cIiGbYT7xKe	-	192.168.10.16	51690	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947200.141533	violation	protocol	LDAP_TCP	CoKanIxR0oodyoTCg	-	192.168.10.50	42226	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947200.168332	violation	protocol	LDAP_TCP	C82AKY1MS1lTPbp4Rg	-	192.168.10.50	56190	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947200.171417	violation	protocol	LDAP_TCP	CdFadmFJ0ajTK36Mj	-	192.168.10.12	60034	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947200.171467	violation	protocol	LDAP_TCP	CvvQ3s3KZuCHgJJl3	-	192.168.10.12	60036	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947200.171497	violation	protocol	LDAP_TCP	CNUafD2fbZFtmebOte	-	192.168.10.12	47232	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947200.200567	violation	protocol	LDAP_TCP	CoPsUU2HkYP2jcC6Ui	-	192.168.10.17	52818	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947200.200615	violation	protocol	LDAP_TCP	CASMOs4UIL66gj6qti	-	192.168.10.17	46204	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947200.218578	violation	protocol	LDAP_TCP	CLMxno3p59gtiqrURc	-	192.168.10.25	50031	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947200.218677	violation	protocol	LDAP_TCP	CJIZZR3l45LIFGP9tk	-	192.168.10.25	50032	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947200.318934	violation	protocol	LDAP_TCP	CtR2J3TQcYiXZ3umb	-	192.168.10.25	50057	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947200.319011	violation	protocol	LDAP_TCP	C5kKge3slowof4UHod	-	192.168.10.25	50058	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947200.324237	violation	protocol	DNP3_UDP	CjEfrH18rjoAQsm6S	-	192.168.10.8	55131	192.168.10.3	53	broken_checksum	-
+1738947201.006570	violation	protocol	LDAP_TCP	CeBH3AF0rN0kyoNl2	-	192.168.10.25	50213	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947201.006640	violation	protocol	LDAP_TCP	CYAqZd4EBX7JKtA4ik	-	192.168.10.25	50214	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947202.526833	violation	protocol	LDAP_TCP	CtVyyH1Gitr2O6nNU1	-	192.168.10.5	53443	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947202.527031	violation	protocol	LDAP_TCP	CWR1v02knOS1MPSyR6	-	192.168.10.5	53444	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947202.659662	violation	protocol	LDAP_TCP	C6QOs51bc4o6uR3TZ9	-	192.168.10.25	51076	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947202.659724	violation	protocol	LDAP_TCP	CERduf4f1Z5lEHPeaj	-	192.168.10.25	51077	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947202.848247	violation	protocol	LDAP_TCP	CmQyGc10b76y29hOx7	-	192.168.10.15	52829	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947202.848322	violation	protocol	LDAP_TCP	CYBECz4X1rmRqYBPMf	-	192.168.10.15	52830	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947202.962822	violation	protocol	LDAP_TCP	Co97Ic1O3xNZZdUSMk	-	192.168.10.9	4209	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947202.962871	violation	protocol	LDAP_TCP	C6BC9u2TyspnJgkL92	-	192.168.10.9	4210	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947203.124838	violation	protocol	LDAP_TCP	CUey5s3mipy2TYaDQe	-	192.168.10.25	51132	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947203.124909	violation	protocol	LDAP_TCP	CMt5se12r9H1WfkKp	-	192.168.10.25	51133	192.168.10.3	389	&size amount not consumed: expected 1 bytes, but got 0 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:46-211:63)	-
+1738947203.184086	violation	protocol	LDAP_TCP	CTRU674a0V6fXXInAg	-	192.168.10.50	42278	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947203.184155	violation	protocol	LDAP_TCP	CJz5aX1lyDFkfpE5O	-	192.168.10.50	56238	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947203.442066	violation	protocol	LDAP_TCP	CwH9wD4mRcryXvct6	-	192.168.10.19	59460	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947203.442329	violation	protocol	LDAP_TCP	CieTIF2WVJrEiPe13	-	192.168.10.19	53121	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947204.195870	violation	protocol	LDAP_TCP	Cv0Yj81gwDdXr6mfc3	-	192.168.10.25	51802	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947204.195952	violation	protocol	LDAP_TCP	C7PsVb2sHfWGldfeM4	-	192.168.10.25	51803	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947205.326859	violation	protocol	LDAP_TCP	Cd7YaF1c7NvyxrVQ8b	-	192.168.10.14	53050	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947205.326912	violation	protocol	LDAP_TCP	CFuE0MhCYdKPN3Id8	-	192.168.10.14	53051	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947205.386683	violation	protocol	SSH	C3PwI1Y9N3pRcLYV	-	192.168.10.8	4949	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947205.448914	violation	protocol	SSH	Cwyw732IrKsDqdXmbi	-	192.168.10.9	6488	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947205.448930	violation	protocol	SSH	Cwyw732IrKsDqdXmbi	-	192.168.10.9	6488	192.168.10.50	22	Binpac exception: binpac exception: out_of_bound: ssh_string:val: 1021822105 > 244	-
+1738947205.448939	violation	protocol	SSH	Cwyw732IrKsDqdXmbi	-	192.168.10.9	6488	192.168.10.50	22	Binpac exception: binpac exception: out_of_bound: ssh_string:val: 1606094761 > 30	-
+1738947205.449162	violation	protocol	SSH	CYrFqI2OCnilUL1Mw6	-	192.168.10.9	6489	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947205.449176	violation	protocol	SSH	CYrFqI2OCnilUL1Mw6	-	192.168.10.9	6489	192.168.10.50	22	Binpac exception: binpac exception: out_of_bound: ssh_string:val: 1354008466 > 245	-
+1738947205.449186	violation	protocol	SSH	CYrFqI2OCnilUL1Mw6	-	192.168.10.9	6489	192.168.10.50	22	Binpac exception: binpac exception: out_of_bound: ssh_string:val: -1654826341 > 29	-
+1738947205.449199	violation	protocol	SSH	CYrFqI2OCnilUL1Mw6	-	192.168.10.9	6489	192.168.10.50	22	Binpac exception: binpac exception: out_of_bound: SSH2_Key_Exchange: -1689298125 > 0	-
+1738947205.449734	violation	protocol	SSH	CKOOXt4JokaCXGzy8	-	192.168.10.5	52375	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947205.449734	violation	protocol	SSH	CKOOXt4JokaCXGzy8	-	192.168.10.5	52375	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947205.449734	violation	protocol	SSH	CKOOXt4JokaCXGzy8	-	192.168.10.5	52375	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947205.449763	violation	protocol	SSH	CKOOXt4JokaCXGzy8	-	192.168.10.5	52375	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947205.449763	violation	protocol	SSH	CKOOXt4JokaCXGzy8	-	192.168.10.5	52375	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947205.449763	violation	protocol	SSH	CKOOXt4JokaCXGzy8	-	192.168.10.5	52375	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947205.461478	violation	protocol	LDAP_TCP	Cjjg2B4loAEepYhGdk	-	192.168.10.15	54025	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947205.461538	violation	protocol	LDAP_TCP	CKiZq7Vzw6yeFVNde	-	192.168.10.15	54026	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947205.571386	violation	protocol	LDAP_TCP	Cztnwb4RtbwrTLi195	-	192.168.10.50	42410	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947205.574006	violation	protocol	LDAP_TCP	Cgf8po3dBxzCcmOnD2	-	192.168.10.50	42414	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947205.574073	violation	protocol	LDAP_TCP	CMe7LfCZtnd0J9mRb	-	192.168.10.50	56374	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947205.629658	violation	protocol	LDAP_TCP	CnYpty3xPocey1k4s8	-	192.168.10.25	52408	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947205.629720	violation	protocol	LDAP_TCP	CRvR1818R2gDUGSMR8	-	192.168.10.25	52409	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947205.750632	violation	protocol	LDAP_TCP	CXEIa52QKK7k4ryHa5	-	192.168.10.25	52418	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947205.750709	violation	protocol	LDAP_TCP	CE5JMU325xvGQt2ha4	-	192.168.10.25	52419	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947205.890962	violation	protocol	LDAP_TCP	Cb2GWv2cwFZec1hrIk	-	192.168.10.5	52846	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:274:45-274:49)	-
+1738947205.891011	violation	protocol	LDAP_TCP	Cb5lcbOddMpYdVA15	-	192.168.10.5	52847	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947206.161708	violation	protocol	LDAP_TCP	CSHu0L1pFl6m2PJ64b	-	192.168.10.25	52725	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947206.161808	violation	protocol	LDAP_TCP	CIaOtd1mtNkxTRrLIg	-	192.168.10.25	52726	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947206.454238	violation	protocol	LDAP_TCP	CWOB9k4cUKjrFpSQZd	-	192.168.10.50	56398	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947207.425483	violation	protocol	HTTP	CZdr9wyLTVYM492lj	-	192.168.10.9	8000	54.195.255.91	443	not a http request line	-
+1738947207.425848	violation	protocol	HTTP	CZdr9wyLTVYM492lj	-	192.168.10.9	8000	54.195.255.91	443	not a http reply line	-
+1738947207.826742	violation	protocol	SSH	CHC5Hn12yjUzRESTEa	-	192.168.10.5	53759	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947207.826755	violation	protocol	SSH	CHC5Hn12yjUzRESTEa	-	192.168.10.5	53759	192.168.10.50	22	Binpac exception: binpac exception: out_of_bound: ssh_string:val: -177107839 > 245	-
+1738947207.826763	violation	protocol	SSH	CHC5Hn12yjUzRESTEa	-	192.168.10.5	53759	192.168.10.50	22	Binpac exception: binpac exception: out_of_bound: ssh_string:val: -66869929 > 29	-
+1738947208.020188	violation	protocol	LDAP_TCP	CXZQJHThhMzSu1hAc	-	192.168.10.50	42486	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947208.020262	violation	protocol	LDAP_TCP	CG2gcB3rd0uSvmhclj	-	192.168.10.50	56446	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947208.911224	violation	protocol	LDAP_TCP	ChlXPQ1ALzRbxsxuR9	-	192.168.10.50	42502	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947209.211816	violation	protocol	LDAP_TCP	Cpxlrf4YV6Pg2LnvAf	-	192.168.10.25	53099	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947209.215019	violation	protocol	SSH	CSZYfC1EC4FJgSMef9	-	192.168.10.8	8376	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947209.215021	violation	protocol	SSH	CykxUg4vvmvF7hF5V9	-	192.168.10.8	8376	192.168.10.50	22	Binpac exception: binpac exception: invalid index for case: SSH_Key_Exchange: 3	-
+1738947209.708405	violation	protocol	LDAP_TCP	CZX2GE0qxjzRGZjt7	-	192.168.10.25	53397	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947209.708480	violation	protocol	LDAP_TCP	CDIa9H2jE8aBVL3g8l	-	192.168.10.25	53398	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947210.037667	violation	protocol	LDAP_TCP	CbQkss4cXQv9cJC7ya	-	192.168.10.25	53463	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947210.037793	violation	protocol	LDAP_TCP	Cco91q1iTtUmqc1yBc	-	192.168.10.25	53464	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947210.224535	violation	protocol	LDAP_TCP	CX1juQ19y2QDvnzuMj	-	192.168.10.25	53476	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947210.224611	violation	protocol	LDAP_TCP	Cbnhzv1SkXFKQWdPXh	-	192.168.10.25	53477	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947211.046242	violation	protocol	LDAP_TCP	CEISTc2PfLJy3JkUo6	-	192.168.10.9	9485	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947214.603020	violation	protocol	LDAP_TCP	C3QaLs1EAs5GtRIqhi	-	192.168.10.25	53657	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947214.603114	violation	protocol	LDAP_TCP	CqQXsT2aTXubrihjTd	-	192.168.10.25	53658	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:211:40-211:44)	-
+1738947214.968156	violation	protocol	LDAP_TCP	CnnDSr1U4392dK9lsl	-	192.168.10.17	58661	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:10-115:14)	-
+1738947214.968159	violation	protocol	LDAP_TCP	CgFfaD3VZSeoIRAch5	-	192.168.10.17	52047	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/ldap.spicy:148:24-151:1)	-
+1738947215.110198	violation	protocol	LDAP_TCP	CiNqOglSQvHuftk2	-	192.168.10.50	42890	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947215.110273	violation	protocol	LDAP_TCP	ClaeEs1dm7y1GK5yWj	-	192.168.10.50	56850	192.168.10.3	3268	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947215.110329	violation	protocol	LDAP_TCP	Cdpi7U1NJKlibFPujc	-	192.168.10.50	42894	192.168.10.3	389	data is missing (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:91:4-95:3)	-
+1738947215.110750	violation	protocol	LDAP_TCP	CE5QKF4Nzy8WIsvEJk	-	192.168.10.50	42898	192.168.10.3	389	&size amount not consumed: expected 23 bytes, but got 15 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:16-115:26)	-
+1738947246.925382	violation	protocol	LDAP_TCP	CQyGuf1djUhOIgcDgj	-	192.168.10.25	50183	192.168.10.3	389	&size amount not consumed: expected 23 bytes, but got 21 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:16-115:26)	-
+1738947246.925382	violation	protocol	LDAP_TCP	CpS3BS1SFrHQtCCVik	-	192.168.10.17	59888	192.168.10.3	389	&size amount not consumed: expected 23 bytes, but got 15 bytes (/usr/src/packages/BUILD/src/analyzer/protocol/ldap/asn1.spicy:115:16-115:26)	-
+#close	2025-02-07-09-54-13
