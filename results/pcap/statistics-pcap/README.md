@@ -1,5 +1,88 @@
 # PCAP Stats
 
+# Full Days
+
+```sh
+mverkerk@node1:~/RustiFlow-experiments$ go run pcap_stat.go /data
+go: downloading github.com/google/gopacket v1.1.19
+Processing monday/monday
+.....................................................................................................................
+Protocol Summary:
+Protocol: Ethernet, Count: 54425, Size: 6187453 bytes
+Protocol: IPv4, Count: 1244, Size: 500290 bytes
+Protocol: IPv4/UDP, Count: 906779, Size: 141415360 bytes
+Protocol: IPv6/UDP, Count: 27403, Size: 4208446 bytes
+Protocol: IPv6, Count: 1651, Size: 138282 bytes
+Protocol: IPv4/TCP, Count: 10718469, Size: 10280645757 bytes
+
+Total Summary:
+Total Packets: 11709971
+Total Size: 10433095588 bytes
+
+Results have been written to /data/monday/monday_stat.csv
+Processing tuesday/tuesday
+...................................................................................................................
+Protocol Summary:
+Protocol: Ethernet, Count: 52666, Size: 6069561 bytes
+Protocol: IPv6/UDP, Count: 28261, Size: 4340440 bytes
+Protocol: IPv4/TCP, Count: 10710230, Size: 10562935807 bytes
+Protocol: IPv4/UDP, Count: 758490, Size: 89863416 bytes
+Protocol: IPv4, Count: 1016, Size: 485216 bytes
+Protocol: IPv6, Count: 1291, Size: 108590 bytes
+
+Total Summary:
+Total Packets: 11551954
+Total Size: 10663803030 bytes
+
+Results have been written to /data/tuesday/tuesday_stat.csv
+Processing wednesday/wednesday
+.........................................................................................................................................
+Protocol Summary:
+Protocol: Ethernet, Count: 56445, Size: 6343595 bytes
+Protocol: IPv4/TCP, Count: 12943316, Size: 12859138379 bytes
+Protocol: IPv6/UDP, Count: 26313, Size: 4206209 bytes
+Protocol: IPv4, Count: 814, Size: 392094 bytes
+Protocol: IPv4/UDP, Count: 761425, Size: 90664094 bytes
+Protocol: IPv6, Count: 565, Size: 48394 bytes
+
+Total Summary:
+Total Packets: 13788878
+Total Size: 12960792765 bytes
+
+Results have been written to /data/wednesday/wednesday_stat.csv
+Processing thursday/thursday
+.............................................................................................
+Protocol Summary:
+Protocol: Ethernet, Count: 53272, Size: 6114652 bytes
+Protocol: IPv4/TCP, Count: 8538148, Size: 7899789362 bytes
+Protocol: IPv4/UDP, Count: 700828, Size: 82096129 bytes
+Protocol: IPv6, Count: 2342, Size: 203244 bytes
+Protocol: IPv6/UDP, Count: 25688, Size: 4069236 bytes
+Protocol: IPv4, Count: 1747, Size: 361746 bytes
+
+Total Summary:
+Total Packets: 9322025
+Total Size: 7992634369 bytes
+
+Results have been written to /data/thursday/thursday_stat.csv
+Processing friday/friday
+...................................................................................................
+Protocol Summary:
+Protocol: IPv6/UDP, Count: 27493, Size: 4222670 bytes
+Protocol: IPv6, Count: 1014, Size: 85568 bytes
+Protocol: IPv4, Count: 1474, Size: 416613 bytes
+Protocol: IPv4/UDP, Count: 722417, Size: 85974508 bytes
+Protocol: IPv4/SCTP, Count: 62, Size: 4092 bytes
+Protocol: Ethernet, Count: 53687, Size: 6073236 bytes
+Protocol: IPv4/TCP, Count: 9191727, Size: 8410627397 bytes
+
+Total Summary:
+Total Packets: 9997874
+Total Size: 8507404084 bytes
+
+Results have been written to /data/friday/friday_stat.csv
+```
+
 ## Monday - Friday
 
 ```sh
