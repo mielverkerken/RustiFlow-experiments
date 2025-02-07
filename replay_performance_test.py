@@ -223,20 +223,23 @@ class Experiment:
 
                 # Try SIGINT first
                 print("Stopping exporter...")
-                self.proc.send_signal(signal.SIGINT)
-                try:
-                    # Wait up to 5 seconds for the process to terminate
-                    self.proc.wait(timeout=2)
-                except subprocess.TimeoutExpired:
-                    print("SIGINT failed, trying SIGTERM...")
-                    # If SIGINT didn't work, try SIGTERM
-                    self.proc.terminate()
+                if self.exporter == "argus":
+                    os.kill(self.proc.pid, signal.SIGTERM)
+                else:
+                    self.proc.send_signal(signal.SIGINT)
                     try:
+                        # Wait up to 5 seconds for the process to terminate
                         self.proc.wait(timeout=2)
                     except subprocess.TimeoutExpired:
-                        print("SIGTERM failed, using SIGKILL...")
-                        # If SIGTERM didn't work, use SIGKILL as last resort
-                        self.proc.kill()
+                        print("SIGINT failed, trying SIGTERM...")
+                        # If SIGINT didn't work, try SIGTERM
+                        self.proc.terminate()
+                        try:
+                            self.proc.wait(timeout=2)
+                        except subprocess.TimeoutExpired:
+                            print("SIGTERM failed, using SIGKILL...")
+                            # If SIGTERM didn't work, use SIGKILL as last resort
+                            self.proc.kill()
 
             print("Waiting for exporter to finish...")
 
