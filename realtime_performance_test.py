@@ -158,6 +158,7 @@ class Experiment:
                 serverip=self.serverip,
                 output_folder=self.folder,
             )
+            print(f"Starting iperf3 server: {server_cmd}...")
             server_proc = subprocess.Popen(
                 shlex.split(server_cmd),
                 stdout=subprocess.PIPE,
@@ -174,6 +175,7 @@ class Experiment:
                 duration=self.duration,
                 serverip=self.serverip,
             )
+            print(f"Starting iperf3 client: {client_cmd}...")
             client_proc = subprocess.Popen(
                 shlex.split(client_cmd),
                 stdout=subprocess.PIPE,
