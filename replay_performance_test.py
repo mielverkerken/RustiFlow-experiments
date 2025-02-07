@@ -85,7 +85,7 @@ THROUGHPUTS = [
 ]  # mbps ["1M", "10M", "100M", "1G", "10G"]
 
 replay_server = "ssh -t mverkerk@{serverip} 'exec sudo tcpreplay -K -i {interface} --duration={duration} --mbps={throughput} /data/cicids2017/cicids2017-trunc.pcap > {output_folder}/tcpreplay_server_{exporter}_{throughput}.log 2>&1'"
-ifstat_client = " ifstat -i eno3 -n -t 1 > {output_folder}/ifstat_client_{exporter}_{throughput}.log 2>&1"
+ifstat_client = "ifstat -i eno3 -n -t 1 > {output_folder}/ifstat_client_{exporter}_{throughput}.log 2>&1"
 
 
 class Experiment:
@@ -214,11 +214,9 @@ class Experiment:
             # Wait for iperf3 client to finish
             if self.throughput or self.duration:
                 if self.throughput:
-                    print(
-                        f"Waiting for iperf3 client to finish in {self.duration} seconds..."
-                    )
-                    client_proc.wait()
-                    print("Iperf3 client finished.")
+                    print(f"Waiting for server to finish in {self.duration} seconds...")
+                    server_proc.wait()
+                    print("Server finished.")
                 elif self.duration:
                     print(f"Running for {self.duration} seconds...")
                     time.sleep(self.duration)
@@ -257,8 +255,8 @@ class Experiment:
 
             # Cleanup iperf processes if they were started
             if self.throughput:
-                server_proc.terminate()
-                server_proc.wait()
+                client_proc.terminate()
+                client_proc.wait()
 
         except KeyboardInterrupt:
             print("\nProcess interrupted by user (Ctrl+C). Stopping...")
