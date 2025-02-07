@@ -223,7 +223,7 @@ class Experiment:
 
                 # Try SIGINT first
                 print("Stopping exporter...")
-                if self.exporter == "argus":
+                if self.extractor == "argus":
                     os.kill(self.proc.pid, signal.SIGTERM)
                 else:
                     self.proc.send_signal(signal.SIGINT)
