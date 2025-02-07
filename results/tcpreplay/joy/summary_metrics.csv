@@ -1,0 +1,6 @@
+DateTime,Extractor,Folder,Interface,Throughput,Runtime (s),Avg_CPU_Usage (%),Avg_Memory_Usage (MB),Max_Memory_Usage (MB),CPU Cores,CPU Logical Cores,Total Memory (MB),Available Memory (MB)
+2025-02-07 08:43:51,joy,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/joy,eno3,1,422.1287693977356,0.04066985645933014,17.548295454545453,21.6875,16,32,48228.4453125,42151.62890625
+2025-02-07 08:50:56,joy,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/joy,eno3,10,429.30251455307007,0.19976470588235296,22.64655330882353,40.4609375,16,32,48228.4453125,42145.8984375
+2025-02-07 08:58:08,joy,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/joy,eno3,100,403.91420316696167,3.802999999999999,66.237490234375,80.80859375,16,32,48228.4453125,42142.88671875
+2025-02-07 09:04:55,joy,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/joy,eno3,1000,384.6238462924957,73.6436842105263,178.9326994243421,289.7578125,16,32,48228.4453125,42143.6328125
+2025-02-07 09:11:23,joy,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/joy,eno3,10000,243.5423707962036,51.429045643153465,154.75609439834025,320.328125,16,32,48228.4453125,42119.40234375
