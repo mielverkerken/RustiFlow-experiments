@@ -8,7 +8,6 @@ import argparse
 import threading
 import signal
 import json
-import signal
 
 # Define the flow exporters
 exporters = {
@@ -224,22 +223,23 @@ class Experiment:
                 # Try SIGINT first
                 print("Stopping exporter...")
                 if self.extractor == "argus":
-                    os.kill(self.proc.pid, signal.SIGTERM)
+                    pgid = os.getpgid(self.proc.pid)
+                    os.killpg(pgid, signal.SIGINT)
                 else:
                     self.proc.send_signal(signal.SIGINT)
+                try:
+                    # Wait up to 5 seconds for the process to terminate
+                    self.proc.wait(timeout=2)
+                except subprocess.TimeoutExpired:
+                    print("SIGINT failed, trying SIGTERM...")
+                    # If SIGINT didn't work, try SIGTERM
+                    self.proc.terminate()
                     try:
-                        # Wait up to 5 seconds for the process to terminate
                         self.proc.wait(timeout=2)
                     except subprocess.TimeoutExpired:
-                        print("SIGINT failed, trying SIGTERM...")
-                        # If SIGINT didn't work, try SIGTERM
-                        self.proc.terminate()
-                        try:
-                            self.proc.wait(timeout=2)
-                        except subprocess.TimeoutExpired:
-                            print("SIGTERM failed, using SIGKILL...")
-                            # If SIGTERM didn't work, use SIGKILL as last resort
-                            self.proc.kill()
+                        print("SIGTERM failed, using SIGKILL...")
+                        # If SIGTERM didn't work, use SIGKILL as last resort
+                        self.proc.kill()
 
             print("Waiting for exporter to finish...")
 
