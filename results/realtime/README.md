@@ -14,6 +14,11 @@ sudo tcprewrite --mtu=1500 --mtu-trunc --infile=/data/monday/monday.pcap --outfi
 --srcipmap=0.0.0.0/0:192.168.0.2 --dstipmap=0.0.0.0/0:192.168.0.1
 ```
 
+```sh
+sudo tcprewrite --mtu=1500 --mtu-trunc --infile=/data/cicids2017/cicids2017.pcap --outfile=/data/cicids2017/cicids2017-trunc.pcap --enet-dmac=00:25:90:dc:43:d2 --enet-smac=0c:c4:7a:0b:9f:76
+sudo tcpreplay -i eno3 --duration=300 --mbps=8 /data/cicids2017/cicids2017-trunc.pcap
+```
+
 ## Experiments ideas
 
 - Iperf (stability test, TCP vs UDP)
