@@ -13,7 +13,7 @@ exporters = {
     "rustiflow": {
         "name": "rustiflow", 
         "shell": False,
-        "cmd": "rustiflow -f cic --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}_rustiflow.csv pcap {pcap_file}.pcap",
+        "cmd": "rustiflow -f rustiflow --header --idle-timeout 120 --active-timeout 3600 --output csv --export-path {pcap_file}_rustiflow.csv pcap {pcap_file}.pcap",
         "cwd": None, # Runs from any directory
     },
     "cicflowmeter": {
