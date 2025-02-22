@@ -249,8 +249,12 @@ class Experiment:
             # Wait for exporter process completion
             stdout, stderr = self.proc.communicate()
             print("Exporter finished.")
-            print(stdout)
-            print(stderr)
+            with open(
+                os.path.join(self.folder, f"{self.extractor}_{self.throughput}.log"),
+                "w",
+            ) as out_file:
+                out_file.write(stdout)
+                out_file.write(stderr)
 
             # Print error if it occurred
             if self.proc.returncode != 0:
