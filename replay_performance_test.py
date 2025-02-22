@@ -83,7 +83,7 @@ THROUGHPUTS = [
     "10000",
 ]  # mbps ["1M", "10M", "100M", "1G", "10G"]
 
-replay_server = "ssh -t mverkerk@{serverip} 'exec sudo tcpreplay -K -i {interface} --duration={duration} --mbps={throughput} /data/cicids2017/cicids2017-trunc.pcap > {output_folder}/tcpreplay_server_{exporter}_{throughput}.log 2>&1'"
+replay_server = "ssh -t mverkerk@{serverip} 'exec sudo tcpreplay -i {interface} --duration={duration} --mbps={throughput} /data/cicids2017/cicids2017-trunc.pcap > {output_folder}/tcpreplay_server_{exporter}_{throughput}.log 2>&1'"
 ifstat_client = "ifstat -i eno3 -n -t 1 > {output_folder}/ifstat_client_{exporter}_{throughput}.log 2>&1"
 
 
@@ -186,9 +186,10 @@ class Experiment:
             )
             print(f"Starting ifstat client: {client_cmd}...")
             client_proc = subprocess.Popen(
-                shlex.split(client_cmd),
+                client_cmd,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
+                shell=True,
             )
 
         start_time = time.time()
