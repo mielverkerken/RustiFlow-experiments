@@ -13,8 +13,8 @@ import json
 exporters = {
     "rustiflow": {
         "name": "rustiflow",
-        "shell": True,
-        "cmd": "sudo ./rustiflow -f rustiflow --header --idle-timeout 120 --active-timeout 3600 --performance-mode --output csv --export-path {output_folder}/rustiflow_realtime.csv realtime {interface} > {output_folder}/rustiflow_realtime_{throughput}.log 2>&1",
+        "shell": False,
+        "cmd": "sudo ./rustiflow -f rustiflow --header --idle-timeout 120 --active-timeout 3600 --performance-mode --output csv --export-path {output_folder}/rustiflow_realtime.csv realtime {interface}",
         "cwd": "/users/mverkerk/RustiFlow/target/release/",
     },
     "cicflowmeter": {  # no realtime support in cli mode, issues requesting this, even PR but never merged by maintainers. Upstream fixed version can't benefit.
