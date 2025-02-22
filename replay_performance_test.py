@@ -250,6 +250,7 @@ class Experiment:
             stdout, stderr = self.proc.communicate()
             print("Exporter finished.")
             print(stdout)
+            print(stderr)
 
             # Print error if it occurred
             if self.proc.returncode != 0:
