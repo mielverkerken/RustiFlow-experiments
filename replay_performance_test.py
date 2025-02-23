@@ -83,7 +83,7 @@ THROUGHPUTS = [
     "10000",
 ]  # mbps ["1M", "10M", "100M", "1G", "10G"]
 
-replay_server = "ssh -t mverkerk@{serverip} 'exec sudo tcpreplay -i {interface} --duration={duration} --mbps={throughput} /data/cicids2017/cicids2017-trunc.pcap > {output_folder}/tcpreplay_server_{exporter}_{throughput}.log 2>&1'"
+replay_server = "ssh -t mverkerk@{serverip} 'exec sudo tcpreplay -i {interface} --duration={duration} --mbps={throughput} --quiet /data/cicids2017/cicids2017-trunc.pcap > {output_folder}/tcpreplay_server_{exporter}_{throughput}.log 2>&1'"
 ifstat_client = "ifstat -i eno3 -n -t 1 > {output_folder}/ifstat_client_{exporter}_{throughput}.log 2>&1"
 
 
@@ -190,6 +190,7 @@ class Experiment:
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 shell=True,
+                preexec_fn=os.setsid,  # Start in a new process group
             )
 
         start_time = time.time()
@@ -266,8 +267,15 @@ class Experiment:
 
             # Cleanup iperf processes if they were started
             if self.throughput:
-                client_proc.terminate()
-                client_proc.wait()
+                os.killpg(
+                    os.getpgid(client_proc.pid), signal.SIGTERM
+                )  # Send SIGTERM to process group
+                try:
+                    client_proc.wait(timeout=2)
+                except subprocess.TimeoutExpired:
+                    os.killpg(
+                        os.getpgid(client_proc.pid), signal.SIGKILL
+                    )  # Force kill if needed
 
         except KeyboardInterrupt:
             print("\nProcess interrupted by user (Ctrl+C). Stopping...")
