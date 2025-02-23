@@ -233,7 +233,7 @@ class Experiment:
                     self.proc.send_signal(signal.SIGINT)
                 try:
                     # Wait up to 5 seconds for the process to terminate
-                    self.proc.wait(timeout=2)
+                    self.proc.wait(timeout=10)
                 except subprocess.TimeoutExpired:
                     print("SIGINT failed, trying SIGTERM...")
                     # If SIGINT didn't work, try SIGTERM
