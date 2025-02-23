@@ -1,0 +1,6 @@
+DateTime,Extractor,Folder,Interface,Throughput,Runtime (s),Avg_CPU_Usage (%),Avg_Memory_Usage (MB),Max_Memory_Usage (MB),CPU Cores,CPU Logical Cores,Total Memory (MB),Available Memory (MB)
+2025-02-23 11:44:22,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,1,297.4021100997925,1.612881355932203,129.09439883474576,136.01171875,16,32,48228.4453125,45752.6328125
+2025-02-23 11:49:22,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,10,297.3907616138458,5.054237288135607,147.1184189618644,151.56640625,16,32,48228.4453125,45750.5234375
+2025-02-23 11:54:23,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,100,297.7082533836365,16.9094915254238,175.62162341101694,204.10546875,16,32,48228.4453125,45733.3671875
+2025-02-23 11:59:23,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,1000,292.32551741600037,182.82525951557105,1011.6769977292388,1450.5859375,16,32,48228.4453125,45723.38671875
+2025-02-23 12:04:19,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,10000,165.74476981163025,232.52134146341467,1293.2526676829268,2340.28125,16,32,48228.4453125,45645.3671875
