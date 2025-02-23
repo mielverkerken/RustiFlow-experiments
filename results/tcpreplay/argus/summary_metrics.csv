@@ -1,0 +1,6 @@
+DateTime,Extractor,Folder,Interface,Throughput,Runtime (s),Avg_CPU_Usage (%),Avg_Memory_Usage (MB),Max_Memory_Usage (MB),CPU Cores,CPU Logical Cores,Total Memory (MB),Available Memory (MB)
+2025-02-23 16:06:45,argus,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/argus,eno3,1,302.3472101688385,0.24666666666666667,149.97055989583333,154.58203125,16,32,48228.4453125,45613.0078125
+2025-02-23 16:11:50,argus,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/argus,eno3,10,302.3500816822052,0.4916387959866221,159.25385399247492,163.30859375,16,32,48228.4453125,45612.359375
+2025-02-23 16:16:55,argus,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/argus,eno3,100,302.34123373031616,2.940468227424748,167.38485054347825,180.23828125,16,32,48228.4453125,45619.98828125
+2025-02-23 16:22:01,argus,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/argus,eno3,1000,287.24477648735046,83.7542253521127,1138.339981294014,2515.73828125,16,32,48228.4453125,45620.83984375
+2025-02-23 16:26:51,argus,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/argus,eno3,10000,167.56916975975037,135.49156626506021,1361.403873305723,2860.7265625,16,32,48228.4453125,45620.8671875
