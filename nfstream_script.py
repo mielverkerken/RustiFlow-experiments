@@ -34,7 +34,7 @@ def process_realtime(interface, output_folder):
         active_timeout=3600,  # changed default to same as rustiflow
         n_dissections=0,
         statistical_analysis=True,
-        performance_report=20,
+        performance_report=5,
     )
 
     # Output CSV file based on the PCAP file name
