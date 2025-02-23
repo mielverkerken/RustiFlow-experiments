@@ -31,8 +31,8 @@ exporters = {
     },
     "argus": {
         "name": "argus",
-        "shell": False,
-        "cmd": "/users/mverkerk/RustiFlow-experiments/argus_script_realtime.sh {interface} {interface}_argus.csv",
+        "shell": True,
+        "cmd": "sudo /users/mverkerk/RustiFlow-experiments/argus_script_realtime.sh {interface} {interface}_argus.csv",
         "cwd": None,  # Runs from any directory
     },
     "go-flows": {  # No default realtime support, recommend to use system specific packet capture
@@ -245,7 +245,15 @@ class Experiment:
                 # Try SIGINT first
                 print("Stopping exporter...")
                 if self.extractor == "argus":
-                    self.proc.send_signal(signal.SIGKILL)
+                    os.killpg(
+                        os.getpgid(self.proc.pid), signal.SIGTERM
+                    )  # Send SIGTERM to process group
+                    try:
+                        client_proc.wait(timeout=5)
+                    except subprocess.TimeoutExpired:
+                        os.killpg(
+                            os.getpgid(self.proc.pid), signal.SIGKILL
+                        )  # Force kill if needed
                 else:
                     self.proc.send_signal(signal.SIGINT)
                 try:
