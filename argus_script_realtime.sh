@@ -1,5 +1,7 @@
 #!/bin/bash
 
+trap 'sudo kill -9 -- -$$' INT TERM EXIT
+
 # Check if the right number of arguments is provided
 if [ "$#" -ne 2 ]; then
     echo "Usage: $0 <interface> <output_csv>"

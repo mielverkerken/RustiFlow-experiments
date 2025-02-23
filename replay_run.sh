@@ -32,9 +32,9 @@ echo "Running test for ${exporter} with results in ${folder}..."
 
 # Call the Python script with the exporter, folder, and optional duration
 if [ -z "$duration" ]; then
-    python3 "$python_script" "$exporter" "$folder" "--interface" "$interface" "--throughput" "all"
+    sudo python3 "$python_script" "$exporter" "$folder" "--interface" "$interface" "--throughput" "all"
 else
-    python3 "$python_script" "$exporter" "$folder" "--interface" "$interface" "--throughput" "all" "--duration" "$duration" "--serverip" "$serverip"
+    sudo python3 "$python_script" "$exporter" "$folder" "--interface" "$interface" "--throughput" "all" "--duration" "$duration" "--serverip" "$serverip"
 fi
 
 # Check if the script executed successfully

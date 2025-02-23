@@ -32,7 +32,7 @@ exporters = {
     "argus": {
         "name": "argus",
         "shell": True,
-        "cmd": "sudo /users/mverkerk/RustiFlow-experiments/argus_script_realtime.sh {interface} {interface}_argus.csv",
+        "cmd": "/users/mverkerk/RustiFlow-experiments/argus_script_realtime.sh {interface} {interface}_argus.csv",
         "cwd": None,  # Runs from any directory
     },
     "go-flows": {  # No default realtime support, recommend to use system specific packet capture
