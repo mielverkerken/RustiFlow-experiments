@@ -734,3 +734,8 @@
 [2025-02-23T19:02:12Z ERROR rustiflow_ebpf_ipv4] Failed to reserve entry in ring buffer.
 [2025-02-23T19:02:12Z ERROR rustiflow_ebpf_ipv4] Failed to reserve entry in ring buffer.
 [2025-02-23T19:02:12Z ERROR rustiflow_ebpf_ipv4] Failed to reserve entry in ring buffer.
+...
+2025-02-23T20:21:11Z INFO  rustiflow::realtime] Fetching dropped packet counters before exiting...
+[2025-02-23T20:21:11Z INFO  rustiflow::realtime] Total dropped packets before exit: 1107415
+[2025-02-23T20:21:23Z INFO  rustiflow] Duration: 525.4830 seconds
+[2025-02-23T20:21:23Z INFO  rustiflow] Total dropped packets: 1107415
