@@ -1,0 +1,11 @@
+DateTime,Extractor,Folder,Interface,Throughput,Runtime (s),Avg_CPU_Usage (%),Avg_Memory_Usage (MB),Max_Memory_Usage (MB),CPU Cores,CPU Logical Cores,Total Memory (MB),Available Memory (MB)
+2025-02-23 10:46:09,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,1,7.4243998527526855,1.5,107.890625,122.53125,16,32,48228.4453125,45679.19140625
+2025-02-23 10:46:19,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,10,7.362024784088135,4.3,107.86083984375,122.89453125,16,32,48228.4453125,45627.06640625
+2025-02-23 10:46:30,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,100,7.339294910430908,10.3375,109.1044921875,124.13671875,16,32,48228.4453125,45626.35546875
+2025-02-23 10:46:40,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,1000,7.355071067810059,67.975,109.8544921875,125.4140625,16,32,48228.4453125,45660.94921875
+2025-02-23 10:46:50,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,10000,10.708492279052734,103.42727272727274,116.97230113636364,130.8828125,16,32,48228.4453125,45663.0390625
+2025-02-23 10:48:37,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,1,297.405255317688,1.5440677966101688,122.83252118644067,123.984375,16,32,48228.4453125,45696.953125
+2025-02-23 10:53:37,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,10,297.4106533527374,4.017966101694914,124.92375529661017,125.8046875,16,32,48228.4453125,45701.109375
+2025-02-23 10:58:38,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,100,297.354736328125,15.312203389830556,126.87873411016949,129.76171875,16,32,48228.4453125,45696.7421875
+2025-02-23 11:03:38,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,1000,283.19699692726135,137.89498207885322,249.9875672043011,328.60546875,16,32,48228.4453125,45701.94140625
+2025-02-23 11:08:24,rustiflow,/users/mverkerk/RustiFlow-experiments/results/tcpreplay/rustiflow,eno3,10000,156.45754981040955,196.20454545454538,275.2380783279221,420.77734375,16,32,48228.4453125,45711.875
