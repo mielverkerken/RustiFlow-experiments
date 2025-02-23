@@ -1,3 +1,0 @@
-[2025-02-22T23:05:22Z INFO  rustiflow::realtime] Waiting for Ctrl-C...
-[2025-02-22T23:10:19Z INFO  rustiflow] Duration: 297.6392 seconds
-[2025-02-22T23:10:19Z INFO  rustiflow] Total dropped packets: 0
