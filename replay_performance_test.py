@@ -85,6 +85,7 @@ THROUGHPUTS = [
 
 replay_server = "ssh -t mverkerk@{serverip} 'exec sudo tcpreplay -i {interface} --duration={duration} --mbps={throughput} --quiet /data/cicids2017/cicids2017-trunc.pcap > {output_folder}/tcpreplay_server_{exporter}_{throughput}.log 2>&1'"
 ifstat_client = "ifstat -i eno3 -n -t 1 > {output_folder}/ifstat_client_{exporter}_{throughput}.log 2>&1"
+tcpdump_client = "sudo tcpdump --immediate-mode --buffer-size=32768 --packet-buffered -n --interface=eno3 -s 64 -w /dev/null > {output_folder}/tcpdump_{exporter}_{throughput}.log 2>&1"
 
 
 class Experiment:
@@ -175,7 +176,7 @@ class Experiment:
             )
             time.sleep(3)  # Wait for server to start
 
-            # Start iperf3 client
+            # Start ifstat client
             client_cmd = ifstat_client.format(
                 output_folder=self.folder,
                 exporter=self.extractor,
@@ -187,6 +188,23 @@ class Experiment:
             print(f"Starting ifstat client: {client_cmd}...")
             client_proc = subprocess.Popen(
                 client_cmd,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                shell=True,
+                preexec_fn=os.setsid,  # Start in a new process group
+            )
+            # Start tcpdump client
+            client_cmd2 = tcpdump_client.format(
+                output_folder=self.folder,
+                exporter=self.extractor,
+                throughput=self.throughput,
+                monitor_interval=MONITOR_INTERVAL,
+                duration=self.duration,
+                serverip=self.serverip,
+            )
+            print(f"Starting tcpdump client: {client_cmd2}...")
+            client_proc2 = subprocess.Popen(
+                client_cmd2,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 shell=True,
@@ -270,11 +288,20 @@ class Experiment:
                 os.killpg(
                     os.getpgid(client_proc.pid), signal.SIGTERM
                 )  # Send SIGTERM to process group
+                os.killpg(
+                    os.getpgid(client_proc2.pid), signal.SIGTERM
+                )  # Send SIGTERM to process group
                 try:
                     client_proc.wait(timeout=2)
                 except subprocess.TimeoutExpired:
                     os.killpg(
                         os.getpgid(client_proc.pid), signal.SIGKILL
+                    )  # Force kill if needed
+                try:
+                    client_proc2.wait(timeout=2)
+                except subprocess.TimeoutExpired:
+                    os.killpg(
+                        os.getpgid(client_proc2.pid), signal.SIGKILL
                     )  # Force kill if needed
 
         except KeyboardInterrupt:
@@ -288,6 +315,7 @@ class Experiment:
                     print(f"ERR:\n{stderr}")
             if self.throughput:
                 client_proc.terminate()
+                client_proc2.terminate()
                 server_proc.terminate()
             self.stop_event.set()
             monitor_thread.join()
