@@ -31,7 +31,7 @@ exporters = {
     },
     "argus": {
         "name": "argus",
-        "shell": True,
+        "shell": False,
         "cmd": "/users/mverkerk/RustiFlow-experiments/argus_script_realtime.sh {interface} {interface}_argus.csv",
         "cwd": None,  # Runs from any directory
     },
@@ -245,8 +245,7 @@ class Experiment:
                 # Try SIGINT first
                 print("Stopping exporter...")
                 if self.extractor == "argus":
-                    pgid = os.getpgid(self.proc.pid)
-                    os.killpg(pgid, signal.SIGINT)
+                    self.proc.send_signal(signal.SIGKILL)
                 else:
                     self.proc.send_signal(signal.SIGINT)
                 try:
