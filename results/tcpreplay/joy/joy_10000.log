@@ -1,0 +1,6 @@
+changed user to 'root' (uid=0 gid=0)
+--- Joy Initialization ---
+Context id: 0, Sun Feb 23 16:59:05 MST 2025 info: 0 packets, 0 active records, 0 records output, 0 alloc fails, -nan bytes/sec, -nan packets/sec, -nan records/sec
+Context id: 0, Sun Feb 23 17:01:48 MST 2025 info: 4627291 packets, 0 active records, 213351 records output, 0 alloc fails, 1.7422e+07 bytes/sec, 2.8328e+04 packets/sec, 1.3061e+03 records/sec
+Libpcap Stats: Received 49773127, Mem Dropped 45144734, IF Dropped 0
+got signal 2, shutting down
