@@ -1,0 +1,56 @@
+23/Feb/2025 18:42:17 [plugin.c:177] No plugins found in ./plugins
+23/Feb/2025 18:42:17 [plugin.c:185] Loading 22 plugins [.so] from /usr/lib/nprobe/plugins
+23/Feb/2025 18:42:17 [nprobe.c:8240] WARNING: The output interfaceId is set to 0: did you forget to use -Q perhaps ?
+23/Feb/2025 18:42:17 [nprobe.c:8243] WARNING: The input interfaceId is set to 0: did you forget to use -u perhaps ?
+23/Feb/2025 18:42:17 [nprobe.c:8346] Welcome to nProbe v.10.6.241202 for x86_64-pc-linux-gnu with native PF_RING acceleration
+23/Feb/2025 18:42:17 [nprobe.c:8368] Enterprise M Edition running on Ubuntu 22.04.4 LTS
+23/Feb/2025 18:42:17 [nprobe.c:8376] Current limits [16 ZMQ exporters][16 collector devices]
+23/Feb/2025 18:42:17 [nprobe.c:8391] SystemId: LA2DF459CB206AB13--UA2DF459CBF3FDC90--OL
+23/Feb/2025 18:42:17 [nprobe.c:8428] Dumping flow files every 60 sec into directory /users/mverkerk/RustiFlow-experiments/results/tcpreplay/nprobe
+23/Feb/2025 18:42:17 [nprobe.c:8484] Sample rate [packet: 1][flow collection/export: 1/1]
+23/Feb/2025 18:42:17 [nprobe.c:10563] Using template %IPV4_SRC_ADDR %IPV4_DST_ADDR %L4_SRC_PORT %L4_DST_PORT %PROTOCOL %L7_PROTO %IN_BYTES %OUT_BYTES %IN_PKTS %OUT_PKTS %FLOW_DURATION_MILLISECONDS %TCP_FLAGS %CLIENT_TCP_FLAGS %SERVER_TCP_FLAGS %DURATION_IN %DURATION_OUT %MIN_TTL %MAX_TTL %LONGEST_FLOW_PKT %SHORTEST_FLOW_PKT %MIN_IP_PKT_LEN %MAX_IP_PKT_LEN %SRC_TO_DST_SECOND_BYTES %DST_TO_SRC_SECOND_BYTES %RETRANSMITTED_IN_BYTES %RETRANSMITTED_IN_PKTS %RETRANSMITTED_OUT_BYTES %RETRANSMITTED_OUT_PKTS %SRC_TO_DST_AVG_THROUGHPUT %DST_TO_SRC_AVG_THROUGHPUT %NUM_PKTS_UP_TO_128_BYTES %NUM_PKTS_128_TO_256_BYTES %NUM_PKTS_256_TO_512_BYTES %NUM_PKTS_512_TO_1024_BYTES %NUM_PKTS_1024_TO_1514_BYTES %TCP_WIN_MAX_IN %TCP_WIN_MAX_OUT %ICMP_TYPE %ICMP_IPV4_TYPE %DNS_QUERY_ID %DNS_QUERY_TYPE %DNS_TTL_ANSWER %FTP_COMMAND_RET_CODE
+23/Feb/2025 18:42:17 [nprobe.c:10565] Using NetFlow Packet Payload Len: 1472
+23/Feb/2025 18:42:17 [nprobe.c:10711] WARNING: Your template lacks some important fields
+23/Feb/2025 18:42:17 [nprobe.c:10712] WARNING: Unless you know what you are doing, make sure
+23/Feb/2025 18:42:17 [nprobe.c:10713] WARNING: your template (-T) contains at least
+23/Feb/2025 18:42:17 [nprobe.c:10714] WARNING: %IPV4_SRC_ADDR %IPV4_DST_ADDR %PROTOCOL
+23/Feb/2025 18:42:17 [nprobe.c:10715] WARNING: %L4_SRC_PORT %L4_DST_PORT %FIRST_SWITCHED %LAST_SWITCHED
+23/Feb/2025 18:42:17 [template.c:3625] WARNING: Unable to locate template 'ICMP_IPV6_TYPE'. Discarded.
+23/Feb/2025 18:42:17 [template.c:3625] WARNING: Unable to locate template 'ICMP_IPV6_TYPE'. Discarded.
+23/Feb/2025 18:42:17 [plugin.c:1204] 2 plugin(s) enabled
+23/Feb/2025 18:42:17 [nprobe.c:11115] Each flow is 153 bytes long
+23/Feb/2025 18:42:17 [nprobe.c:11116] The # flows per packet has been set to 8
+23/Feb/2025 18:42:17 [nprobe.c:11119] IP TOS is ignored
+23/Feb/2025 18:42:17 [nprobe.c:11147] Non IPv4/v6 traffic is discarded according to the template
+23/Feb/2025 18:42:17 [nprobe.c:12098] Flow export type (-T): bidirectional flows
+23/Feb/2025 18:42:17 [nprobe.c:12292] Flows ASs will not be computed (no GeoDB files loaded with --as-list)
+23/Feb/2025 18:42:17 [nprobe.c:12324] Flows will be exported in NetFlow 9 format
+23/Feb/2025 18:42:17 [pf_ring.c:434] Initializing PF_RING socket on device eno3.. (promisc)
+23/Feb/2025 18:42:17 [pf_ring.c:476] Dumping traffic statistics on /proc/net/pf_ring/stats/340480-eno3.183
+23/Feb/2025 18:42:17 [pf_ring.c:556] PF_RING enabled on eno3
+23/Feb/2025 18:42:17 [nprobe.c:12570] Capturing packets from PF_RING interface eno3
+23/Feb/2025 18:42:17 [util.c:5463] nProbe changed user to 'mverkerk'
+23/Feb/2025 18:42:17 [plugin.c:999] Enabling plugin DNS/LLMNR Protocol
+23/Feb/2025 18:42:17 [plugin.c:999] Enabling plugin FTP Protocol
+23/Feb/2025 18:42:17 [export.c:487] Using TLV as serialization format
+23/Feb/2025 18:42:17 [nprobe.c:12876] nProbe started successfully
+23/Feb/2025 18:42:17 [pf_ring.c:269] Packet copy enabled
+23/Feb/2025 18:47:14 [cache.c:1497] LRUCacheUnit L7Cache [current_hash_size: 5740][max_cache_node_len: 4][mem_size: 0.27 MB]
+23/Feb/2025 18:47:14 [cache.c:1507] LRUCache L7Cache [find: 0 operations/0.0 find/sec][cache miss 0/0.0 %][add: 6093 operations/0.0 add/sec][tot: 5740][mem_size: 0.3 MB]
+23/Feb/2025 18:47:14 [nprobe.c:721] Received shutdown request... [signal: 2]
+23/Feb/2025 18:47:14 [pf_ring.c:410] Terminated PF_RING packet processing
+23/Feb/2025 18:47:15 [pf_ring.c:133] PF_RING stats (Average): 480438/0 [0.0 %] pkts rcvd/dropped
+23/Feb/2025 18:47:15 [pf_ring.c:148] PF_RING stats (Current): 0/0 [0.0 %] pkts rcvd/dropped
+23/Feb/2025 18:47:15 [nprobe.c:8601] Waiting for PF_RING termination
+23/Feb/2025 18:47:15 [nprobe.c:8611] PF_RING terminated
+23/Feb/2025 18:47:15 [nprobe.c:8579] Flushing active flows
+23/Feb/2025 18:47:15 [engine.c:4018] About to flush hash
+23/Feb/2025 18:47:15 [engine.c:4022] Completed hash walk
+23/Feb/2025 18:47:18 [cache.c:1497] LRUCacheUnit L7Cache [current_hash_size: 5740][max_cache_node_len: 4][mem_size: 0.27 MB]
+23/Feb/2025 18:47:18 [cache.c:1507] LRUCache L7Cache [find: 0 operations/0.0 find/sec][cache miss 0/0.0 %][add: 6093 operations/0.0 add/sec][tot: 5740][mem_size: 0.3 MB]
+23/Feb/2025 18:47:18 [nprobe.c:4325] Processed packets: 480438 (max bucket search: 2)
+23/Feb/2025 18:47:18 [nprobe.c:4306] Fragment queue length: 0 
+23/Feb/2025 18:47:18 [nprobe.c:4356] Flow export stats:      [0 bytes/0 pkts][8366 flows/0 pkts sent]
+23/Feb/2025 18:47:18 [nprobe.c:4368] Flow export drop stats: [0 bytes/0 pkts][0 flows/0.00 %]
+23/Feb/2025 18:47:18 [nprobe.c:4374] Total flow stats:       [0 bytes/0 pkts][8366 flows/0 pkts sent]
+23/Feb/2025 18:47:18 [nprobe.c:4384] Total dumped to file:   [8366 flows]
