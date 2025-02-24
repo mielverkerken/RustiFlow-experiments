@@ -3,8 +3,8 @@
 #empty_field	(empty)
 #unset_field	-
 #path	websocket
-#open	2025-02-07-09-52-40
+#open	2025-02-23-17-24-44
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	host	uri	user_agent	subprotocol	client_protocols	server_extensions	client_extensions
 #types	time	string	addr	port	addr	port	string	string	string	string	vector[string]	vector[string]	vector[string]
-1738947153.569060	CNI1EF2U7h4k9K0Pmg	192.168.10.16	38288	208.93.230.130	8080	s13.chatango.com:8080	/	Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:54.0) Gecko/20100101 Firefox/54.0	-	-	-	permessage-deflate
-#close	2025-02-07-09-54-13
+1740356680.546701	C50FMG3twwVw9NfnB5	192.168.10.16	38288	208.93.230.130	8080	s13.chatango.com:8080	/	Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:54.0) Gecko/20100101 Firefox/54.0	-	-	-	permessage-deflate
+#close	2025-02-23-17-26-55

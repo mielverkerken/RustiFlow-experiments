@@ -3,13 +3,21 @@
 #empty_field	(empty)
 #unset_field	-
 #path	socks
-#open	2025-02-07-09-51-43
+#open	2025-02-23-17-27-10
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	version	user	password	status	request.host	request.name	request_p	bound.host	bound.name	bound_p
 #types	time	string	addr	port	addr	port	count	string	string	string	addr	string	port	addr	string	port
-1738947096.044650	CGw6ol281Tez3i6dP9	192.168.10.9	1028	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\x0c\x01\x00\x00\x02\x00\x00\x00\xf4\x00\x00\x00\x01	0
-1738947096.102165	CGvvlc20iNy3KOKbba	192.168.10.14	49414	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\x98\x00\x00\x00\x02\x00\x00\x00\x80\x00\x00\x00\x00	0
-1738947096.199344	CBzLPa1i2POJbfEHF2	192.168.10.5	49157	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\x0c\x01\x00\x00\x02\x00\x00\x00\xf4\x00\x00\x00\x01	0
-1738947184.077545	CcJsOs4uygs78rCu71	192.168.10.8	54007	192.168.10.3	49666	5	-	-	succeeded	-	-	-	-	\x00\x00\x00i\x00)\x00\x01\x00\x00\x00\xd0\x16\xd0\x16\x01	27136
-1738947135.250394	C1xTLk15siFfoEzoN	192.168.10.5	56821	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\x0c\x01\x00\x00\x02\x00\x00\x00\xf4\x00\x00\x00\x01	0
-1738947178.793170	Cwx4nG40G8uC7NBaR3	192.168.10.15	53741	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xac\x00\x00\x00\x02\x00\x00\x00\x94\x00\x00\x00\x01	0
-#close	2025-02-07-09-54-13
+1740356823.737492	Cn7eaX4ZWooTCb66e	192.168.10.8	49156	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xac\x00\x00\x00\x02\x00\x00\x00\x94\x00\x00\x00\x01	0
+1740356840.557829	CkWqTB1mFZsj3LSMvg	192.168.10.9	2038	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xac\x00\x00\x00\x02\x00\x00\x00\x94\x00\x00\x00\x01	0
+1740356883.542923	CDcmCT39q5wOVYuNu3	192.168.10.8	54556	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xac\x00\x00\x00\x01\x00\x00\x00\x94\x00\x00\x00\x01	0
+1740356923.646158	CKFG3a3CFSgzemPFvd	192.168.10.5	52770	192.168.10.3	49666	5	-	-	succeeded	-	-	-	-	\x00\x00\x00i\x00)\x00\x02\x00\x00\x00\xd0\x16\xd0\x16\xbc	25344
+1740356948.054765	CL6seT3p4JIA1kgk9	192.168.10.9	4816	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xac\x00\x00\x00\x02\x00\x00\x00\x94\x00\x00\x00\x01	0
+1740356950.117508	CddQoG3Cy0zcJXQK99	192.168.10.15	57824	192.168.10.3	49666	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xcc\x00L\x00\x02\x00\x00\x00`\x00\x00\x00\x01	0
+1740356854.826184	Cjt7Lr16PZkAnpks36	192.168.10.9	1040	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xac\x00\x00\x00\x03\x00\x00\x00\x94\x00\x00\x00\x01	0
+1740356971.072135	CtJLqf3f52u1E4KBP7	192.168.10.8	2081	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xac\x00\x00\x00\x01\x00\x00\x00\x94\x00\x00\x00\x01	0
+1740356974.680423	CTYuaK11HyADbmepp8	192.168.10.8	3018	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xac\x00\x00\x00\x01\x00\x00\x00\x94\x00\x00\x00\x01	0
+1740356957.794732	CZ073C4BB62Niuar07	192.168.10.9	9171	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xac\x00\x00\x00\x02\x00\x00\x00\x94\x00\x00\x00\x01	0
+1740356974.456414	Cdb2W32XbII1oq3MW6	192.168.10.9	4206	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xac\x00\x00\x00\x02\x00\x00\x00\x94\x00\x00\x00\x01	0
+1740356845.330165	CcfHxJ3PW2dXZl7qcb	192.168.10.15	52184	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xac\x00\x00\x00\x02\x00\x00\x00\x94\x00\x00\x00\x01	0
+1740356930.922241	CLYop13k0jorGQtJH	192.168.10.15	49412	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\xac\x00\x00\x00\x02\x00\x00\x00\x94\x00\x00\x00\x01	0
+1740356952.698287	CQ14B3vABy6qF5Xe1	192.168.10.8	49156	192.168.10.3	135	5	-	-	succeeded	-	-	-	-	\x00\x00\x00\x0c\x01\x00\x00\x01\x00\x00\x00\xf4\x00\x00\x00\x01	0
+#close	2025-02-23-17-30-01

@@ -3,8 +3,8 @@
 #empty_field	(empty)
 #unset_field	-
 #path	notice
-#open	2025-02-07-09-54-07
+#open	2025-02-23-17-29-53
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	fuid	file_mime_type	file_desc	proto	note	msg	sub	src	dst	p	n	peer_descr	actions	email_dest	suppress_for	remote_location.country_code	remote_location.region	remote_location.city	remote_location.latitude	remote_location.longitude
 #types	time	string	addr	port	addr	port	string	string	string	enum	enum	string	string	addr	addr	port	count	string	set[enum]	set[string]	interval	string	string	string	double	double
-1738947246.925382	-	-	-	-	-	-	-	-	-	PacketFilter::Dropped_Packets	48757613 packets dropped after filtering, 56370710 received, 56370718 on link	-	-	-	-	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
-#close	2025-02-07-09-54-13
+1740356984.253274	-	-	-	-	-	-	-	-	-	PacketFilter::Dropped_Packets	37570043 packets dropped after filtering, 51654986 received, 51938774 on link	-	-	-	-	-	-	Notice::ACTION_LOG	(empty)	3600.000000	-	-	-	-	-
+#close	2025-02-23-17-30-01

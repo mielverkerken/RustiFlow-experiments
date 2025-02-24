@@ -3,8 +3,16 @@
 #empty_field	(empty)
 #unset_field	-
 #path	mqtt_connect
-#open	2025-02-07-09-52-49
+#open	2025-02-23-17-28-28
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto_name	proto_version	client_id	connect_status	will_topic	will_payload
 #types	time	string	addr	port	addr	port	string	string	string	string	string	string
-1738947160.345422	CzUEwA1BcucvDaXTcd	172.16.0.1	39398	192.168.10.50	80	-	-	-	unknown-return-code-70	-	-
-#close	2025-02-07-09-54-13
+1740356906.622655	CSPB0Z1cF9CO6MogT9	192.168.10.12	56970	178.172.160.4	443	-	-	-	unknown-return-code-213	-	-
+1740356910.737021	ClOmEc65GyB7M54J	172.16.0.1	40186	192.168.10.50	80	-	-	-	unknown-return-code-32	-	-
+1740356911.399627	CKc75Y1LUIdRszbxIb	172.16.0.1	40512	192.168.10.50	80	-	-	-	unknown-return-code-32	-	-
+1740356911.268979	CCGhCGXMp8adjC526	172.16.0.1	35628	192.168.10.50	80	-	-	-	unknown-return-code-32	-	-
+1740356911.399627	CKc75Y1LUIdRszbxIb	172.16.0.1	40512	192.168.10.50	80	-	-	-	unknown-return-code-32	-	-
+1740356911.399627	CKc75Y1LUIdRszbxIb	172.16.0.1	40512	192.168.10.50	80	-	-	-	unknown-return-code-32	-	-
+1740356912.042322	Cno3urT4dK8ADGque	172.16.0.1	40488	192.168.10.50	80	-	-	-	unknown-return-code-32	-	-
+1740356912.042322	Cno3urT4dK8ADGque	172.16.0.1	40488	192.168.10.50	80	-	-	-	unknown-return-code-32	-	-
+1740356911.399627	CKc75Y1LUIdRszbxIb	172.16.0.1	40512	192.168.10.50	80	-	-	-	unknown-return-code-32	-	-
+#close	2025-02-23-17-30-01
