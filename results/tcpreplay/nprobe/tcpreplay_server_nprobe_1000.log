@@ -1,6 +1,6 @@
-Actual: 56370702 packets (35445870432 bytes) sent in 284.64 seconds
-Rated: 124525712.3 Bps, 996.20 Mbps, 198037.22 pps
-Flows: 2134535 flows, 7498.86 fps, 55958122 flow packets, 412516 non-flow
+Actual: 56370702 packets (35445870432 bytes) sent in 285.11 seconds
+Rated: 124321746.5 Bps, 994.57 Mbps, 197712.85 pps
+Flows: 2134535 flows, 7486.58 fps, 55958122 flow packets, 412516 non-flow
 Statistics for network device: eno3
 	Successful packets:        56370702
 	Failed packets:            0

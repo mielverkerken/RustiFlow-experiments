@@ -1,7 +1,6 @@
-File Cache is enabled
-Actual: 56370702 packets (35445870432 bytes) sent in 119.42 seconds
-Rated: 296811897.5 Bps, 2374.49 Mbps, 472029.45 pps
-Flows: 2134535 flows, 17873.75 fps, 55958122 flow packets, 412516 non-flow
+Actual: 56370702 packets (35445870432 bytes) sent in 171.53 seconds
+Rated: 206635675.0 Bps, 1653.08 Mbps, 328619.32 pps
+Flows: 2134535 flows, 12443.49 fps, 55958122 flow packets, 412516 non-flow
 Statistics for network device: eno3
 	Successful packets:        56370702
 	Failed packets:            0
