@@ -1,0 +1,41 @@
+uuid: 296a8580-7cd3-43e8-a185-27e99669f4b2
+name: nmap-ss
+startTime: 2025-03-11T16:16:43.092597742+01:00
+stopTime: 2025-03-11T16:16:43.429854053+01:00
+attacker:
+  name: nmap
+  image: ghcr.io/idlab-discover/concap/nmap:ubuntu20
+  atkCommand: nmap $TARGET_IP -n -p 79,80 --disable-arp-ping -sS 2>&1 | tee -a /proc/1/fd/1
+  atkTime: ""
+  cpuRequest: 500m
+  cpuLimit: ""
+  memRequest: 500Mi
+  memLimit: ""
+target:
+  name: httpd
+  image: ghcr.io/idlab-discover/concap/httpd:ubuntu20
+  filter: ((dst host $ATTACKER_IP and src host $TARGET_IP) or (dst host $TARGET_IP
+    and src host $ATTACKER_IP)) and not arp
+  cpuRequest: 500m
+  cpuLimit: ""
+  memRequest: 500Mi
+  memLimit: ""
+network:
+  bandwidth: 100mbit
+  queueSize: 100ms
+  limit: "10000"
+  delay: 0ms
+  jitter: 0ms
+  distribution: normal
+  loss: 0%
+  corrupt: 0%
+  duplicate: 0%
+  seed: "0"
+labels:
+  category: port-scan
+  label: "1"
+  scenario: nmap_SS
+  subcategory: nmap
+deployment:
+  attacker: 192.168.249.68
+  target: 192.168.168.232

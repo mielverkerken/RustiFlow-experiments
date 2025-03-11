@@ -1,0 +1,5 @@
+stdout:
+NFStream processing offline PCAP file: /data/input/patator-ssh-cic-t10-p.pcap
+Writing flow results to CSV file: /data/output/patator-ssh-cic-t10-p.csv
+stderr:
+

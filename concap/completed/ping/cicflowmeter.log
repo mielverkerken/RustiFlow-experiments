@@ -1,0 +1,27 @@
+stdout:
+pcapfix 1.1.7 (c) 2012-2021 Robert Krause
+
+[*] Reading from file: /data/input/ping.pcap
+[*] Writing to file: /data/input/ping.pcap
+[*] File size: 2304 bytes.
+[+] This is a PCAP file.
+[*] Analyzing Global Header...
+[+] The global pcap header seems to be fine!
+[*] Analyzing packets...
+[*] Progress:  20.83 %
+[*] Progress:  40.62 %
+[*] Progress:  60.42 %
+[*] Progress:  80.21 %
+[*] Progress: 100.00 %
+[*] Your pcap file looks proper. Nothing to fix!
+
+20 frames, 0 out of order
+cic.cs.unb.ca.ifm.Cmd You select: /data/input/ping.pcap
+cic.cs.unb.ca.ifm.Cmd Out folder: /data/output/ping/
+cic.cs.unb.ca.ifm.Cmd CICFlowMeter received 1 pcap file
+Working on... ping.pcap
+ping.pcap is done. total 2 flows 
+Packet stats: Total=20,Valid=20,Discarded=0
+-------------------------------------------------------------------------------
+stderr:
+

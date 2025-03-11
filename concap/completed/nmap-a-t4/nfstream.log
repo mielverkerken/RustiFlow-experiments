@@ -1,0 +1,5 @@
+stdout:
+NFStream processing offline PCAP file: /data/input/nmap-a-t4.pcap
+Writing flow results to CSV file: /data/output/nmap-a-t4.csv
+stderr:
+

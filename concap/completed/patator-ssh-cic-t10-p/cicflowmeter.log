@@ -1,0 +1,27 @@
+stdout:
+pcapfix 1.1.7 (c) 2012-2021 Robert Krause
+
+[*] Reading from file: /data/input/patator-ssh-cic-t10-p.pcap
+[*] Writing to file: /data/input/patator-ssh-cic-t10-p.pcap
+[*] File size: 5604712 bytes.
+[+] This is a PCAP file.
+[*] Analyzing Global Header...
+[+] The global pcap header seems to be fine!
+[*] Analyzing packets...
+[*] Progress:  20.01 %
+[*] Progress:  40.00 %
+[*] Progress:  60.00 %
+[*] Progress:  80.01 %
+[*] Progress: 100.00 %
+[*] Your pcap file looks proper. Nothing to fix!
+
+32004 frames, 46 out of order
+cic.cs.unb.ca.ifm.Cmd You select: /data/input/patator-ssh-cic-t10-p.pcap
+cic.cs.unb.ca.ifm.Cmd Out folder: /data/output/patator-ssh-cic-t10-p/
+cic.cs.unb.ca.ifm.Cmd CICFlowMeter received 1 pcap file
+Working on... patator-ssh-cic-t10-p.pcap
+patator-ssh-cic-t10-p.pcap -> 1 flows patator-ssh-cic-t10-p.pcap -> 2 flows patator-ssh-cic-t10-p.pcap -> 3 flows patator-ssh-cic-t10-p.pcap -> 4 flows patator-ssh-cic-t10-p.pcap -> 5 flows patator-ssh-cic-t10-p.pcap -> 6 flows patator-ssh-cic-t10-p.pcap -> 7 flows patator-ssh-cic-t10-p.pcap -> 8 flows patator-ssh-cic-t10-p.pcap -> 9 flows patator-ssh-cic-t10-p.pcap -> 10 flows patator-ssh-cic-t10-p.pcap -> 11 flows patator-ssh-cic-t10-p.pcap -> 12 flows patator-ssh-cic-t10-p.pcap -> 13 flows patator-ssh-cic-t10-p.pcap is done. total 681 flows 
+Packet stats: Total=32004,Valid=32004,Discarded=0
+-------------------------------------------------------------------------------
+stderr:
+

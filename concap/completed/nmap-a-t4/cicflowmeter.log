@@ -1,0 +1,27 @@
+stdout:
+pcapfix 1.1.7 (c) 2012-2021 Robert Krause
+
+[*] Reading from file: /data/input/nmap-a-t4.pcap
+[*] Writing to file: /data/input/nmap-a-t4.pcap
+[*] File size: 281726 bytes.
+[+] This is a PCAP file.
+[*] Analyzing Global Header...
+[+] The global pcap header seems to be fine!
+[*] Analyzing packets...
+[*] Progress:  20.01 %
+[*] Progress:  40.02 %
+[*] Progress:  60.01 %
+[*] Progress:  80.04 %
+[*] Progress: 100.00 %
+[*] Your pcap file looks proper. Nothing to fix!
+
+2508 frames, 672 out of order
+cic.cs.unb.ca.ifm.Cmd You select: /data/input/nmap-a-t4.pcap
+cic.cs.unb.ca.ifm.Cmd Out folder: /data/output/nmap-a-t4/
+cic.cs.unb.ca.ifm.Cmd CICFlowMeter received 1 pcap file
+Working on... nmap-a-t4.pcap
+nmap-a-t4.pcap -> 1 flows nmap-a-t4.pcap -> 2 flows nmap-a-t4.pcap -> 3 flows nmap-a-t4.pcap -> 4 flows nmap-a-t4.pcap -> 5 flows nmap-a-t4.pcap -> 6 flows nmap-a-t4.pcap -> 7 flows nmap-a-t4.pcap -> 8 flows nmap-a-t4.pcap -> 9 flows nmap-a-t4.pcap -> 10 flows nmap-a-t4.pcap -> 11 flows nmap-a-t4.pcap -> 12 flows nmap-a-t4.pcap -> 13 flows nmap-a-t4.pcap -> 14 flows nmap-a-t4.pcap -> 15 flows nmap-a-t4.pcap -> 16 flows nmap-a-t4.pcap -> 17 flows nmap-a-t4.pcap -> 18 flows nmap-a-t4.pcap -> 19 flows nmap-a-t4.pcap -> 20 flows nmap-a-t4.pcap -> 21 flows nmap-a-t4.pcap -> 22 flows nmap-a-t4.pcap -> 23 flows nmap-a-t4.pcap -> 24 flows nmap-a-t4.pcap -> 25 flows nmap-a-t4.pcap -> 26 flows nmap-a-t4.pcap -> 27 flows nmap-a-t4.pcap -> 28 flows nmap-a-t4.pcap -> 29 flows nmap-a-t4.pcap -> 30 flows nmap-a-t4.pcap -> 31 flows nmap-a-t4.pcap -> 32 flows nmap-a-t4.pcap -> 33 flows nmap-a-t4.pcap -> 34 flows nmap-a-t4.pcap -> 35 flows nmap-a-t4.pcap -> 36 flows nmap-a-t4.pcap -> 37 flows nmap-a-t4.pcap -> 38 flows nmap-a-t4.pcap -> 39 flows nmap-a-t4.pcap -> 40 flows nmap-a-t4.pcap -> 41 flows nmap-a-t4.pcap -> 42 flows nmap-a-t4.pcap -> 43 flows nmap-a-t4.pcap -> 44 flows nmap-a-t4.pcap -> 45 flows nmap-a-t4.pcap -> 46 flows nmap-a-t4.pcap -> 47 flows nmap-a-t4.pcap is done. total 1099 flows 
+Packet stats: Total=2508,Valid=2508,Discarded=0
+-------------------------------------------------------------------------------
+stderr:
+

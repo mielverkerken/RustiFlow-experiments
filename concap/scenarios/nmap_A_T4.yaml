@@ -1,0 +1,27 @@
+attacker:
+  name: nmap
+  image: ghcr.io/idlab-discover/concap/nmap:ubuntu20
+  atkCommand: nmap $TARGET_IP -A -T4
+  cpuRequest: 500m
+  memRequest: 500Mi
+target:
+  name: httpd
+  image: ghcr.io/idlab-discover/concap/httpd:ubuntu20
+  cpuRequest: 500m
+  memRequest: 500Mi
+network:
+  bandwidth: 100mbit
+  queueSize: 100ms
+  limit: 10000
+  delay: 0ms
+  jitter: 0ms
+  distribution: normal
+  loss: 0%
+  corrupt: 0%
+  duplicate: 0%
+  seed: 0
+labels:
+  label: 1
+  category: port-scan
+  subcategory: nmap
+  scenario: nmap_A_T4

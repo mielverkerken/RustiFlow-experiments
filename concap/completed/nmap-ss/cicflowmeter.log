@@ -1,0 +1,27 @@
+stdout:
+pcapfix 1.1.7 (c) 2012-2021 Robert Krause
+
+[*] Reading from file: /data/input/nmap-ss.pcap
+[*] Writing to file: /data/input/nmap-ss.pcap
+[*] File size: 926 bytes.
+[+] This is a PCAP file.
+[*] Analyzing Global Header...
+[+] The global pcap header seems to be fine!
+[*] Analyzing packets...
+[*] Progress:  23.11 %
+[*] Progress:  45.79 %
+[*] Progress:  60.91 %
+[*] Progress:  84.88 %
+[*] Progress: 100.00 %
+[*] Your pcap file looks proper. Nothing to fix!
+
+13 frames, 3 out of order
+cic.cs.unb.ca.ifm.Cmd You select: /data/input/nmap-ss.pcap
+cic.cs.unb.ca.ifm.Cmd Out folder: /data/output/nmap-ss/
+cic.cs.unb.ca.ifm.Cmd CICFlowMeter received 1 pcap file
+Working on... nmap-ss.pcap
+nmap-ss.pcap is done. total 6 flows 
+Packet stats: Total=13,Valid=13,Discarded=0
+-------------------------------------------------------------------------------
+stderr:
+

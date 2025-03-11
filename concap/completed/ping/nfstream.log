@@ -1,0 +1,5 @@
+stdout:
+NFStream processing offline PCAP file: /data/input/ping.pcap
+Writing flow results to CSV file: /data/output/ping.csv
+stderr:
+

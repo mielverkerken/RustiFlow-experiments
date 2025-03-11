@@ -1,0 +1,38 @@
+uuid: 0d1b49ac-81cc-44af-af11-26d5bcc21c2f
+name: ping
+startTime: 2025-03-11T16:28:46.062040519+01:00
+stopTime: 2025-03-11T16:28:55.576504452+01:00
+attacker:
+  name: ping
+  image: ghcr.io/idlab-discover/concap/iproute2:1.0.0
+  atkCommand: ping -c 10 $TARGET_IP 2>&1 | tee -a /proc/1/fd/1
+  atkTime: ""
+  cpuRequest: 500m
+  cpuLimit: ""
+  memRequest: 500Mi
+  memLimit: ""
+target:
+  name: ubuntu
+  image: ubuntu:20.04
+  filter: ((dst host $ATTACKER_IP and src host $TARGET_IP) or (dst host $TARGET_IP
+    and src host $ATTACKER_IP)) and not arp
+  cpuRequest: 500m
+  cpuLimit: ""
+  memRequest: 500Mi
+  memLimit: ""
+network:
+  bandwidth: 100mbit
+  queueSize: 100ms
+  limit: "10000"
+  delay: 0ms
+  jitter: 0ms
+  distribution: normal
+  loss: 0%
+  corrupt: 0%
+  duplicate: 0%
+  seed: "0"
+labels:
+  scenario: ping
+deployment:
+  attacker: 192.168.249.88
+  target: 192.168.168.226

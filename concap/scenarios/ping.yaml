@@ -1,0 +1,24 @@
+attacker:
+  name: ping
+  image: ghcr.io/idlab-discover/concap/iproute2:1.0.0
+  atkCommand: ping -c 10 $TARGET_IP
+  cpuRequest: 500m
+  memRequest: 500Mi
+target:
+  name: ubuntu
+  image: ubuntu:20.04
+  cpuRequest: 500m
+  memRequest: 500Mi
+network:
+  bandwidth: 100mbit
+  queueSize: 100ms
+  limit: 10000
+  delay: 0ms
+  jitter: 0ms
+  distribution: normal
+  loss: 0%
+  corrupt: 0%
+  duplicate: 0%
+  seed: 0
+labels:
+  scenario: ping

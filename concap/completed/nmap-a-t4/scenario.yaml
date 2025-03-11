@@ -1,0 +1,41 @@
+uuid: c8828fb5-59dd-4f8d-b20f-3edfdf40bd3f
+name: nmap-a-t4
+startTime: 2025-03-11T16:16:17.211982146+01:00
+stopTime: 2025-03-11T16:16:37.280295462+01:00
+attacker:
+  name: nmap
+  image: ghcr.io/idlab-discover/concap/nmap:ubuntu20
+  atkCommand: nmap $TARGET_IP -A -T4 2>&1 | tee -a /proc/1/fd/1
+  atkTime: ""
+  cpuRequest: 500m
+  cpuLimit: ""
+  memRequest: 500Mi
+  memLimit: ""
+target:
+  name: httpd
+  image: ghcr.io/idlab-discover/concap/httpd:ubuntu20
+  filter: ((dst host $ATTACKER_IP and src host $TARGET_IP) or (dst host $TARGET_IP
+    and src host $ATTACKER_IP)) and not arp
+  cpuRequest: 500m
+  cpuLimit: ""
+  memRequest: 500Mi
+  memLimit: ""
+network:
+  bandwidth: 100mbit
+  queueSize: 100ms
+  limit: "10000"
+  delay: 0ms
+  jitter: 0ms
+  distribution: normal
+  loss: 0%
+  corrupt: 0%
+  duplicate: 0%
+  seed: "0"
+labels:
+  category: port-scan
+  label: "1"
+  scenario: nmap_A_T4
+  subcategory: nmap
+deployment:
+  attacker: 192.168.249.73
+  target: 192.168.19.166
